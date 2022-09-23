@@ -1,0 +1,1917 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<xml>
+	<Header>
+		<DocumentName value="AuditTypeParameterFile" />
+		<SavePath value="d:\bestfit\audittypes_left\010_w177_fa_li.xml" />
+		<VolumeID value="A81B-CEA1" />
+		<DocumentVersion value="2" />
+		<Revision value="r7437" />
+		<TimeStamp value="2022-09-09 09:54:58" />
+		<CheckSum value="6F01279A6A4F6A5D1F990A55753D5FBE0F7B6336" />
+	</Header>
+	<Container name="root">
+		<Container name="Audit">
+			<Integer name="NoScanners" value="14" />
+			<Container name="Scanner1">
+				<Integer name="Typ" value="3" />
+				<String name="Name" value="DistanceSensor 01" />
+				<String name="SensorPath" value="D:\BestFit\BestFitTypes_Left\DistanceSensor\DistanceSensor01.xml" />
+			</Container>
+			<Container name="Scanner2">
+				<Integer name="Typ" value="3" />
+				<String name="Name" value="DistanceSensor 02" />
+				<String name="SensorPath" value="D:\BestFit\BestFitTypes_Left\DistanceSensor\DistanceSensor02.xml" />
+			</Container>
+			<Container name="Scanner3">
+				<Integer name="Typ" value="3" />
+				<String name="Name" value="DistanceSensor 03" />
+				<String name="SensorPath" value="D:\BestFit\BestFitTypes_Left\DistanceSensor\DistanceSensor03.xml" />
+			</Container>
+			<Container name="Scanner4">
+				<Integer name="Typ" value="3" />
+				<String name="Name" value="DistanceSensor 04" />
+				<String name="SensorPath" value="D:\BestFit\BestFitTypes_Left\DistanceSensor\DistanceSensor04.xml" />
+			</Container>
+			<Container name="Scanner5">
+				<Integer name="Typ" value="1" />
+				<String name="Name" value="Sensor 01" />
+				<String name="SensorPath" value="D:\BestFit\AuditTypes_Left\Sensors_W177\Sensor01.xml" />
+			</Container>
+			<Container name="Scanner6">
+				<Integer name="Typ" value="1" />
+				<String name="Name" value="Sensor 02" />
+				<String name="SensorPath" value="D:\BestFit\AuditTypes_Left\Sensors_W177\Sensor02.xml" />
+			</Container>
+			<Container name="Scanner7">
+				<Integer name="Typ" value="1" />
+				<String name="Name" value="Sensor 03" />
+				<String name="SensorPath" value="D:\BestFit\AuditTypes_Left\Sensors_W177\Sensor03.xml" />
+			</Container>
+			<Container name="Scanner8">
+				<Integer name="Typ" value="1" />
+				<String name="Name" value="Sensor 04" />
+				<String name="SensorPath" value="D:\BestFit\AuditTypes_Left\Sensors_W177\Sensor04.xml" />
+			</Container>
+			<Container name="Scanner9">
+				<Integer name="Typ" value="1" />
+				<String name="Name" value="Sensor 05" />
+				<String name="SensorPath" value="D:\BestFit\AuditTypes_Left\Sensors_W177\Sensor05.xml" />
+			</Container>
+			<Container name="Scanner10">
+				<Integer name="Typ" value="1" />
+				<String name="Name" value="Sensor 06" />
+				<String name="SensorPath" value="D:\BestFit\AuditTypes_Left\Sensors_W177\Sensor06.xml" />
+			</Container>
+			<Container name="Scanner11">
+				<Integer name="Typ" value="1" />
+				<String name="Name" value="Sensor 07" />
+				<String name="SensorPath" value="D:\BestFit\AuditTypes_Left\Sensors_W177\Sensor07.xml" />
+			</Container>
+			<Container name="Scanner12">
+				<Integer name="Typ" value="1" />
+				<String name="Name" value="Sensor 09" />
+				<String name="SensorPath" value="D:\BestFit\AuditTypes_Left\Sensors_W177\Sensor09.xml" />
+			</Container>
+			<Container name="Scanner13">
+				<Integer name="Typ" value="1" />
+				<String name="Name" value="Sensor 10" />
+				<String name="SensorPath" value="D:\BestFit\AuditTypes_Left\Sensors_W177\Sensor10.xml" />
+			</Container>
+			<Container name="Scanner14">
+				<Integer name="Typ" value="3" />
+				<String name="Name" value="DistanceSensor 06" />
+				<String name="SensorPath" value="D:\BestFit\BestFitTypes_Left\DistanceSensor\DistanceSensor06.xml" />
+			</Container>
+			<Integer name="NoSamples" value="10" />
+			<Double name="MaxDeviation" value="1" />
+			<Integer name="SensorDelay" value="1000" />
+			<Bool name="FlagRsiQStop" value="true" />
+			<Integer name="GroupIndex" value="1" />
+			<Container name="SubType">
+				<UInt name="NoAddedSubTypes" value="10" />
+				<Integer name="NoSubTypes" value="10" />
+				<Container name="SubType1">
+					<UInt name="InternalIndex" value="1" />
+					<Integer name="Index" value="1" />
+					<String name="Name" value="Abgabemessung" />
+					<Container name="Recording">
+						<Bool name="FlagPathAuto" value="true" />
+						<Bool name="FlagSave" value="true" />
+						<String name="Path" value="D:\BestFitLog\RawData\" />
+						<UInt name="MaxNoDirs" value="1000" />
+					</Container>
+				</Container>
+				<Container name="SubType2">
+					<UInt name="InternalIndex" value="2" />
+					<Integer name="Index" value="4" />
+					<String name="Name" value="Passung_vor_Regelung" />
+					<Container name="Recording">
+						<Bool name="FlagPathAuto" value="true" />
+						<Bool name="FlagSave" value="true" />
+						<String name="Path" value="D:\BestFitLog\RawData\" />
+						<UInt name="MaxNoDirs" value="100" />
+					</Container>
+				</Container>
+				<Container name="SubType3">
+					<UInt name="InternalIndex" value="3" />
+					<Integer name="Index" value="5" />
+					<String name="Name" value="Passung_nach_Regelung" />
+					<Container name="Recording">
+						<Bool name="FlagPathAuto" value="true" />
+						<Bool name="FlagSave" value="true" />
+						<String name="Path" value="D:\BestFitLog\RawData\" />
+						<UInt name="MaxNoDirs" value="100" />
+					</Container>
+				</Container>
+				<Container name="SubType4">
+					<UInt name="InternalIndex" value="4" />
+					<Integer name="Index" value="6" />
+					<String name="Name" value="Fuegeposition" />
+					<Container name="Recording">
+						<Bool name="FlagPathAuto" value="true" />
+						<Bool name="FlagSave" value="true" />
+						<String name="Path" value="D:\BestFitLog\RawData\" />
+						<UInt name="MaxNoDirs" value="100" />
+					</Container>
+				</Container>
+				<Container name="SubType5">
+					<UInt name="InternalIndex" value="5" />
+					<Integer name="Index" value="7" />
+					<String name="Name" value="vor_Verschraubung" />
+					<Container name="Recording">
+						<Bool name="FlagPathAuto" value="true" />
+						<Bool name="FlagSave" value="true" />
+						<String name="Path" value="D:\BestFitLog\RawData\" />
+						<UInt name="MaxNoDirs" value="100" />
+					</Container>
+				</Container>
+				<Container name="SubType6">
+					<UInt name="InternalIndex" value="6" />
+					<Integer name="Index" value="8" />
+					<String name="Name" value="nach_Verschraubung" />
+					<Container name="Recording">
+						<Bool name="FlagPathAuto" value="true" />
+						<Bool name="FlagSave" value="true" />
+						<String name="Path" value="D:\BestFitLog\RawData\" />
+						<UInt name="MaxNoDirs" value="100" />
+					</Container>
+				</Container>
+				<Container name="SubType7">
+					<UInt name="InternalIndex" value="7" />
+					<Integer name="Index" value="501" />
+					<String name="Name" value="MFU1" />
+					<Container name="Recording">
+						<Bool name="FlagPathAuto" value="true" />
+						<Bool name="FlagSave" value="true" />
+						<String name="Path" value="D:\BestFitLog\RawData\" />
+						<UInt name="MaxNoDirs" value="700" />
+					</Container>
+				</Container>
+				<Container name="SubType8">
+					<UInt name="InternalIndex" value="8" />
+					<Integer name="Index" value="502" />
+					<String name="Name" value="MFU2" />
+					<Container name="Recording">
+						<Bool name="FlagPathAuto" value="true" />
+						<Bool name="FlagSave" value="true" />
+						<String name="Path" value="D:\BestFitLog\RawData\" />
+						<UInt name="MaxNoDirs" value="700" />
+					</Container>
+				</Container>
+				<Container name="SubType9">
+					<UInt name="InternalIndex" value="9" />
+					<Integer name="Index" value="503" />
+					<String name="Name" value="MFU3" />
+					<Container name="Recording">
+						<Bool name="FlagPathAuto" value="true" />
+						<Bool name="FlagSave" value="true" />
+						<String name="Path" value="D:\BestFitLog\RawData\" />
+						<UInt name="MaxNoDirs" value="700" />
+					</Container>
+				</Container>
+				<Container name="SubType10">
+					<UInt name="InternalIndex" value="10" />
+					<Integer name="Index" value="504" />
+					<String name="Name" value="MFU4" />
+					<Container name="Recording">
+						<Bool name="FlagPathAuto" value="true" />
+						<Bool name="FlagSave" value="true" />
+						<String name="Path" value="D:\BestFitLog\RawData\" />
+						<UInt name="MaxNoDirs" value="700" />
+					</Container>
+				</Container>
+			</Container>
+		</Container>
+		<Container name="Visu">
+			<Bool name="WarnTolActive" value="true" />
+			<Container name="LayoutConf">
+				<String name="ImagePath" value="D:\BestFit\Pictures\BestFitVisu_IQ-Vis_W177_FA_li.bmp" />
+				<Bool name="UseAutoPositionUpdateForMeasPos" value="false" />
+				<Bool name="EnableScaling" value="false" />
+				<Integer name="ImageWidth" value="1312" />
+				<Integer name="ImageHeight" value="877" />
+				<Double name="ImageScaling" value="1" />
+				<Container name="CoordinateSystem">
+					<Integer name="ImageOriginX" value="0" />
+					<Integer name="ImageOriginY" value="0" />
+					<Integer name="HorizontalAxis" value="0" />
+					<Integer name="DirectionHorizontal" value="1" />
+					<Integer name="VerticalAxis" value="1" />
+					<Integer name="DirectionVertical" value="1" />
+					<Integer name="DeepnessAxis" value="2" />
+					<Integer name="DirectionDeepness" value="1" />
+				</Container>
+				<Integer name="NoLayoutElements" value="12" />
+				<Container name="LayoutElement1">
+					<Bool name="Show" value="true" />
+					<String name="DisplayTitle" value="1-6_40L" />
+					<String name="DisplayText" value="SW-FA un Y li" />
+					<Integer name="DisplayElementType" value="0" />
+					<Container name="ValueReferences">
+						<Integer name="Count" value="1" />
+						<String name="ValueReference1" value="d1306266-2f77-436f-8176-defd2992966c" />
+					</Container>
+					<Container name="MeasSymbol">
+						<String name="ColorText" value="Red" />
+						<Integer name="Size" value="2" />
+						<Integer name="Symbol" value="2" />
+						<Integer name="DockPosition" value="5" />
+						<Double name="PosX" value="0.15064244501892" />
+						<Double name="PosY" value="0.782508313041657" />
+						<Double name="Angle" value="90" />
+						<Bool name="Visible" value="true" />
+					</Container>
+					<Container name="DisplayElement">
+						<Integer name="Size" value="2" />
+						<Integer name="DockPosition" value="5" />
+						<Double name="PosX" value="0.280102562661572" />
+						<Double name="PosY" value="0.780575236299846" />
+						<Bool name="ShowTitle" value="true" />
+						<Bool name="ShowText" value="true" />
+					</Container>
+				</Container>
+				<Container name="LayoutElement2">
+					<Bool name="Show" value="true" />
+					<String name="DisplayTitle" value="1-6_41L" />
+					<String name="DisplayText" value="SW-FA ob Y li" />
+					<Integer name="DisplayElementType" value="0" />
+					<Container name="ValueReferences">
+						<Integer name="Count" value="1" />
+						<String name="ValueReference1" value="98f425c3-77ef-44ca-9686-3b3a13c32f49" />
+					</Container>
+					<Container name="MeasSymbol">
+						<String name="ColorText" value="Red" />
+						<Integer name="Size" value="2" />
+						<Integer name="Symbol" value="2" />
+						<Integer name="DockPosition" value="5" />
+						<Double name="PosX" value="0.143001479899592" />
+						<Double name="PosY" value="0.493593852276595" />
+						<Double name="Angle" value="90" />
+						<Bool name="Visible" value="true" />
+					</Container>
+					<Container name="DisplayElement">
+						<Integer name="Size" value="2" />
+						<Integer name="DockPosition" value="5" />
+						<Double name="PosX" value="0.279330860589712" />
+						<Double name="PosY" value="0.494168564920273" />
+						<Bool name="ShowTitle" value="true" />
+						<Bool name="ShowText" value="true" />
+					</Container>
+				</Container>
+				<Container name="LayoutElement3">
+					<Bool name="Show" value="true" />
+					<String name="DisplayTitle" value="1-6_42L" />
+					<String name="DisplayText" value="SW-FA vo Z li" />
+					<Integer name="DisplayElementType" value="0" />
+					<Container name="ValueReferences">
+						<Integer name="Count" value="1" />
+						<String name="ValueReference1" value="8cb94547-cf3c-4b43-8521-18cbfd56a4f0" />
+					</Container>
+					<Container name="MeasSymbol">
+						<String name="ColorText" value="Red" />
+						<Integer name="Size" value="2" />
+						<Integer name="Symbol" value="0" />
+						<Integer name="DockPosition" value="5" />
+						<Double name="PosX" value="0.171460979356337" />
+						<Double name="PosY" value="0.417282748147566" />
+						<Double name="Angle" value="0" />
+						<Bool name="Visible" value="true" />
+					</Container>
+					<Container name="DisplayElement">
+						<Integer name="Size" value="2" />
+						<Integer name="DockPosition" value="5" />
+						<Double name="PosX" value="0.11147465437788" />
+						<Double name="PosY" value="0.233563218390804" />
+						<Bool name="ShowTitle" value="true" />
+						<Bool name="ShowText" value="true" />
+					</Container>
+				</Container>
+				<Container name="LayoutElement4">
+					<Bool name="Show" value="true" />
+					<String name="DisplayTitle" value="1-6_16L" />
+					<String name="DisplayText" value="SW-FAR vo li" />
+					<Integer name="DisplayElementType" value="0" />
+					<Container name="ValueReferences">
+						<Integer name="Count" value="2" />
+						<String name="ValueReference1" value="b5236d1a-0a93-4493-9e0c-22640910eb31" />
+						<String name="ValueReference2" value="1012f087-4b31-4646-8767-7329ce38638e" />
+					</Container>
+					<Container name="MeasSymbol">
+						<String name="ColorText" value="Red" />
+						<Integer name="Size" value="2" />
+						<Integer name="Symbol" value="0" />
+						<Integer name="DockPosition" value="5" />
+						<Double name="PosX" value="0.274622438275074" />
+						<Double name="PosY" value="0.277251066949441" />
+						<Double name="Angle" value="-30" />
+						<Bool name="Visible" value="true" />
+					</Container>
+					<Container name="DisplayElement">
+						<Integer name="Size" value="2" />
+						<Integer name="DockPosition" value="5" />
+						<Double name="PosX" value="0.395773762691545" />
+						<Double name="PosY" value="0.209665907365224" />
+						<Bool name="ShowTitle" value="true" />
+						<Bool name="ShowText" value="true" />
+					</Container>
+				</Container>
+				<Container name="LayoutElement5">
+					<Bool name="Show" value="true" />
+					<String name="DisplayTitle" value="1-6_20L" />
+					<String name="DisplayText" value="SW-FAR hi li" />
+					<Integer name="DisplayElementType" value="0" />
+					<Container name="ValueReferences">
+						<Integer name="Count" value="2" />
+						<String name="ValueReference1" value="5a377aee-8e06-4f43-af45-c568dfc1e8fc" />
+						<String name="ValueReference2" value="2bef67a7-9987-4fbc-b16f-07abcfae190b" />
+					</Container>
+					<Container name="MeasSymbol">
+						<String name="ColorText" value="Red" />
+						<Integer name="Size" value="2" />
+						<Integer name="Symbol" value="0" />
+						<Integer name="DockPosition" value="5" />
+						<Double name="PosX" value="0.656701416207711" />
+						<Double name="PosY" value="0.133238289738958" />
+						<Double name="Angle" value="0" />
+						<Bool name="Visible" value="true" />
+					</Container>
+					<Container name="DisplayElement">
+						<Integer name="Size" value="2" />
+						<Integer name="DockPosition" value="5" />
+						<Double name="PosX" value="0.537766381926493" />
+						<Double name="PosY" value="0.13572565653392" />
+						<Bool name="ShowTitle" value="true" />
+						<Bool name="ShowText" value="true" />
+					</Container>
+				</Container>
+				<Container name="LayoutElement6">
+					<Bool name="Show" value="true" />
+					<String name="DisplayTitle" value="5-6_10L" />
+					<String name="DisplayText" value="FOR-FAR ob li" />
+					<Integer name="DisplayElementType" value="0" />
+					<Container name="ValueReferences">
+						<Integer name="Count" value="2" />
+						<String name="ValueReference1" value="f0ef45a6-9bf6-49b1-bfa7-2e68f7f41191" />
+						<String name="ValueReference2" value="81772e58-ec55-4f7f-97c0-f001d4a6cc37" />
+					</Container>
+					<Container name="MeasSymbol">
+						<String name="ColorText" value="Red" />
+						<Integer name="Size" value="2" />
+						<Integer name="Symbol" value="0" />
+						<Integer name="DockPosition" value="5" />
+						<Double name="PosX" value="0.669067756921809" />
+						<Double name="PosY" value="0.199246458775169" />
+						<Double name="Angle" value="-80" />
+						<Bool name="Visible" value="true" />
+					</Container>
+					<Container name="DisplayElement">
+						<Integer name="Size" value="2" />
+						<Integer name="DockPosition" value="5" />
+						<Double name="PosX" value="0.484658499119553" />
+						<Double name="PosY" value="0.44877490639646" />
+						<Bool name="ShowTitle" value="true" />
+						<Bool name="ShowText" value="true" />
+					</Container>
+				</Container>
+				<Container name="LayoutElement7">
+					<Bool name="Show" value="true" />
+					<String name="DisplayTitle" value="5-6_6L" />
+					<String name="DisplayText" value="FA HST li" />
+					<Integer name="DisplayElementType" value="0" />
+					<Container name="ValueReferences">
+						<Integer name="Count" value="1" />
+						<String name="ValueReference1" value="714bddca-ba42-46c7-9e09-cd8193cfe21b" />
+					</Container>
+					<Container name="MeasSymbol">
+						<String name="ColorText" value="Red" />
+						<Integer name="Size" value="2" />
+						<Integer name="Symbol" value="0" />
+						<Integer name="DockPosition" value="5" />
+						<Double name="PosX" value="0.64439361582556" />
+						<Double name="PosY" value="0.367418636922997" />
+						<Double name="Angle" value="0" />
+						<Bool name="Visible" value="true" />
+					</Container>
+					<Container name="DisplayElement">
+						<Integer name="Size" value="2" />
+						<Integer name="DockPosition" value="5" />
+						<Double name="PosX" value="0.773506331722304" />
+						<Double name="PosY" value="0.233271018249417" />
+						<Bool name="ShowTitle" value="true" />
+						<Bool name="ShowText" value="true" />
+					</Container>
+				</Container>
+				<Container name="LayoutElement8">
+					<Bool name="Show" value="true" />
+					<String name="DisplayTitle" value="5-6_4L" />
+					<String name="DisplayText" value="FD-FA ob li (NST)" />
+					<Integer name="DisplayElementType" value="0" />
+					<Container name="ValueReferences">
+						<Integer name="Count" value="2" />
+						<String name="ValueReference1" value="c6970d9c-74c6-4a5b-80ef-7f007b550cb6" />
+						<String name="ValueReference2" value="f1b4cc62-ada6-4700-8e5f-cdbed328cad8" />
+					</Container>
+					<Container name="MeasSymbol">
+						<String name="ColorText" value="-256" />
+						<Integer name="Size" value="2" />
+						<Integer name="Symbol" value="0" />
+						<Integer name="DockPosition" value="5" />
+						<Double name="PosX" value="0.625200442096587" />
+						<Double name="PosY" value="0.443155421958993" />
+						<Double name="Angle" value="100" />
+						<Bool name="Visible" value="true" />
+					</Container>
+					<Container name="DisplayElement">
+						<Integer name="Size" value="2" />
+						<Integer name="DockPosition" value="5" />
+						<Double name="PosX" value="0.798738526094939" />
+						<Double name="PosY" value="0.473667425968109" />
+						<Bool name="ShowTitle" value="true" />
+						<Bool name="ShowText" value="true" />
+					</Container>
+				</Container>
+				<Container name="LayoutElement9">
+					<Bool name="Show" value="true" />
+					<String name="DisplayTitle" value="5-6_2L" />
+					<String name="DisplayText" value="FD-FA un li" />
+					<Integer name="DisplayElementType" value="0" />
+					<Container name="ValueReferences">
+						<Integer name="Count" value="2" />
+						<String name="ValueReference1" value="5a7d2923-dbf4-484f-a1ae-73b849d1decc" />
+						<String name="ValueReference2" value="abe2a18b-3c68-4224-885f-231343f91b97" />
+					</Container>
+					<Container name="MeasSymbol">
+						<String name="ColorText" value="Red" />
+						<Integer name="Size" value="2" />
+						<Integer name="Symbol" value="0" />
+						<Integer name="DockPosition" value="5" />
+						<Double name="PosX" value="0.615929714135851" />
+						<Double name="PosY" value="0.74923729479224" />
+						<Double name="Angle" value="80" />
+						<Bool name="Visible" value="true" />
+					</Container>
+					<Container name="DisplayElement">
+						<Integer name="Size" value="2" />
+						<Integer name="DockPosition" value="5" />
+						<Double name="PosX" value="0.787997545989285" />
+						<Double name="PosY" value="0.7150569476082" />
+						<Bool name="ShowTitle" value="true" />
+						<Bool name="ShowText" value="true" />
+					</Container>
+				</Container>
+				<Container name="LayoutElement10">
+					<Bool name="Show" value="true" />
+					<String name="DisplayTitle" value="5-6_4-2L" />
+					<String name="DisplayText" value="FA ob-un Sp KK li" />
+					<Integer name="DisplayElementType" value="0" />
+					<Container name="ValueReferences">
+						<Integer name="Count" value="1" />
+						<String name="ValueReference1" value="b2f3570a-28f8-4561-b43b-c3fd2f4774a0" />
+					</Container>
+					<Container name="MeasSymbol">
+						<String name="ColorText" value="Red" />
+						<Integer name="Size" value="2" />
+						<Integer name="Symbol" value="3" />
+						<Integer name="DockPosition" value="5" />
+						<Double name="PosX" value="0.600340136054422" />
+						<Double name="PosY" value="0.369168356997972" />
+						<Double name="Angle" value="0" />
+						<Bool name="Visible" value="false" />
+					</Container>
+					<Container name="DisplayElement">
+						<Integer name="Size" value="2" />
+						<Integer name="DockPosition" value="5" />
+						<Double name="PosX" value="0.621066839009405" />
+						<Double name="PosY" value="0.599602544968973" />
+						<Bool name="ShowTitle" value="true" />
+						<Bool name="ShowText" value="true" />
+					</Container>
+				</Container>
+				<Container name="LayoutElement11">
+					<Bool name="Show" value="true" />
+					<String name="DisplayTitle" value="5-6_1L" />
+					<String name="DisplayText" value="FD-FA Stein Üb li" />
+					<Integer name="DisplayElementType" value="0" />
+					<Container name="ValueReferences">
+						<Integer name="Count" value="1" />
+						<String name="ValueReference1" value="c37ea51d-5b69-45e0-873b-4178c3e7bd4b" />
+					</Container>
+					<Container name="MeasSymbol">
+						<String name="ColorText" value="Red" />
+						<Integer name="Size" value="2" />
+						<Integer name="Symbol" value="0" />
+						<Integer name="DockPosition" value="5" />
+						<Double name="PosX" value="0.622857517515267" />
+						<Double name="PosY" value="0.832508313041657" />
+						<Double name="Angle" value="80" />
+						<Bool name="Visible" value="true" />
+					</Container>
+					<Container name="DisplayElement">
+						<Integer name="Size" value="2" />
+						<Integer name="DockPosition" value="5" />
+						<Double name="PosX" value="0.793700859572783" />
+						<Double name="PosY" value="0.890888382687927" />
+						<Bool name="ShowTitle" value="true" />
+						<Bool name="ShowText" value="true" />
+					</Container>
+				</Container>
+				<Container name="LayoutElement12">
+					<Bool name="Show" value="true" />
+					<String name="DisplayTitle" value="1-11_40L" />
+					<String name="DisplayText" value="SW-2LTE Y li" />
+					<Integer name="DisplayElementType" value="0" />
+					<Container name="ValueReferences">
+						<Integer name="Count" value="1" />
+						<String name="ValueReference1" value="a812fc5a-0ad2-4893-b9bb-89275fe1d6c8" />
+					</Container>
+					<Container name="MeasSymbol">
+						<String name="ColorText" value="Red" />
+						<Integer name="Size" value="2" />
+						<Integer name="Symbol" value="2" />
+						<Integer name="DockPosition" value="5" />
+						<Double name="PosX" value="0.063546366619031" />
+						<Double name="PosY" value="0.496612714679777" />
+						<Double name="Angle" value="-90" />
+						<Bool name="Visible" value="true" />
+					</Container>
+					<Container name="DisplayElement">
+						<Integer name="Size" value="2" />
+						<Integer name="DockPosition" value="5" />
+						<Double name="PosX" value="0.062776123037728" />
+						<Double name="PosY" value="0.663625009818553" />
+						<Bool name="ShowTitle" value="true" />
+						<Bool name="ShowText" value="true" />
+					</Container>
+				</Container>
+			</Container>
+			<Container name="ErrPropConf">
+				<Integer name="Condition1GlobalMaxQuantity" value="0" />
+				<Integer name="Condition2GlobalMaxQuantity" value="0" />
+				<String name="StationLabel" value="FA_LI_EP" />
+			</Container>
+			<Container name="QStopConf">
+				<Integer name="Condition1GlobalMaxQuantity" value="0" />
+				<Integer name="Condition2GlobalMaxQuantity" value="0" />
+				<String name="StationLabel" value="FA_LI_QS" />
+			</Container>
+			<Container name="IqVisConf">
+				<String name="FileNamePrefix" value="IQVIS_040MSR001FA_LI" />
+				<String name="System" value="BFK_W177_FA_li" />
+				<String name="Type Series" value="177" />
+				<String name="Model" value="W" />
+				<String name="InspectionPlan" value="BFK_W177_FA_li" />
+				<Container name="IqVisElements">
+					<Integer name="Count" value="12" />
+					<Container name="IqVisElement1">
+						<Bool name="Export" value="true" />
+						<String name="FeatureName" value="1-6_40L" />
+						<Container name="SubItems">
+							<Integer name="Count" value="1" />
+							<Container name="SubItem1">
+								<String name="ComponentLabel" value="Y" />
+								<String name="AnalysisStrategy" value="PG" />
+								<String name="ValueReference" value="d1306266-2f77-436f-8176-defd2992966c" />
+							</Container>
+						</Container>
+					</Container>
+					<Container name="IqVisElement2">
+						<Bool name="Export" value="true" />
+						<String name="FeatureName" value="1-6_41L" />
+						<Container name="SubItems">
+							<Integer name="Count" value="1" />
+							<Container name="SubItem1">
+								<String name="ComponentLabel" value="Y" />
+								<String name="AnalysisStrategy" value="PG" />
+								<String name="ValueReference" value="98f425c3-77ef-44ca-9686-3b3a13c32f49" />
+							</Container>
+						</Container>
+					</Container>
+					<Container name="IqVisElement3">
+						<Bool name="Export" value="true" />
+						<String name="FeatureName" value="1-6_42L" />
+						<Container name="SubItems">
+							<Integer name="Count" value="1" />
+							<Container name="SubItem1">
+								<String name="ComponentLabel" value="Z" />
+								<String name="AnalysisStrategy" value="PG" />
+								<String name="ValueReference" value="8cb94547-cf3c-4b43-8521-18cbfd56a4f0" />
+							</Container>
+						</Container>
+					</Container>
+					<Container name="IqVisElement4">
+						<Bool name="Export" value="true" />
+						<String name="FeatureName" value="1-6_16L" />
+						<Container name="SubItems">
+							<Integer name="Count" value="2" />
+							<Container name="SubItem1">
+								<String name="ComponentLabel" value="G" />
+								<String name="AnalysisStrategy" value="LG" />
+								<String name="ValueReference" value="b5236d1a-0a93-4493-9e0c-22640910eb31" />
+							</Container>
+							<Container name="SubItem2">
+								<String name="ComponentLabel" value="F" />
+								<String name="AnalysisStrategy" value="LG" />
+								<String name="ValueReference" value="1012f087-4b31-4646-8767-7329ce38638e" />
+							</Container>
+						</Container>
+					</Container>
+					<Container name="IqVisElement5">
+						<Bool name="Export" value="true" />
+						<String name="FeatureName" value="1-6_20L" />
+						<Container name="SubItems">
+							<Integer name="Count" value="2" />
+							<Container name="SubItem1">
+								<String name="ComponentLabel" value="G" />
+								<String name="AnalysisStrategy" value="LG" />
+								<String name="ValueReference" value="5a377aee-8e06-4f43-af45-c568dfc1e8fc" />
+							</Container>
+							<Container name="SubItem2">
+								<String name="ComponentLabel" value="F" />
+								<String name="AnalysisStrategy" value="LG" />
+								<String name="ValueReference" value="2bef67a7-9987-4fbc-b16f-07abcfae190b" />
+							</Container>
+						</Container>
+					</Container>
+					<Container name="IqVisElement6">
+						<Bool name="Export" value="true" />
+						<String name="FeatureName" value="5-6_10L" />
+						<Container name="SubItems">
+							<Integer name="Count" value="2" />
+							<Container name="SubItem1">
+								<String name="ComponentLabel" value="G" />
+								<String name="AnalysisStrategy" value="LG" />
+								<String name="ValueReference" value="f0ef45a6-9bf6-49b1-bfa7-2e68f7f41191" />
+							</Container>
+							<Container name="SubItem2">
+								<String name="ComponentLabel" value="F" />
+								<String name="AnalysisStrategy" value="LG" />
+								<String name="ValueReference" value="81772e58-ec55-4f7f-97c0-f001d4a6cc37" />
+							</Container>
+						</Container>
+					</Container>
+					<Container name="IqVisElement7">
+						<Bool name="Export" value="true" />
+						<String name="FeatureName" value="5-6_6L" />
+						<Container name="SubItems">
+							<Integer name="Count" value="1" />
+							<Container name="SubItem1">
+								<String name="ComponentLabel" value="F" />
+								<String name="AnalysisStrategy" value="LG" />
+								<String name="ValueReference" value="714bddca-ba42-46c7-9e09-cd8193cfe21b" />
+							</Container>
+						</Container>
+					</Container>
+					<Container name="IqVisElement8">
+						<Bool name="Export" value="true" />
+						<String name="FeatureName" value="5-6_4L" />
+						<Container name="SubItems">
+							<Integer name="Count" value="2" />
+							<Container name="SubItem1">
+								<String name="ComponentLabel" value="G" />
+								<String name="AnalysisStrategy" value="LG" />
+								<String name="ValueReference" value="c6970d9c-74c6-4a5b-80ef-7f007b550cb6" />
+							</Container>
+							<Container name="SubItem2">
+								<String name="ComponentLabel" value="F" />
+								<String name="AnalysisStrategy" value="LG" />
+								<String name="ValueReference" value="f1b4cc62-ada6-4700-8e5f-cdbed328cad8" />
+							</Container>
+						</Container>
+					</Container>
+					<Container name="IqVisElement9">
+						<Bool name="Export" value="true" />
+						<String name="FeatureName" value="5-6_2L" />
+						<Container name="SubItems">
+							<Integer name="Count" value="2" />
+							<Container name="SubItem1">
+								<String name="ComponentLabel" value="G" />
+								<String name="AnalysisStrategy" value="LG" />
+								<String name="ValueReference" value="5a7d2923-dbf4-484f-a1ae-73b849d1decc" />
+							</Container>
+							<Container name="SubItem2">
+								<String name="ComponentLabel" value="F" />
+								<String name="AnalysisStrategy" value="LG" />
+								<String name="ValueReference" value="abe2a18b-3c68-4224-885f-231343f91b97" />
+							</Container>
+						</Container>
+					</Container>
+					<Container name="IqVisElement10">
+						<Bool name="Export" value="true" />
+						<String name="FeatureName" value="5-6_4-2L" />
+						<Container name="SubItems">
+							<Integer name="Count" value="1" />
+							<Container name="SubItem1">
+								<String name="ComponentLabel" value="K" />
+								<String name="AnalysisStrategy" value="PG" />
+								<String name="ValueReference" value="b2f3570a-28f8-4561-b43b-c3fd2f4774a0" />
+							</Container>
+						</Container>
+					</Container>
+					<Container name="IqVisElement11">
+						<Bool name="Export" value="true" />
+						<String name="FeatureName" value="5-6_1L" />
+						<Container name="SubItems">
+							<Integer name="Count" value="1" />
+							<Container name="SubItem1">
+								<String name="ComponentLabel" value="F" />
+								<String name="AnalysisStrategy" value="LG" />
+								<String name="ValueReference" value="c37ea51d-5b69-45e0-873b-4178c3e7bd4b" />
+							</Container>
+						</Container>
+					</Container>
+					<Container name="IqVisElement12">
+						<Bool name="Export" value="true" />
+						<String name="FeatureName" value="1-11_40L" />
+						<Container name="SubItems">
+							<Integer name="Count" value="1" />
+							<Container name="SubItem1">
+								<String name="ComponentLabel" value="Y" />
+								<String name="AnalysisStrategy" value="PG" />
+								<String name="ValueReference" value="a812fc5a-0ad2-4893-b9bb-89275fe1d6c8" />
+							</Container>
+						</Container>
+					</Container>
+				</Container>
+			</Container>
+			<Container name="ValueContainer">
+				<Integer name="Count" value="17" />
+				<Container name="ValueConfig1">
+					<String name="ValueId" value="a812fc5a-0ad2-4893-b9bb-89275fe1d6c8" />
+					<String name="MeasurementPosition" value="1-11_40L.Y" />
+					<String name="ValueLabel" value="SW-2LTE Y li" />
+					<Container name="ValueEvalConf">
+						<Bool name="WarningActive" value="true" />
+						<Double name="LowerWarnLimit" value="-2" />
+						<Double name="UpperWarnLimit" value="2" />
+						<Double name="LowerLimit" value="-2" />
+						<Double name="UpperLimit" value="2" />
+						<Double name="Nominal" value="0" />
+						<Double name="Offset" value="-0.8" />
+						<Double name="SigmaMaximum" value="0.075" />
+					</Container>
+					<Container name="ValueErrPropConf">
+						<Bool name="Condition1AddToQuantity" value="false" />
+						<Bool name="Condition2AddToQuantity" value="false" />
+						<Double name="Condition3OverTolerance" value="0" />
+					</Container>
+					<Container name="ValueQStopConf">
+						<Bool name="Condition1AddToQuantity" value="false" />
+						<Bool name="Condition2AddToQuantity" value="false" />
+						<Double name="Condition3OverTolerance" value="0" />
+						<Double name="Condition4MaxFrequency" value="0" />
+						<Integer name="Condition4NoMeasurements" value="0" />
+						<Integer name="Condition5MaxNoOutOfTolInSequence" value="0" />
+					</Container>
+					<Container name="ValueItems">
+						<Integer name="NoItems" value="2" />
+						<Container name="Item1">
+							<Integer name="TypeReference" value="-1" />
+							<Integer name="SubTypeReference" value="1" />
+							<String name="SensorName" value="DistanceSensor 03" />
+							<Integer name="Signal" value="12" />
+							<Double name="Weight" value="1" />
+							<Bool name="CheckProdNumber" value="true" />
+						</Container>
+						<Container name="Item2">
+							<Integer name="TypeReference" value="-1" />
+							<Integer name="SubTypeReference" value="1" />
+							<String name="SensorName" value="Sensor 02" />
+							<Integer name="Signal" value="16" />
+							<Double name="Weight" value="-1" />
+							<Bool name="CheckProdNumber" value="true" />
+						</Container>
+					</Container>
+					<Container name="ValuePlusConf">
+						<String name="MeasurementPosition" value="1-11_40L." />
+						<Bool name="FlagAddToPLUS" value="true" />
+						<String name="PLUSLabel" value="Y" />
+					</Container>
+					<Container name="ValueCSVConf">
+						<Bool name="Export" value="false" />
+						<String name="CSVMeasurementPosition" value="L01" />
+						<String name="CSVLabel" value="V" />
+					</Container>
+				</Container>
+				<Container name="ValueConfig2">
+					<String name="ValueId" value="b5236d1a-0a93-4493-9e0c-22640910eb31" />
+					<String name="MeasurementPosition" value="1-6_16L.G" />
+					<String name="ValueLabel" value="SW-FAR vo Sp li" />
+					<Container name="ValueEvalConf">
+						<Bool name="WarningActive" value="false" />
+						<Double name="LowerWarnLimit" value="-1.2" />
+						<Double name="UpperWarnLimit" value="1.2" />
+						<Double name="LowerLimit" value="-1.2" />
+						<Double name="UpperLimit" value="1.2" />
+						<Double name="Nominal" value="9.8" />
+						<Double name="Offset" value="-2.24" />
+						<Double name="SigmaMaximum" value="0.075" />
+					</Container>
+					<Container name="ValueErrPropConf">
+						<Bool name="Condition1AddToQuantity" value="false" />
+						<Bool name="Condition2AddToQuantity" value="false" />
+						<Double name="Condition3OverTolerance" value="0" />
+					</Container>
+					<Container name="ValueQStopConf">
+						<Bool name="Condition1AddToQuantity" value="false" />
+						<Bool name="Condition2AddToQuantity" value="false" />
+						<Double name="Condition3OverTolerance" value="0" />
+						<Double name="Condition4MaxFrequency" value="0.5" />
+						<Integer name="Condition4NoMeasurements" value="20" />
+						<Integer name="Condition5MaxNoOutOfTolInSequence" value="10" />
+					</Container>
+					<Container name="ValueItems">
+						<Integer name="NoItems" value="1" />
+						<Container name="Item1">
+							<Integer name="TypeReference" value="-1" />
+							<Integer name="SubTypeReference" value="1" />
+							<String name="SensorName" value="Sensor 03" />
+							<Integer name="Signal" value="2" />
+							<Double name="Weight" value="1" />
+							<Bool name="CheckProdNumber" value="true" />
+						</Container>
+					</Container>
+					<Container name="ValuePlusConf">
+						<String name="MeasurementPosition" value="1-6_16L." />
+						<Bool name="FlagAddToPLUS" value="true" />
+						<String name="PLUSLabel" value="G" />
+					</Container>
+					<Container name="ValueCSVConf">
+						<Bool name="Export" value="false" />
+						<String name="CSVMeasurementPosition" value="L01" />
+						<String name="CSVLabel" value="V" />
+					</Container>
+				</Container>
+				<Container name="ValueConfig3">
+					<String name="ValueId" value="1012f087-4b31-4646-8767-7329ce38638e" />
+					<String name="MeasurementPosition" value="1-6_16L.F" />
+					<String name="ValueLabel" value="SW-FAR vo Üb li" />
+					<Container name="ValueEvalConf">
+						<Bool name="WarningActive" value="false" />
+						<Double name="LowerWarnLimit" value="-1.2" />
+						<Double name="UpperWarnLimit" value="1.2" />
+						<Double name="LowerLimit" value="-1.2" />
+						<Double name="UpperLimit" value="1.2" />
+						<Double name="Nominal" value="-8.3" />
+						<Double name="Offset" value="-8.61" />
+						<Double name="SigmaMaximum" value="0.075" />
+					</Container>
+					<Container name="ValueErrPropConf">
+						<Bool name="Condition1AddToQuantity" value="false" />
+						<Bool name="Condition2AddToQuantity" value="false" />
+						<Double name="Condition3OverTolerance" value="0" />
+					</Container>
+					<Container name="ValueQStopConf">
+						<Bool name="Condition1AddToQuantity" value="false" />
+						<Bool name="Condition2AddToQuantity" value="false" />
+						<Double name="Condition3OverTolerance" value="0" />
+						<Double name="Condition4MaxFrequency" value="0.5" />
+						<Integer name="Condition4NoMeasurements" value="20" />
+						<Integer name="Condition5MaxNoOutOfTolInSequence" value="10" />
+					</Container>
+					<Container name="ValueItems">
+						<Integer name="NoItems" value="1" />
+						<Container name="Item1">
+							<Integer name="TypeReference" value="-1" />
+							<Integer name="SubTypeReference" value="1" />
+							<String name="SensorName" value="Sensor 03" />
+							<Integer name="Signal" value="1" />
+							<Double name="Weight" value="1" />
+							<Bool name="CheckProdNumber" value="true" />
+						</Container>
+					</Container>
+					<Container name="ValuePlusConf">
+						<String name="MeasurementPosition" value="1-6_16L." />
+						<Bool name="FlagAddToPLUS" value="true" />
+						<String name="PLUSLabel" value="F" />
+					</Container>
+					<Container name="ValueCSVConf">
+						<Bool name="Export" value="false" />
+						<String name="CSVMeasurementPosition" value="L01" />
+						<String name="CSVLabel" value="V" />
+					</Container>
+				</Container>
+				<Container name="ValueConfig4">
+					<String name="ValueId" value="5a377aee-8e06-4f43-af45-c568dfc1e8fc" />
+					<String name="MeasurementPosition" value="1-6_20L.G" />
+					<String name="ValueLabel" value="SW-FAR hi Sp li" />
+					<Container name="ValueEvalConf">
+						<Bool name="WarningActive" value="false" />
+						<Double name="LowerWarnLimit" value="-1.2" />
+						<Double name="UpperWarnLimit" value="1.2" />
+						<Double name="LowerLimit" value="-1.2" />
+						<Double name="UpperLimit" value="1.2" />
+						<Double name="Nominal" value="8.4" />
+						<Double name="Offset" value="-2.57" />
+						<Double name="SigmaMaximum" value="0.075" />
+					</Container>
+					<Container name="ValueErrPropConf">
+						<Bool name="Condition1AddToQuantity" value="false" />
+						<Bool name="Condition2AddToQuantity" value="false" />
+						<Double name="Condition3OverTolerance" value="0" />
+					</Container>
+					<Container name="ValueQStopConf">
+						<Bool name="Condition1AddToQuantity" value="false" />
+						<Bool name="Condition2AddToQuantity" value="false" />
+						<Double name="Condition3OverTolerance" value="0" />
+						<Double name="Condition4MaxFrequency" value="0.5" />
+						<Integer name="Condition4NoMeasurements" value="20" />
+						<Integer name="Condition5MaxNoOutOfTolInSequence" value="10" />
+					</Container>
+					<Container name="ValueItems">
+						<Integer name="NoItems" value="1" />
+						<Container name="Item1">
+							<Integer name="TypeReference" value="-1" />
+							<Integer name="SubTypeReference" value="1" />
+							<String name="SensorName" value="Sensor 04" />
+							<Integer name="Signal" value="2" />
+							<Double name="Weight" value="1" />
+							<Bool name="CheckProdNumber" value="true" />
+						</Container>
+					</Container>
+					<Container name="ValuePlusConf">
+						<String name="MeasurementPosition" value="1-6_20L." />
+						<Bool name="FlagAddToPLUS" value="true" />
+						<String name="PLUSLabel" value="G" />
+					</Container>
+					<Container name="ValueCSVConf">
+						<Bool name="Export" value="false" />
+						<String name="CSVMeasurementPosition" value="L01" />
+						<String name="CSVLabel" value="V" />
+					</Container>
+				</Container>
+				<Container name="ValueConfig5">
+					<String name="ValueId" value="2bef67a7-9987-4fbc-b16f-07abcfae190b" />
+					<String name="MeasurementPosition" value="1-6_20L.F" />
+					<String name="ValueLabel" value="SW-FAR hi Üb li" />
+					<Container name="ValueEvalConf">
+						<Bool name="WarningActive" value="false" />
+						<Double name="LowerWarnLimit" value="-1.3" />
+						<Double name="UpperWarnLimit" value="1.5" />
+						<Double name="LowerLimit" value="-1.3" />
+						<Double name="UpperLimit" value="1.5" />
+						<Double name="Nominal" value="-7.5" />
+						<Double name="Offset" value="-8.07" />
+						<Double name="SigmaMaximum" value="0.075" />
+					</Container>
+					<Container name="ValueErrPropConf">
+						<Bool name="Condition1AddToQuantity" value="false" />
+						<Bool name="Condition2AddToQuantity" value="false" />
+						<Double name="Condition3OverTolerance" value="0" />
+					</Container>
+					<Container name="ValueQStopConf">
+						<Bool name="Condition1AddToQuantity" value="false" />
+						<Bool name="Condition2AddToQuantity" value="false" />
+						<Double name="Condition3OverTolerance" value="0" />
+						<Double name="Condition4MaxFrequency" value="0.5" />
+						<Integer name="Condition4NoMeasurements" value="20" />
+						<Integer name="Condition5MaxNoOutOfTolInSequence" value="10" />
+					</Container>
+					<Container name="ValueItems">
+						<Integer name="NoItems" value="1" />
+						<Container name="Item1">
+							<Integer name="TypeReference" value="-1" />
+							<Integer name="SubTypeReference" value="1" />
+							<String name="SensorName" value="Sensor 04" />
+							<Integer name="Signal" value="1" />
+							<Double name="Weight" value="1" />
+							<Bool name="CheckProdNumber" value="true" />
+						</Container>
+					</Container>
+					<Container name="ValuePlusConf">
+						<String name="MeasurementPosition" value="1-6_20L." />
+						<Bool name="FlagAddToPLUS" value="true" />
+						<String name="PLUSLabel" value="F" />
+					</Container>
+					<Container name="ValueCSVConf">
+						<Bool name="Export" value="false" />
+						<String name="CSVMeasurementPosition" value="L01" />
+						<String name="CSVLabel" value="V" />
+					</Container>
+				</Container>
+				<Container name="ValueConfig6">
+					<String name="ValueId" value="d1306266-2f77-436f-8176-defd2992966c" />
+					<String name="MeasurementPosition" value="1-6_40L.Y" />
+					<String name="ValueLabel" value="SW-FA un Y li" />
+					<Container name="ValueEvalConf">
+						<Bool name="WarningActive" value="true" />
+						<Double name="LowerWarnLimit" value="-1.5" />
+						<Double name="UpperWarnLimit" value="1.5" />
+						<Double name="LowerLimit" value="-1.5" />
+						<Double name="UpperLimit" value="1.5" />
+						<Double name="Nominal" value="0" />
+						<Double name="Offset" value="4.89" />
+						<Double name="SigmaMaximum" value="0.075" />
+					</Container>
+					<Container name="ValueErrPropConf">
+						<Bool name="Condition1AddToQuantity" value="false" />
+						<Bool name="Condition2AddToQuantity" value="false" />
+						<Double name="Condition3OverTolerance" value="0" />
+					</Container>
+					<Container name="ValueQStopConf">
+						<Bool name="Condition1AddToQuantity" value="false" />
+						<Bool name="Condition2AddToQuantity" value="false" />
+						<Double name="Condition3OverTolerance" value="0" />
+						<Double name="Condition4MaxFrequency" value="0.5" />
+						<Integer name="Condition4NoMeasurements" value="20" />
+						<Integer name="Condition5MaxNoOutOfTolInSequence" value="10" />
+					</Container>
+					<Container name="ValueItems">
+						<Integer name="NoItems" value="2" />
+						<Container name="Item1">
+							<Integer name="TypeReference" value="-1" />
+							<Integer name="SubTypeReference" value="1" />
+							<String name="SensorName" value="DistanceSensor 01" />
+							<Integer name="Signal" value="12" />
+							<Double name="Weight" value="1" />
+							<Bool name="CheckProdNumber" value="true" />
+						</Container>
+						<Container name="Item2">
+							<Integer name="TypeReference" value="-1" />
+							<Integer name="SubTypeReference" value="1" />
+							<String name="SensorName" value="DistanceSensor 02" />
+							<Integer name="Signal" value="12" />
+							<Double name="Weight" value="-1" />
+							<Bool name="CheckProdNumber" value="true" />
+						</Container>
+					</Container>
+					<Container name="ValuePlusConf">
+						<String name="MeasurementPosition" value="1-6_40L." />
+						<Bool name="FlagAddToPLUS" value="true" />
+						<String name="PLUSLabel" value="Y" />
+					</Container>
+					<Container name="ValueCSVConf">
+						<Bool name="Export" value="false" />
+						<String name="CSVMeasurementPosition" value="L01" />
+						<String name="CSVLabel" value="V" />
+					</Container>
+				</Container>
+				<Container name="ValueConfig7">
+					<String name="ValueId" value="98f425c3-77ef-44ca-9686-3b3a13c32f49" />
+					<String name="MeasurementPosition" value="1-6_41L.Y" />
+					<String name="ValueLabel" value="SW-FA ob Y li" />
+					<Container name="ValueEvalConf">
+						<Bool name="WarningActive" value="false" />
+						<Double name="LowerWarnLimit" value="-0.5" />
+						<Double name="UpperWarnLimit" value="0.5" />
+						<Double name="LowerLimit" value="-0.5" />
+						<Double name="UpperLimit" value="0.5" />
+						<Double name="Nominal" value="0.3" />
+						<Double name="Offset" value="-1.23" />
+						<Double name="SigmaMaximum" value="0.075" />
+					</Container>
+					<Container name="ValueErrPropConf">
+						<Bool name="Condition1AddToQuantity" value="false" />
+						<Bool name="Condition2AddToQuantity" value="false" />
+						<Double name="Condition3OverTolerance" value="0" />
+					</Container>
+					<Container name="ValueQStopConf">
+						<Bool name="Condition1AddToQuantity" value="false" />
+						<Bool name="Condition2AddToQuantity" value="false" />
+						<Double name="Condition3OverTolerance" value="0" />
+						<Double name="Condition4MaxFrequency" value="0" />
+						<Integer name="Condition4NoMeasurements" value="0" />
+						<Integer name="Condition5MaxNoOutOfTolInSequence" value="0" />
+					</Container>
+					<Container name="ValueItems">
+						<Integer name="NoItems" value="2" />
+						<Container name="Item1">
+							<Integer name="TypeReference" value="-1" />
+							<Integer name="SubTypeReference" value="1" />
+							<String name="SensorName" value="DistanceSensor 04" />
+							<Integer name="Signal" value="12" />
+							<Double name="Weight" value="1" />
+							<Bool name="CheckProdNumber" value="true" />
+						</Container>
+						<Container name="Item2">
+							<Integer name="TypeReference" value="-1" />
+							<Integer name="SubTypeReference" value="1" />
+							<String name="SensorName" value="DistanceSensor 06" />
+							<Integer name="Signal" value="12" />
+							<Double name="Weight" value="-1" />
+							<Bool name="CheckProdNumber" value="true" />
+						</Container>
+					</Container>
+					<Container name="ValuePlusConf">
+						<String name="MeasurementPosition" value="1-6_41L." />
+						<Bool name="FlagAddToPLUS" value="true" />
+						<String name="PLUSLabel" value="Y" />
+					</Container>
+					<Container name="ValueCSVConf">
+						<Bool name="Export" value="false" />
+						<String name="CSVMeasurementPosition" value="L01" />
+						<String name="CSVLabel" value="V" />
+					</Container>
+				</Container>
+				<Container name="ValueConfig8">
+					<String name="ValueId" value="8cb94547-cf3c-4b43-8521-18cbfd56a4f0" />
+					<String name="MeasurementPosition" value="1-6_42L.Z" />
+					<String name="ValueLabel" value="SW-FA vo Z li" />
+					<Container name="ValueEvalConf">
+						<Bool name="WarningActive" value="true" />
+						<Double name="LowerWarnLimit" value="-1.5" />
+						<Double name="UpperWarnLimit" value="1.5" />
+						<Double name="LowerLimit" value="-1.5" />
+						<Double name="UpperLimit" value="1.5" />
+						<Double name="Nominal" value="0" />
+						<Double name="Offset" value="-9.16" />
+						<Double name="SigmaMaximum" value="0.075" />
+					</Container>
+					<Container name="ValueErrPropConf">
+						<Bool name="Condition1AddToQuantity" value="false" />
+						<Bool name="Condition2AddToQuantity" value="false" />
+						<Double name="Condition3OverTolerance" value="0" />
+					</Container>
+					<Container name="ValueQStopConf">
+						<Bool name="Condition1AddToQuantity" value="false" />
+						<Bool name="Condition2AddToQuantity" value="false" />
+						<Double name="Condition3OverTolerance" value="0" />
+						<Double name="Condition4MaxFrequency" value="0.5" />
+						<Integer name="Condition4NoMeasurements" value="20" />
+						<Integer name="Condition5MaxNoOutOfTolInSequence" value="10" />
+					</Container>
+					<Container name="ValueItems">
+						<Integer name="NoItems" value="2" />
+						<Container name="Item1">
+							<Integer name="TypeReference" value="-1" />
+							<Integer name="SubTypeReference" value="1" />
+							<String name="SensorName" value="Sensor 02" />
+							<Integer name="Signal" value="2" />
+							<Double name="Weight" value="0.368" />
+							<Bool name="CheckProdNumber" value="true" />
+						</Container>
+						<Container name="Item2">
+							<Integer name="TypeReference" value="-1" />
+							<Integer name="SubTypeReference" value="1" />
+							<String name="SensorName" value="Sensor 01" />
+							<Integer name="Signal" value="22" />
+							<Double name="Weight" value="1" />
+							<Bool name="CheckProdNumber" value="true" />
+						</Container>
+					</Container>
+					<Container name="ValuePlusConf">
+						<String name="MeasurementPosition" value="1-6_42L." />
+						<Bool name="FlagAddToPLUS" value="true" />
+						<String name="PLUSLabel" value="Z" />
+					</Container>
+					<Container name="ValueCSVConf">
+						<Bool name="Export" value="false" />
+						<String name="CSVMeasurementPosition" value="L01" />
+						<String name="CSVLabel" value="V" />
+					</Container>
+				</Container>
+				<Container name="ValueConfig9">
+					<String name="ValueId" value="f0ef45a6-9bf6-49b1-bfa7-2e68f7f41191" />
+					<String name="MeasurementPosition" value="5-6_10L.G" />
+					<String name="ValueLabel" value="FOR-FAR ob Sp li" />
+					<Container name="ValueEvalConf">
+						<Bool name="WarningActive" value="true" />
+						<Double name="LowerWarnLimit" value="-1" />
+						<Double name="UpperWarnLimit" value="1" />
+						<Double name="LowerLimit" value="-2" />
+						<Double name="UpperLimit" value="2" />
+						<Double name="Nominal" value="13" />
+						<Double name="Offset" value="1.58" />
+						<Double name="SigmaMaximum" value="0.075" />
+					</Container>
+					<Container name="ValueErrPropConf">
+						<Bool name="Condition1AddToQuantity" value="false" />
+						<Bool name="Condition2AddToQuantity" value="false" />
+						<Double name="Condition3OverTolerance" value="0" />
+					</Container>
+					<Container name="ValueQStopConf">
+						<Bool name="Condition1AddToQuantity" value="false" />
+						<Bool name="Condition2AddToQuantity" value="false" />
+						<Double name="Condition3OverTolerance" value="0" />
+						<Double name="Condition4MaxFrequency" value="0" />
+						<Integer name="Condition4NoMeasurements" value="0" />
+						<Integer name="Condition5MaxNoOutOfTolInSequence" value="0" />
+					</Container>
+					<Container name="ValueItems">
+						<Integer name="NoItems" value="1" />
+						<Container name="Item1">
+							<Integer name="TypeReference" value="-1" />
+							<Integer name="SubTypeReference" value="1" />
+							<String name="SensorName" value="Sensor 05" />
+							<Integer name="Signal" value="2" />
+							<Double name="Weight" value="1" />
+							<Bool name="CheckProdNumber" value="true" />
+						</Container>
+					</Container>
+					<Container name="ValuePlusConf">
+						<String name="MeasurementPosition" value="5-6_10L." />
+						<Bool name="FlagAddToPLUS" value="true" />
+						<String name="PLUSLabel" value="G" />
+					</Container>
+					<Container name="ValueCSVConf">
+						<Bool name="Export" value="false" />
+						<String name="CSVMeasurementPosition" value="L01" />
+						<String name="CSVLabel" value="V" />
+					</Container>
+				</Container>
+				<Container name="ValueConfig10">
+					<String name="ValueId" value="81772e58-ec55-4f7f-97c0-f001d4a6cc37" />
+					<String name="MeasurementPosition" value="5-6_10L.F" />
+					<String name="ValueLabel" value="FOR-FAR ob Üb li" />
+					<Container name="ValueEvalConf">
+						<Bool name="WarningActive" value="true" />
+						<Double name="LowerWarnLimit" value="-0.75" />
+						<Double name="UpperWarnLimit" value="0.75" />
+						<Double name="LowerLimit" value="-1.5" />
+						<Double name="UpperLimit" value="1.5" />
+						<Double name="Nominal" value="0.4" />
+						<Double name="Offset" value="-0.47" />
+						<Double name="SigmaMaximum" value="0.075" />
+					</Container>
+					<Container name="ValueErrPropConf">
+						<Bool name="Condition1AddToQuantity" value="false" />
+						<Bool name="Condition2AddToQuantity" value="false" />
+						<Double name="Condition3OverTolerance" value="0" />
+					</Container>
+					<Container name="ValueQStopConf">
+						<Bool name="Condition1AddToQuantity" value="false" />
+						<Bool name="Condition2AddToQuantity" value="false" />
+						<Double name="Condition3OverTolerance" value="0" />
+						<Double name="Condition4MaxFrequency" value="0" />
+						<Integer name="Condition4NoMeasurements" value="0" />
+						<Integer name="Condition5MaxNoOutOfTolInSequence" value="0" />
+					</Container>
+					<Container name="ValueItems">
+						<Integer name="NoItems" value="1" />
+						<Container name="Item1">
+							<Integer name="TypeReference" value="-1" />
+							<Integer name="SubTypeReference" value="1" />
+							<String name="SensorName" value="Sensor 05" />
+							<Integer name="Signal" value="1" />
+							<Double name="Weight" value="1" />
+							<Bool name="CheckProdNumber" value="true" />
+						</Container>
+					</Container>
+					<Container name="ValuePlusConf">
+						<String name="MeasurementPosition" value="5-6_10L." />
+						<Bool name="FlagAddToPLUS" value="true" />
+						<String name="PLUSLabel" value="F" />
+					</Container>
+					<Container name="ValueCSVConf">
+						<Bool name="Export" value="false" />
+						<String name="CSVMeasurementPosition" value="L01" />
+						<String name="CSVLabel" value="V" />
+					</Container>
+				</Container>
+				<Container name="ValueConfig11">
+					<String name="ValueId" value="c37ea51d-5b69-45e0-873b-4178c3e7bd4b" />
+					<String name="MeasurementPosition" value="5-6_1L.F" />
+					<String name="ValueLabel" value="FD-FA Stein Üb li" />
+					<Container name="ValueEvalConf">
+						<Bool name="WarningActive" value="true" />
+						<Double name="LowerWarnLimit" value="-0.5" />
+						<Double name="UpperWarnLimit" value="0.5" />
+						<Double name="LowerLimit" value="-1" />
+						<Double name="UpperLimit" value="1" />
+						<Double name="Nominal" value="-0.7" />
+						<Double name="Offset" value="-0.46" />
+						<Double name="SigmaMaximum" value="0.075" />
+					</Container>
+					<Container name="ValueErrPropConf">
+						<Bool name="Condition1AddToQuantity" value="false" />
+						<Bool name="Condition2AddToQuantity" value="false" />
+						<Double name="Condition3OverTolerance" value="0" />
+					</Container>
+					<Container name="ValueQStopConf">
+						<Bool name="Condition1AddToQuantity" value="false" />
+						<Bool name="Condition2AddToQuantity" value="false" />
+						<Double name="Condition3OverTolerance" value="0" />
+						<Double name="Condition4MaxFrequency" value="0" />
+						<Integer name="Condition4NoMeasurements" value="0" />
+						<Integer name="Condition5MaxNoOutOfTolInSequence" value="0" />
+					</Container>
+					<Container name="ValueItems">
+						<Integer name="NoItems" value="1" />
+						<Container name="Item1">
+							<Integer name="TypeReference" value="-1" />
+							<Integer name="SubTypeReference" value="1" />
+							<String name="SensorName" value="Sensor 10" />
+							<Integer name="Signal" value="1" />
+							<Double name="Weight" value="1" />
+							<Bool name="CheckProdNumber" value="true" />
+						</Container>
+					</Container>
+					<Container name="ValuePlusConf">
+						<String name="MeasurementPosition" value="5-6_1L." />
+						<Bool name="FlagAddToPLUS" value="true" />
+						<String name="PLUSLabel" value="F" />
+					</Container>
+					<Container name="ValueCSVConf">
+						<Bool name="Export" value="false" />
+						<String name="CSVMeasurementPosition" value="L01" />
+						<String name="CSVLabel" value="V" />
+					</Container>
+				</Container>
+				<Container name="ValueConfig12">
+					<String name="ValueId" value="5a7d2923-dbf4-484f-a1ae-73b849d1decc" />
+					<String name="MeasurementPosition" value="5-6_2L.G" />
+					<String name="ValueLabel" value="FD-FA un Sp li" />
+					<Container name="ValueEvalConf">
+						<Bool name="WarningActive" value="false" />
+						<Double name="LowerWarnLimit" value="-0.6" />
+						<Double name="UpperWarnLimit" value="0.6" />
+						<Double name="LowerLimit" value="-0.6" />
+						<Double name="UpperLimit" value="0.6" />
+						<Double name="Nominal" value="4.1" />
+						<Double name="Offset" value="-0.19" />
+						<Double name="SigmaMaximum" value="0.075" />
+					</Container>
+					<Container name="ValueErrPropConf">
+						<Bool name="Condition1AddToQuantity" value="false" />
+						<Bool name="Condition2AddToQuantity" value="false" />
+						<Double name="Condition3OverTolerance" value="3" />
+					</Container>
+					<Container name="ValueQStopConf">
+						<Bool name="Condition1AddToQuantity" value="false" />
+						<Bool name="Condition2AddToQuantity" value="false" />
+						<Double name="Condition3OverTolerance" value="0" />
+						<Double name="Condition4MaxFrequency" value="0.5" />
+						<Integer name="Condition4NoMeasurements" value="20" />
+						<Integer name="Condition5MaxNoOutOfTolInSequence" value="10" />
+					</Container>
+					<Container name="ValueItems">
+						<Integer name="NoItems" value="1" />
+						<Container name="Item1">
+							<Integer name="TypeReference" value="-1" />
+							<Integer name="SubTypeReference" value="1" />
+							<String name="SensorName" value="Sensor 09" />
+							<Integer name="Signal" value="2" />
+							<Double name="Weight" value="1" />
+							<Bool name="CheckProdNumber" value="true" />
+						</Container>
+					</Container>
+					<Container name="ValuePlusConf">
+						<String name="MeasurementPosition" value="5-6_2L." />
+						<Bool name="FlagAddToPLUS" value="true" />
+						<String name="PLUSLabel" value="G" />
+					</Container>
+					<Container name="ValueCSVConf">
+						<Bool name="Export" value="false" />
+						<String name="CSVMeasurementPosition" value="L01" />
+						<String name="CSVLabel" value="V" />
+					</Container>
+				</Container>
+				<Container name="ValueConfig13">
+					<String name="ValueId" value="abe2a18b-3c68-4224-885f-231343f91b97" />
+					<String name="MeasurementPosition" value="5-6_2L.F" />
+					<String name="ValueLabel" value="FD-FA un Üb li" />
+					<Container name="ValueEvalConf">
+						<Bool name="WarningActive" value="false" />
+						<Double name="LowerWarnLimit" value="-0.7" />
+						<Double name="UpperWarnLimit" value="0.5" />
+						<Double name="LowerLimit" value="-0.7" />
+						<Double name="UpperLimit" value="0.5" />
+						<Double name="Nominal" value="-0.9" />
+						<Double name="Offset" value="-0.03" />
+						<Double name="SigmaMaximum" value="0.075" />
+					</Container>
+					<Container name="ValueErrPropConf">
+						<Bool name="Condition1AddToQuantity" value="false" />
+						<Bool name="Condition2AddToQuantity" value="false" />
+						<Double name="Condition3OverTolerance" value="0" />
+					</Container>
+					<Container name="ValueQStopConf">
+						<Bool name="Condition1AddToQuantity" value="false" />
+						<Bool name="Condition2AddToQuantity" value="false" />
+						<Double name="Condition3OverTolerance" value="0" />
+						<Double name="Condition4MaxFrequency" value="0.5" />
+						<Integer name="Condition4NoMeasurements" value="20" />
+						<Integer name="Condition5MaxNoOutOfTolInSequence" value="10" />
+					</Container>
+					<Container name="ValueItems">
+						<Integer name="NoItems" value="1" />
+						<Container name="Item1">
+							<Integer name="TypeReference" value="-1" />
+							<Integer name="SubTypeReference" value="1" />
+							<String name="SensorName" value="Sensor 09" />
+							<Integer name="Signal" value="1" />
+							<Double name="Weight" value="1" />
+							<Bool name="CheckProdNumber" value="true" />
+						</Container>
+					</Container>
+					<Container name="ValuePlusConf">
+						<String name="MeasurementPosition" value="5-6_2L." />
+						<Bool name="FlagAddToPLUS" value="true" />
+						<String name="PLUSLabel" value="F" />
+					</Container>
+					<Container name="ValueCSVConf">
+						<Bool name="Export" value="false" />
+						<String name="CSVMeasurementPosition" value="L01" />
+						<String name="CSVLabel" value="V" />
+					</Container>
+				</Container>
+				<Container name="ValueConfig14">
+					<String name="ValueId" value="b2f3570a-28f8-4561-b43b-c3fd2f4774a0" />
+					<String name="MeasurementPosition" value="5-6_4-2L.K" />
+					<String name="ValueLabel" value="FA ob-un Sp KK li" />
+					<Container name="ValueEvalConf">
+						<Bool name="WarningActive" value="false" />
+						<Double name="LowerWarnLimit" value="-0.6" />
+						<Double name="UpperWarnLimit" value="0.6" />
+						<Double name="LowerLimit" value="-0.6" />
+						<Double name="UpperLimit" value="0.6" />
+						<Double name="Nominal" value="0.9" />
+						<Double name="Offset" value="0.05" />
+						<Double name="SigmaMaximum" value="0.075" />
+					</Container>
+					<Container name="ValueErrPropConf">
+						<Bool name="Condition1AddToQuantity" value="false" />
+						<Bool name="Condition2AddToQuantity" value="false" />
+						<Double name="Condition3OverTolerance" value="0" />
+					</Container>
+					<Container name="ValueQStopConf">
+						<Bool name="Condition1AddToQuantity" value="false" />
+						<Bool name="Condition2AddToQuantity" value="false" />
+						<Double name="Condition3OverTolerance" value="0" />
+						<Double name="Condition4MaxFrequency" value="0" />
+						<Integer name="Condition4NoMeasurements" value="0" />
+						<Integer name="Condition5MaxNoOutOfTolInSequence" value="0" />
+					</Container>
+					<Container name="ValueItems">
+						<Integer name="NoItems" value="2" />
+						<Container name="Item1">
+							<Integer name="TypeReference" value="-1" />
+							<Integer name="SubTypeReference" value="1" />
+							<String name="SensorName" value="Sensor 07" />
+							<Integer name="Signal" value="2" />
+							<Double name="Weight" value="1" />
+							<Bool name="CheckProdNumber" value="true" />
+						</Container>
+						<Container name="Item2">
+							<Integer name="TypeReference" value="-1" />
+							<Integer name="SubTypeReference" value="1" />
+							<String name="SensorName" value="Sensor 09" />
+							<Integer name="Signal" value="2" />
+							<Double name="Weight" value="-1" />
+							<Bool name="CheckProdNumber" value="true" />
+						</Container>
+					</Container>
+					<Container name="ValuePlusConf">
+						<String name="MeasurementPosition" value="5-6_4-2L." />
+						<Bool name="FlagAddToPLUS" value="true" />
+						<String name="PLUSLabel" value="K" />
+					</Container>
+					<Container name="ValueCSVConf">
+						<Bool name="Export" value="false" />
+						<String name="CSVMeasurementPosition" value="L01" />
+						<String name="CSVLabel" value="V" />
+					</Container>
+				</Container>
+				<Container name="ValueConfig15">
+					<String name="ValueId" value="c6970d9c-74c6-4a5b-80ef-7f007b550cb6" />
+					<String name="MeasurementPosition" value="5-6_4L.G" />
+					<String name="ValueLabel" value="FD-FA ob Sp li" />
+					<Container name="ValueEvalConf">
+						<Bool name="WarningActive" value="false" />
+						<Double name="LowerWarnLimit" value="-0.6" />
+						<Double name="UpperWarnLimit" value="0.6" />
+						<Double name="LowerLimit" value="-0.6" />
+						<Double name="UpperLimit" value="0.6" />
+						<Double name="Nominal" value="5" />
+						<Double name="Offset" value="-0.14" />
+						<Double name="SigmaMaximum" value="0.075" />
+					</Container>
+					<Container name="ValueErrPropConf">
+						<Bool name="Condition1AddToQuantity" value="false" />
+						<Bool name="Condition2AddToQuantity" value="false" />
+						<Double name="Condition3OverTolerance" value="3" />
+					</Container>
+					<Container name="ValueQStopConf">
+						<Bool name="Condition1AddToQuantity" value="false" />
+						<Bool name="Condition2AddToQuantity" value="false" />
+						<Double name="Condition3OverTolerance" value="0" />
+						<Double name="Condition4MaxFrequency" value="0.5" />
+						<Integer name="Condition4NoMeasurements" value="20" />
+						<Integer name="Condition5MaxNoOutOfTolInSequence" value="10" />
+					</Container>
+					<Container name="ValueItems">
+						<Integer name="NoItems" value="1" />
+						<Container name="Item1">
+							<Integer name="TypeReference" value="-1" />
+							<Integer name="SubTypeReference" value="1" />
+							<String name="SensorName" value="Sensor 07" />
+							<Integer name="Signal" value="2" />
+							<Double name="Weight" value="1" />
+							<Bool name="CheckProdNumber" value="true" />
+						</Container>
+					</Container>
+					<Container name="ValuePlusConf">
+						<String name="MeasurementPosition" value="5-6_4L." />
+						<Bool name="FlagAddToPLUS" value="true" />
+						<String name="PLUSLabel" value="G" />
+					</Container>
+					<Container name="ValueCSVConf">
+						<Bool name="Export" value="false" />
+						<String name="CSVMeasurementPosition" value="L01" />
+						<String name="CSVLabel" value="V" />
+					</Container>
+				</Container>
+				<Container name="ValueConfig16">
+					<String name="ValueId" value="714bddca-ba42-46c7-9e09-cd8193cfe21b" />
+					<String name="MeasurementPosition" value="5-6_6L.F" />
+					<String name="ValueLabel" value="FA HST li" />
+					<Container name="ValueEvalConf">
+						<Bool name="WarningActive" value="true" />
+						<Double name="LowerWarnLimit" value="-0.4" />
+						<Double name="UpperWarnLimit" value="0.8" />
+						<Double name="LowerLimit" value="-0.4" />
+						<Double name="UpperLimit" value="0.8" />
+						<Double name="Nominal" value="2" />
+						<Double name="Offset" value="2.56" />
+						<Double name="SigmaMaximum" value="0.075" />
+					</Container>
+					<Container name="ValueErrPropConf">
+						<Bool name="Condition1AddToQuantity" value="false" />
+						<Bool name="Condition2AddToQuantity" value="false" />
+						<Double name="Condition3OverTolerance" value="0" />
+					</Container>
+					<Container name="ValueQStopConf">
+						<Bool name="Condition1AddToQuantity" value="false" />
+						<Bool name="Condition2AddToQuantity" value="false" />
+						<Double name="Condition3OverTolerance" value="0" />
+						<Double name="Condition4MaxFrequency" value="0.5" />
+						<Integer name="Condition4NoMeasurements" value="20" />
+						<Integer name="Condition5MaxNoOutOfTolInSequence" value="10" />
+					</Container>
+					<Container name="ValueItems">
+						<Integer name="NoItems" value="1" />
+						<Container name="Item1">
+							<Integer name="TypeReference" value="-1" />
+							<Integer name="SubTypeReference" value="1" />
+							<String name="SensorName" value="Sensor 06" />
+							<Integer name="Signal" value="1" />
+							<Double name="Weight" value="1" />
+							<Bool name="CheckProdNumber" value="true" />
+						</Container>
+					</Container>
+					<Container name="ValuePlusConf">
+						<String name="MeasurementPosition" value="5-6_6L." />
+						<Bool name="FlagAddToPLUS" value="true" />
+						<String name="PLUSLabel" value="F" />
+					</Container>
+					<Container name="ValueCSVConf">
+						<Bool name="Export" value="false" />
+						<String name="CSVMeasurementPosition" value="L01" />
+						<String name="CSVLabel" value="V" />
+					</Container>
+				</Container>
+				<Container name="ValueConfig17">
+					<String name="ValueId" value="f1b4cc62-ada6-4700-8e5f-cdbed328cad8" />
+					<String name="MeasurementPosition" value="5-6_4L.F" />
+					<String name="ValueLabel" value="FA NST li" />
+					<Container name="ValueEvalConf">
+						<Bool name="WarningActive" value="true" />
+						<Double name="LowerWarnLimit" value="-0.05" />
+						<Double name="UpperWarnLimit" value="0.05" />
+						<Double name="LowerLimit" value="-0.05" />
+						<Double name="UpperLimit" value="0.05" />
+						<Double name="Nominal" value="0" />
+						<Double name="Offset" value="0" />
+						<Double name="SigmaMaximum" value="0.075" />
+					</Container>
+					<Container name="ValueErrPropConf">
+						<Bool name="Condition1AddToQuantity" value="false" />
+						<Bool name="Condition2AddToQuantity" value="false" />
+						<Double name="Condition3OverTolerance" value="0" />
+					</Container>
+					<Container name="ValueQStopConf">
+						<Bool name="Condition1AddToQuantity" value="false" />
+						<Bool name="Condition2AddToQuantity" value="false" />
+						<Double name="Condition3OverTolerance" value="0" />
+						<Double name="Condition4MaxFrequency" value="0.5" />
+						<Integer name="Condition4NoMeasurements" value="20" />
+						<Integer name="Condition5MaxNoOutOfTolInSequence" value="10" />
+					</Container>
+					<Container name="ValueItems">
+						<Integer name="NoItems" value="1" />
+						<Container name="Item1">
+							<Integer name="TypeReference" value="-1" />
+							<Integer name="SubTypeReference" value="1" />
+							<String name="SensorName" value="Sensor 07" />
+							<Integer name="Signal" value="1" />
+							<Double name="Weight" value="1" />
+							<Bool name="CheckProdNumber" value="true" />
+						</Container>
+					</Container>
+					<Container name="ValuePlusConf">
+						<String name="MeasurementPosition" value="5-6_4L." />
+						<Bool name="FlagAddToPLUS" value="true" />
+						<String name="PLUSLabel" value="F" />
+					</Container>
+					<Container name="ValueCSVConf">
+						<Bool name="Export" value="false" />
+						<String name="CSVMeasurementPosition" value="L01" />
+						<String name="CSVLabel" value="V" />
+					</Container>
+				</Container>
+			</Container>
+			<Container name="SubTypeContainer">
+				<Container name="SubTypeWithInternalIndex1">
+					<Bool name="GenerateEProp" value="true" />
+					<Bool name="GenerateQStop" value="true" />
+					<Container name="PlusConf">
+						<Bool name="Enabled" value="true" />
+						<String name="StationNumber" value="2365" />
+					</Container>
+					<Container name="IqVisConf">
+						<Bool name="Enabled" value="true" />
+						<String name="ProcessStep" value="Audit" />
+					</Container>
+					<Container name="CSVConf">
+						<Bool name="Enabled" value="false" />
+						<String name="FileNamePrefix" value="" />
+					</Container>
+					<Container name="EmilConf">
+						<Bool name="Enabled" value="false" />
+						<String name="InspectionCategory" value="SILN" />
+					</Container>
+				</Container>
+				<Container name="SubTypeWithInternalIndex2">
+					<Bool name="GenerateEProp" value="false" />
+					<Bool name="GenerateQStop" value="false" />
+					<Container name="PlusConf">
+						<Bool name="Enabled" value="false" />
+						<String name="StationNumber" value="" />
+					</Container>
+					<Container name="IqVisConf">
+						<Bool name="Enabled" value="true" />
+						<String name="ProcessStep" value="Passung_vor_Regelung" />
+					</Container>
+					<Container name="CSVConf">
+						<Bool name="Enabled" value="false" />
+						<String name="FileNamePrefix" value="" />
+					</Container>
+					<Container name="EmilConf">
+						<Bool name="Enabled" value="false" />
+						<String name="InspectionCategory" value="SILN" />
+					</Container>
+				</Container>
+				<Container name="SubTypeWithInternalIndex3">
+					<Bool name="GenerateEProp" value="false" />
+					<Bool name="GenerateQStop" value="false" />
+					<Container name="PlusConf">
+						<Bool name="Enabled" value="false" />
+						<String name="StationNumber" value="" />
+					</Container>
+					<Container name="IqVisConf">
+						<Bool name="Enabled" value="true" />
+						<String name="ProcessStep" value="Passung_nach_Regelung" />
+					</Container>
+					<Container name="CSVConf">
+						<Bool name="Enabled" value="false" />
+						<String name="FileNamePrefix" value="" />
+					</Container>
+					<Container name="EmilConf">
+						<Bool name="Enabled" value="false" />
+						<String name="InspectionCategory" value="SILN" />
+					</Container>
+				</Container>
+				<Container name="SubTypeWithInternalIndex4">
+					<Bool name="GenerateEProp" value="false" />
+					<Bool name="GenerateQStop" value="false" />
+					<Container name="PlusConf">
+						<Bool name="Enabled" value="false" />
+						<String name="StationNumber" value="" />
+					</Container>
+					<Container name="IqVisConf">
+						<Bool name="Enabled" value="true" />
+						<String name="ProcessStep" value="Fuegeposition" />
+					</Container>
+					<Container name="CSVConf">
+						<Bool name="Enabled" value="false" />
+						<String name="FileNamePrefix" value="" />
+					</Container>
+					<Container name="EmilConf">
+						<Bool name="Enabled" value="false" />
+						<String name="InspectionCategory" value="SILN" />
+					</Container>
+				</Container>
+				<Container name="SubTypeWithInternalIndex5">
+					<Bool name="GenerateEProp" value="false" />
+					<Bool name="GenerateQStop" value="false" />
+					<Container name="PlusConf">
+						<Bool name="Enabled" value="false" />
+						<String name="StationNumber" value="" />
+					</Container>
+					<Container name="IqVisConf">
+						<Bool name="Enabled" value="true" />
+						<String name="ProcessStep" value="vor_Verschraubung" />
+					</Container>
+					<Container name="CSVConf">
+						<Bool name="Enabled" value="false" />
+						<String name="FileNamePrefix" value="" />
+					</Container>
+					<Container name="EmilConf">
+						<Bool name="Enabled" value="false" />
+						<String name="InspectionCategory" value="SILN" />
+					</Container>
+				</Container>
+				<Container name="SubTypeWithInternalIndex6">
+					<Bool name="GenerateEProp" value="false" />
+					<Bool name="GenerateQStop" value="false" />
+					<Container name="PlusConf">
+						<Bool name="Enabled" value="false" />
+						<String name="StationNumber" value="" />
+					</Container>
+					<Container name="IqVisConf">
+						<Bool name="Enabled" value="true" />
+						<String name="ProcessStep" value="nach_Verschraubung" />
+					</Container>
+					<Container name="CSVConf">
+						<Bool name="Enabled" value="false" />
+						<String name="FileNamePrefix" value="" />
+					</Container>
+					<Container name="EmilConf">
+						<Bool name="Enabled" value="false" />
+						<String name="InspectionCategory" value="SILN" />
+					</Container>
+				</Container>
+				<Container name="SubTypeWithInternalIndex7">
+					<Bool name="GenerateEProp" value="false" />
+					<Bool name="GenerateQStop" value="false" />
+					<Container name="PlusConf">
+						<Bool name="Enabled" value="false" />
+						<String name="StationNumber" value="" />
+					</Container>
+					<Container name="IqVisConf">
+						<Bool name="Enabled" value="true" />
+						<String name="ProcessStep" value="MFU1" />
+					</Container>
+					<Container name="CSVConf">
+						<Bool name="Enabled" value="false" />
+						<String name="FileNamePrefix" value="" />
+					</Container>
+					<Container name="EmilConf">
+						<Bool name="Enabled" value="false" />
+						<String name="InspectionCategory" value="SILN" />
+					</Container>
+				</Container>
+				<Container name="SubTypeWithInternalIndex8">
+					<Bool name="GenerateEProp" value="false" />
+					<Bool name="GenerateQStop" value="false" />
+					<Container name="PlusConf">
+						<Bool name="Enabled" value="false" />
+						<String name="StationNumber" value="" />
+					</Container>
+					<Container name="IqVisConf">
+						<Bool name="Enabled" value="true" />
+						<String name="ProcessStep" value="MFU2" />
+					</Container>
+					<Container name="CSVConf">
+						<Bool name="Enabled" value="false" />
+						<String name="FileNamePrefix" value="" />
+					</Container>
+					<Container name="EmilConf">
+						<Bool name="Enabled" value="false" />
+						<String name="InspectionCategory" value="SILN" />
+					</Container>
+				</Container>
+				<Container name="SubTypeWithInternalIndex9">
+					<Bool name="GenerateEProp" value="false" />
+					<Bool name="GenerateQStop" value="false" />
+					<Container name="PlusConf">
+						<Bool name="Enabled" value="false" />
+						<String name="StationNumber" value="" />
+					</Container>
+					<Container name="IqVisConf">
+						<Bool name="Enabled" value="true" />
+						<String name="ProcessStep" value="MFU3" />
+					</Container>
+					<Container name="CSVConf">
+						<Bool name="Enabled" value="false" />
+						<String name="FileNamePrefix" value="" />
+					</Container>
+					<Container name="EmilConf">
+						<Bool name="Enabled" value="false" />
+						<String name="InspectionCategory" value="SILN" />
+					</Container>
+				</Container>
+				<Container name="SubTypeWithInternalIndex10">
+					<Bool name="GenerateEProp" value="false" />
+					<Bool name="GenerateQStop" value="false" />
+					<Container name="PlusConf">
+						<Bool name="Enabled" value="false" />
+						<String name="StationNumber" value="" />
+					</Container>
+					<Container name="IqVisConf">
+						<Bool name="Enabled" value="true" />
+						<String name="ProcessStep" value="MFU4" />
+					</Container>
+					<Container name="CSVConf">
+						<Bool name="Enabled" value="false" />
+						<String name="FileNamePrefix" value="" />
+					</Container>
+					<Container name="EmilConf">
+						<Bool name="Enabled" value="false" />
+						<String name="InspectionCategory" value="SILN" />
+					</Container>
+				</Container>
+			</Container>
+			<Container name="EmilConf">
+				<String name="FileNamePrefix" value="" />
+				<String name="InspectionTask" value="" />
+				<String name="InspectionPlan" value="" />
+				<String name="ProductionDevice" value="" />
+				<Integer name="ProductionState" value="0" />
+				<Container name="InspectionElement">
+					<Integer name="Count" value="0" />
+				</Container>
+			</Container>
+		</Container>
+		<Container name="MeasurementValueGroups">
+			<Integer name="ValueGroupCount" value="5" />
+			<Container name="ValueGroup1">
+				<String name="Name" value="KFU" />
+				<String name="Comment" value="" />
+				<Container name="Values">
+					<Integer name="ValueCount" value="8" />
+					<String name="MeasurementValue1" value="SW-FA un Y li [1-6_40L.Y];ComposedValue;Value" />
+					<String name="MeasurementValue2" value="SW-FA ob Y li [1-6_41L.Y];ComposedValue;Value" />
+					<String name="MeasurementValue3" value="SW-FA vo Z li [1-6_42L.Z];ComposedValue;Value" />
+					<String name="MeasurementValue4" value="FA HST li [5-6_6L.F];ComposedValue;Value" />
+					<String name="MeasurementValue5" value="FD-FA ob Sp li [5-6_4L.G];ComposedValue;Value" />
+					<String name="MeasurementValue6" value="FA NST li [5-6_4L.F];ComposedValue;Value" />
+					<String name="MeasurementValue7" value="FD-FA un Sp li [5-6_2L.G];ComposedValue;Value" />
+					<String name="MeasurementValue8" value="FA ob-un Sp KK li [5-6_4-2L.K];ComposedValue;Value" />
+				</Container>
+			</Container>
+			<Container name="ValueGroup2">
+				<String name="Name" value="MFU1_mit_BT_Einfluss_je 100" />
+				<String name="Comment" value="" />
+				<Container name="Values">
+					<Integer name="ValueCount" value="8" />
+					<String name="MeasurementValue1" value="FOR-FAR ob Sp li [5-6_10L.G];ComposedValue;Value" />
+					<String name="MeasurementValue2" value="FOR-FAR ob Üb li [5-6_10L.F];ComposedValue;Value" />
+					<String name="MeasurementValue3" value="SW-2LTE Y li [1-11_40L.Y];ComposedValue;Value" />
+					<String name="MeasurementValue4" value="SW-FA ob Y li [1-6_41L.Y];ComposedValue;Value" />
+					<String name="MeasurementValue5" value="SW-FA un Y li [1-6_40L.Y];ComposedValue;Value" />
+					<String name="MeasurementValue6" value="SW-FA vo Z li [1-6_42L.Z];ComposedValue;Value" />
+					<String name="MeasurementValue7" value="SW-FAR vo Sp li [1-6_16L.G];ComposedValue;Value" />
+					<String name="MeasurementValue8" value="SW-FAR vo Üb li [1-6_16L.F];ComposedValue;Value" />
+				</Container>
+			</Container>
+			<Container name="ValueGroup3">
+				<String name="Name" value="MFU1_ohne_BT_Einfluss_700" />
+				<String name="Comment" value="" />
+				<Container name="Values">
+					<Integer name="ValueCount" value="9" />
+					<String name="MeasurementValue1" value="FA HST li [5-6_6L.F];ComposedValue;Value" />
+					<String name="MeasurementValue2" value="FA NST li [5-6_4L.F];ComposedValue;Value" />
+					<String name="MeasurementValue3" value="FA ob-un Sp KK li [5-6_4-2L.K];ComposedValue;Value" />
+					<String name="MeasurementValue4" value="FD-FA ob Sp li [5-6_4L.G];ComposedValue;Value" />
+					<String name="MeasurementValue5" value="FD-FA Stein Üb li [5-6_1L.F];ComposedValue;Value" />
+					<String name="MeasurementValue6" value="FD-FA un Sp li [5-6_2L.G];ComposedValue;Value" />
+					<String name="MeasurementValue7" value="FD-FA un Üb li [5-6_2L.F];ComposedValue;Value" />
+					<String name="MeasurementValue8" value="SW-FAR hi Sp li [1-6_20L.G];ComposedValue;Value" />
+					<String name="MeasurementValue9" value="SW-FAR hi Üb li [1-6_20L.F];ComposedValue;Value" />
+				</Container>
+			</Container>
+			<Container name="ValueGroup4">
+				<String name="Name" value="MFU2" />
+				<String name="Comment" value="" />
+				<Container name="Values">
+					<Integer name="ValueCount" value="1" />
+					<String name="MeasurementValue1" value="FA NST li [5-6_4L.F];ComposedValue;Value" />
+				</Container>
+			</Container>
+			<Container name="ValueGroup5">
+				<String name="Name" value="MFU4" />
+				<String name="Comment" value="" />
+				<Container name="Values">
+					<Integer name="ValueCount" value="7" />
+					<String name="MeasurementValue1" value="FA HST li [5-6_6L.F];ComposedValue;Value" />
+					<String name="MeasurementValue2" value="FA NST li [5-6_4L.F];ComposedValue;Value" />
+					<String name="MeasurementValue3" value="FD-FA ob Sp li [5-6_4L.G];ComposedValue;Value" />
+					<String name="MeasurementValue4" value="FD-FA un Sp li [5-6_2L.G];ComposedValue;Value" />
+					<String name="MeasurementValue5" value="SW-2LTE Y li [1-11_40L.Y];ComposedValue;Value" />
+					<String name="MeasurementValue6" value="SW-FA ob Y li [1-6_41L.Y];ComposedValue;Value" />
+					<String name="MeasurementValue7" value="SW-FA vo Z li [1-6_42L.Z];ComposedValue;Value" />
+				</Container>
+			</Container>
+		</Container>
+	</Container>
+</xml>
