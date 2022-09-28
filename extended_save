@@ -21,7 +21,8 @@ path_list = ["D:\BestFit\AuditTypes_Left\\010_W177_FD_LI.xml",
              "D:\BestFit\AuditTypes_STS_vo_Left\\011_W177_STS_vo_li.xml",
              "D:\BestFit\AuditTypes_STS_vo_Right\\011_W177_STS_vo_re.xml",
              "D:\BestFit\AuditTypes\Type_W177\\11_W177_KV_LBR_Links.xml",
-             "D:\BestFit\AuditTypes\Type_W177\\11_W177_KV_LBR_Rechts.xml"]
+             "D:\BestFit\AuditTypes\Type_W177\\11_W177_KV_LBR_Rechts.xml"
+             ]
 
 existing_path = []
 
@@ -118,7 +119,6 @@ CSV_ORIGDATA = {}
 def setmeasurement_pointc118(document):
     tree = ET.parse(document)
     root = tree.getroot()
-    check_filepath()
     for element in root.findall('.//Container'):
         if 'ValueConfig' in element.get('name') or 'ValueEvalConf' in element.get('name'):
 
