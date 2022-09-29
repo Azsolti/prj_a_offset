@@ -156,8 +156,7 @@ def start_program():
  
  def exit_program():
      exit()
-     
- 
+      
 
 def open_File():
     filepath = filedialog.askopenfilename(title='Select the .txt file',
