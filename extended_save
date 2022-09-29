@@ -11,30 +11,79 @@ import os.path
 
 root = Tk()
 
-path_list = ["D:\BestFit\AuditTypes_Left\\010_W177_FD_LI.xml",
-             "D:\BestFit\AuditTypes_Right\\010_W177_FD_RE.xml", 
-             "D:\BestFit\AuditTypes_Left\\010_W177_FA_LI.xml",
-             "D:\BestFit\AuditTypes_Right\\010_W177_FA_RE.xml",
-             "D:\BestFit\AuditTypes_KH_Left\\010_W177_KH_LI.xml",
-             "D:\BestFit\AuditTypes_KH_Right\\010_W177_KH_RE.xml",
-             "D:\BestFit\AuditTypes_RT\\010_W177_ND_RT.xml",
-             "D:\BestFit\AuditTypes_STS_vo_Left\\011_W177_STS_vo_li.xml",
-             "D:\BestFit\AuditTypes_STS_vo_Right\\011_W177_STS_vo_re.xml",
-             "D:\BestFit\AuditTypes\Type_W177\\11_W177_KV_LBR_Links.xml",
-             "D:\BestFit\AuditTypes\Type_W177\\11_W177_KV_LBR_Rechts.xml"
-             ]
+path_list_W1777 = ["D:\BestFit\AuditTypes_Left\\010_W177_FD_LI.xml",
+                   "D:\BestFit\AuditTypes_Right\\010_W177_FD_RE.xml", 
+                   "D:\BestFit\AuditTypes_Left\\010_W177_FA_LI.xml",
+                   "D:\BestFit\AuditTypes_Right\\010_W177_FA_RE.xml",
+                   "D:\BestFit\AuditTypes_KH_Left\\010_W177_KH_LI.xml",
+                   "D:\BestFit\AuditTypes_KH_Right\\010_W177_KH_RE.xml",
+                   "D:\BestFit\AuditTypes_RT\\010_W177_ND_RT.xml",
+                   "D:\BestFit\AuditTypes_STS_vo_Left\\011_W177_STS_vo_li.xml",
+                   "D:\BestFit\AuditTypes_STS_vo_Right\\011_W177_STS_vo_re.xml",
+                   "D:\BestFit\AuditTypes\Type_W177\\11_W177_KV_LBR_Links.xml",
+                   "D:\BestFit\AuditTypes\Type_W177\\11_W177_KV_LBR_Rechts.xml",
+                   "D:\BestFit\AuditTypes_MH\010_W177_MH.xml"
+                   ]
+             
+path_list_C118 = ["D:\BestFit\AuditTypes_Left\100_C118_FD_LI.xml",
+                  "D:\BestFit\AuditTypes_Right\100_C118_FD_RE.xml",
+                  "D:\BestFit\AuditTypes_Left\100_C118_FA_LI.xml",
+                  "D:\BestFit\AuditTypes_Right\100_C118_FA_RE.xml",
+                  "D:\BestFit\AuditTypes_KH_Left\100_C118_KH_LI.xml",
+                  "D:\BestFit\AuditTypes_KH_Right\100_C118_KH_RE.xml",
+                  "D:\BestFit\AuditTypes_MH\100_C118_MH.xml",
+                  "D:\BestFit\AuditTypes_STS_vo_Left\101_C118_STS_vo_li.xml",
+                  "D:\BestFit\AuditTypes_STS_vo_Right\101_C118_STS_vo_re.xml",
+                  "D:\BestFit\AuditTypes\Type_C118\21_C118_KV_LBR_Links.xml",
+                  "D:\BestFit\AuditTypes\Type_C118\21_C118_KV_LBR_Rechts.xml",
+                  ]
+ 
+path_list_X118 = ["D:\BestFit\AuditTypes_Left\140_X118_FD_LI.xml",
+                  "D:\BestFit\AuditTypes_Right\140_X118_FD_RE.xml",
+                  "D:\BestFit\AuditTypes_Left\140_X118_FA_LI.xml",
+                  "D:\BestFit\AuditTypes_Right\140_X118_FA_RE.xml",
+                  "D:\BestFit\AuditTypes\140_X118_ND_RT.xml",
+                  "D:\BestFit\AuditTypes_KH_Left\140_X118_KH_LI.xml",
+                  "D:\BestFit\AuditTypes_KH_Right\140_X118_KH_RE.xml",
+                  "D:\BestFit\AuditTypes_MH\140_X118_MH.xml",
+                  "D:\BestFit\AuditTypes_STS_vo_Left\141_X118_STS_vo_li.xml",
+                  "D:\BestFit\AuditTypes_STS_vo_Right\141_X118_STS_vo_re.xml",
+                  "D:\BestFit\AuditTypes\Type_X118\31_X118_KV_LBR_Links.xml",
+                  "D:\BestFit\AuditTypes\Type_X118\31_X118_KV_LBR_Rechts.xml"
+                  ]
 
-existing_path = []
 
-def check_fileexists():
-    for file in path_list:
+existing_path_W177 = []
+existing_path_C118 = []
+existing_path_X118 = []
+
+def check_fileexists_W177():
+    for file in path_list_W177:
         if os.path.exists(file) == True:
-            existing_path.append(file)
+            existing_path_W177.append(file)
         else:
             pass
 
 
-check_fileexists()
+def check_fileexists_C118():
+    for file in path_list_C118:
+        if os.path.exists(file) == True:
+            existing_path_C118.append(file)
+        else:
+            pass
+                     
+            
+def check_fileexists_X118():
+    for file in path_list_X118:
+        if os.path.exists(file) == True:
+            existing_path_X118.append(file)
+        else:
+            pass
+
+
+check_fileexists_W177()
+check_fileexists_C118()
+check_fileexists_X118()
 
 
 def start_program():
@@ -71,8 +120,17 @@ def start_program():
                 CSV_ORIGDATA[name_puff] = value_puff
 
             if "W177" in str(csv_file):
-                for file_path in existing_path:  
+                for file_path in existing_path_W177:  
                     setmeasurement_pointc118(file_path)
+            
+            elif "C118" in str(csv_file):
+                for file_path in existing_path_C118:
+                    stemeasurement_pointc118(file_path)
+                               
+            elif "X118" in str(csv_file):
+                for file_path in existing_path_X118:
+                    stemeasurement_pointc118(file_path)
+               
 
         except ValueError:
 
