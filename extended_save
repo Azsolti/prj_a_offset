@@ -8,7 +8,6 @@ import os
 import os.path
 
 
-
 root = Tk()
 
 path_list_W1777 = ["D:\BestFit\AuditTypes_Left\\010_W177_FD_LI.xml",
@@ -56,6 +55,7 @@ path_list_X118 = ["D:\BestFit\AuditTypes_Left\140_X118_FD_LI.xml",
 existing_path_W177 = []
 existing_path_C118 = []
 existing_path_X118 = []
+
 
 def check_fileexists_W177():
     for file in path_list_W177:
@@ -122,14 +122,23 @@ def start_program():
             if "W177" in str(csv_file):
                 for file_path in existing_path_W177:  
                     setmeasurement_pointc118(file_path)
+                    open_button_W177["text"] = "W177 file loaded"
+                    open_button_W177["state"] = "disabled"
+                    break
             
             elif "C118" in str(csv_file):
                 for file_path in existing_path_C118:
                     stemeasurement_pointc118(file_path)
+                    open_button_C118["text"] = "C118 file loaded"
+                    open_button_C118["state"] = "disabled"
+                    break
                                
             elif "X118" in str(csv_file):
                 for file_path in existing_path_X118:
                     stemeasurement_pointc118(file_path)
+                    open_button_X118["text"] = "X118 file loaded"
+                    open_button_X118["state"] = "disabled"
+                    break
                
 
         except ValueError:
@@ -142,9 +151,12 @@ def start_program():
                 break
 
         messagebox.showinfo('Close program', 'Offsets has been updated. Closing program')
-        root.destroy()
         break
-        
+ 
+ 
+ def exit_program():
+     root.destroy()
+ 
 
 def open_File():
     filepath = filedialog.askopenfilename(title='Select the .txt file',
@@ -166,8 +178,13 @@ root.title('Auto offset loader')
 label = Label(root, text='Select the offset data(.txt) file\nthen select the .xml you want to overwrite',
                     font=('Arial', 17))
 label.pack()
-open_button = Button(root, text='Open file', font=('Arial', 30), command=start_program)
-open_button.pack()
+open_button_W177 = Button(root, text='Open W177 file', font=('Arial', 20), command=start_program)
+open_button_W177.pack()
+open_button_C118 = Button(root, text='Open C118 file', font=('Arial', 30), command=start_program)
+open_button_C118.pack()
+open_button_X118 = Button(root, text='Open X118 file', font=('Arial', 30), command=start_program)
+open_button_X118.pack()
+close_button = Button(root, text="Exit program",font=("Arial", 15), command=exit_program)
 pointnames_got = []
 values_got = []
 XML_ORIGDATA = {}
