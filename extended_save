@@ -155,7 +155,8 @@ def start_program():
  
  
  def exit_program():
-     root.destroy()
+     exit()
+     
  
 
 def open_File():
@@ -173,18 +174,18 @@ def filepath_popup():
     return messagebox.askquestion('Error', File path doesn!t match. Check file names. \nContinue?')
 
 
-root.geometry('500x300')
+root.geometry('600x600')
 root.title('Auto offset loader')
 label = Label(root, text='Select the offset data(.txt) file\nthen select the .xml you want to overwrite',
                     font=('Arial', 17))
 label.pack()
-open_button_W177 = Button(root, text='Open W177 file', font=('Arial', 20), command=start_program)
+open_button_W177 = Button(root, text='Open W177 file', font=('Arial', 30), command=start_program)
 open_button_W177.pack()
 open_button_C118 = Button(root, text='Open C118 file', font=('Arial', 30), command=start_program)
 open_button_C118.pack()
 open_button_X118 = Button(root, text='Open X118 file', font=('Arial', 30), command=start_program)
 open_button_X118.pack()
-close_button = Button(root, text="Exit program",font=("Arial", 15), command=exit_program)
+exit_button = Button(root, text="Exit program",font=("Arial", 15), command=exit_program)
 pointnames_got = []
 values_got = []
 XML_ORIGDATA = {}
