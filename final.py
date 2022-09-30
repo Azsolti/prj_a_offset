@@ -112,6 +112,7 @@ def start_program_W177():
                     setmeasurement_pointc118(file_path)
                 open_button_W177["text"] = "W177 file loaded"
                 open_button_W177["state"] = "disabled"
+                break
                 
             else:
                 messagebox.showerror('Invalid file', 'Please select the correct TXT file')
@@ -165,6 +166,7 @@ def start_program_C118():
                     setmeasurement_pointc118(file_path)
                 open_button_C118["text"] = "C118 file loaded"
                 open_button_C118["state"] = "disabled"
+                break
                 
             else:
                 messagebox.showerror('Invalid file', 'Please select the correct TXT file')
@@ -219,6 +221,7 @@ def start_program_X118():
                     setmeasurement_pointc118(file_path)
                 open_button_X118["text"] = "X118 file loaded"
                 open_button_X118["state"] = "disabled"
+                break
                 
             else:
                 messagebox.showerror('Invalid file', 'Please select the correct TXT file')
