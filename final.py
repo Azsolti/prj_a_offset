@@ -76,7 +76,7 @@ def check_fileexists_W177():
         else:
             pass
 
-
+          
 def check_fileexists_C118():
     for file in path_list_C118:
         if os.path.exists(file) == True:
@@ -113,11 +113,10 @@ def start_program_W177():
                 open_button_W177["text"] = "W177 file loaded"
                 open_button_W177["state"] = "disabled"
                 
-
             else:
                 messagebox.showerror('Invalid file', 'Please select the correct TXT file')
                 break
-
+               
             for n in my_list:
                 for character in n:
                     list_tostrg += character
@@ -167,7 +166,6 @@ def start_program_C118():
                 open_button_C118["text"] = "C118 file loaded"
                 open_button_C118["state"] = "disabled"
                 
-
             else:
                 messagebox.showerror('Invalid file', 'Please select the correct TXT file')
                 break
@@ -222,7 +220,6 @@ def start_program_X118():
                 open_button_X118["text"] = "X118 file loaded"
                 open_button_X118["state"] = "disabled"
                 
-
             else:
                 messagebox.showerror('Invalid file', 'Please select the correct TXT file')
                 break
