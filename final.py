@@ -73,15 +73,13 @@ path_list_X118 = ["D:\BestFit\AuditTypes_Left\\140_X118_FD_LI.xml",
 existing_path_W177 = []
 existing_path_C118 = []
 existing_path_X118 = []
-W177_backup_paths = []
-C118_backup_paths = []
-X118_backup_paths = []
-
+backup_pathlist = []
 
 def check_fileexists_W177():
     for file in path_list_W177:
         if os.path.exists(file) == True:
             existing_path_W177.append(file)
+            backup_pathlist.append(file)
         else:
             pass
 
@@ -90,6 +88,7 @@ def check_fileexists_C118():
     for file in path_list_C118:
         if os.path.exists(file) == True:
             existing_path_C118.append(file)
+            backup_pathlist.append(file)
         else:
             pass
 
@@ -98,26 +97,33 @@ def check_fileexists_X118():
     for file in path_list_X118:
         if os.path.exists(file) == True:
             existing_path_X118.append(file)
+            backup_pathlist.append(file)
         else:
             pass
 
           
 def create_xml_backup():
-    for file in existing_path_W177, existing_path_C118, existing_path_X118:
-        shutil.copy2(file, "D:\\BestFit\\AbgleichBackup")
+    for file_path in existing_path_W177:
+        shutil.copy2(str(file_path), "D:\\BestFit\\AbgleichBackup")
         
-        
+   for file_path in existing_path_C118:
+        shutil.copy2(str(file_path), "D:\\BestFit\\AbgleichBackup")
+    
+    for file_path in existing_path_X118:
+        shutil.copy2(str(file_path), "D:\\BestFit\\AbgleichBackup")
+
     
     global backup_created    
     backup_created = True
     
-def get_backup_path():
-    backup_files = os.listdir("D:\\BestFit\\AbgleichBackup")
-    pass
-        
-        
     
-        
+def restore_xml_backup():
+    backup_files = os.listdir("D:\\BestFit\\AbgleichBackup")
+    for file_path, backup_path in zip(backup_files, backup_pathlist):
+        shutil.move(str(file_path), str(backup_path))
+    messagebox.showinfo("Restore completed","Offsets has been restored")
+    backup_button["state"] = "disabled"
+
           
 def start_program_W177():
 
@@ -363,11 +369,7 @@ def setmeasurement_pointc118(document):
 
     tree.write(document)
     
-    
-def restore_xml_backup():
-    pass
-    
-    
+
     
 check_fileexists_W177()
 check_fileexists_C118()
