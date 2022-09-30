@@ -7,11 +7,10 @@ from datetime import date
 import os
 import os.path
 
-
 root = Tk()
 
-path_list_W1777 = ["D:\BestFit\AuditTypes_Left\\010_W177_FD_LI.xml",
-                   "D:\BestFit\AuditTypes_Right\\010_W177_FD_RE.xml", 
+path_list_W177 = ["D:\BestFit\AuditTypes_Left\\010_W177_FD_LI.xml",
+                   "D:\BestFit\AuditTypes_Right\\010_W177_FD_RE.xml",
                    "D:\BestFit\AuditTypes_Left\\010_W177_FA_LI.xml",
                    "D:\BestFit\AuditTypes_Right\\010_W177_FA_RE.xml",
                    "D:\BestFit\AuditTypes_KH_Left\\010_W177_KH_LI.xml",
@@ -21,36 +20,35 @@ path_list_W1777 = ["D:\BestFit\AuditTypes_Left\\010_W177_FD_LI.xml",
                    "D:\BestFit\AuditTypes_STS_vo_Right\\011_W177_STS_vo_re.xml",
                    "D:\BestFit\AuditTypes\Type_W177\\11_W177_KV_LBR_Links.xml",
                    "D:\BestFit\AuditTypes\Type_W177\\11_W177_KV_LBR_Rechts.xml",
-                   "D:\BestFit\AuditTypes_MH\010_W177_MH.xml"
+                   "D:\BestFit\AuditTypes_MH\\010_W177_MH.xml"
                    ]
-             
-path_list_C118 = ["D:\BestFit\AuditTypes_Left\100_C118_FD_LI.xml",
-                  "D:\BestFit\AuditTypes_Right\100_C118_FD_RE.xml",
-                  "D:\BestFit\AuditTypes_Left\100_C118_FA_LI.xml",
-                  "D:\BestFit\AuditTypes_Right\100_C118_FA_RE.xml",
-                  "D:\BestFit\AuditTypes_KH_Left\100_C118_KH_LI.xml",
-                  "D:\BestFit\AuditTypes_KH_Right\100_C118_KH_RE.xml",
-                  "D:\BestFit\AuditTypes_MH\100_C118_MH.xml",
-                  "D:\BestFit\AuditTypes_STS_vo_Left\101_C118_STS_vo_li.xml",
-                  "D:\BestFit\AuditTypes_STS_vo_Right\101_C118_STS_vo_re.xml",
-                  "D:\BestFit\AuditTypes\Type_C118\21_C118_KV_LBR_Links.xml",
-                  "D:\BestFit\AuditTypes\Type_C118\21_C118_KV_LBR_Rechts.xml",
-                  ]
- 
-path_list_X118 = ["D:\BestFit\AuditTypes_Left\140_X118_FD_LI.xml",
-                  "D:\BestFit\AuditTypes_Right\140_X118_FD_RE.xml",
-                  "D:\BestFit\AuditTypes_Left\140_X118_FA_LI.xml",
-                  "D:\BestFit\AuditTypes_Right\140_X118_FA_RE.xml",
-                  "D:\BestFit\AuditTypes\140_X118_ND_RT.xml",
-                  "D:\BestFit\AuditTypes_KH_Left\140_X118_KH_LI.xml",
-                  "D:\BestFit\AuditTypes_KH_Right\140_X118_KH_RE.xml",
-                  "D:\BestFit\AuditTypes_MH\140_X118_MH.xml",
-                  "D:\BestFit\AuditTypes_STS_vo_Left\141_X118_STS_vo_li.xml",
-                  "D:\BestFit\AuditTypes_STS_vo_Right\141_X118_STS_vo_re.xml",
-                  "D:\BestFit\AuditTypes\Type_X118\31_X118_KV_LBR_Links.xml",
-                  "D:\BestFit\AuditTypes\Type_X118\31_X118_KV_LBR_Rechts.xml"
+
+path_list_C118 = ["D:\BestFit\AuditTypes_Left\\100_C118_FD_LI.xml",
+                  "D:\BestFit\AuditTypes_Right\\100_C118_FD_RE.xml",
+                  "D:\BestFit\AuditTypes_Left\\100_C118_FA_LI.xml",
+                  "D:\BestFit\AuditTypes_Right\\100_C118_FA_RE.xml",
+                  "D:\BestFit\AuditTypes_KH_Left\\100_C118_KH_LI.xml",
+                  "D:\BestFit\AuditTypes_KH_Right\\100_C118_KH_RE.xml",
+                  "D:\BestFit\AuditTypes_MH\\100_C118_MH.xml",
+                  "D:\BestFit\AuditTypes_STS_vo_Left\\101_C118_STS_vo_li.xml",
+                  "D:\BestFit\AuditTypes_STS_vo_Right\\101_C118_STS_vo_re.xml",
+                  "D:\BestFit\AuditTypes\Type_C118\\21_C118_KV_LBR_Links.xml",
+                  "D:\BestFit\AuditTypes\Type_C118\\21_C118_KV_LBR_Rechts.xml",
                   ]
 
+path_list_X118 = ["D:\BestFit\AuditTypes_Left\\140_X118_FD_LI.xml",
+                  "D:\BestFit\AuditTypes_Right\\140_X118_FD_RE.xml",
+                  "D:\BestFit\AuditTypes_Left\\140_X118_FA_LI.xml",
+                  "D:\BestFit\AuditTypes_Right\\140_X118_FA_RE.xml",
+                  "D:\BestFit\AuditTypes\\140_X118_ND_RT.xml",
+                  "D:\BestFit\AuditTypes_KH_Left\\140_X118_KH_LI.xml",
+                  "D:\BestFit\AuditTypes_KH_Right\\140_X118_KH_RE.xml",
+                  "D:\BestFit\AuditTypes_MH\\140_X118_MH.xml",
+                  "D:\BestFit\AuditTypes_STS_vo_Left\\141_X118_STS_vo_li.xml",
+                  "D:\BestFit\AuditTypes_STS_vo_Right\\141_X118_STS_vo_re.xml",
+                  "D:\BestFit\AuditTypes\Type_X118\\31_X118_KV_LBR_Links.xml",
+                  "D:\BestFit\AuditTypes\Type_X118\\31_X118_KV_LBR_Rechts.xml"
+                  ]
 
 existing_path_W177 = []
 existing_path_C118 = []
@@ -71,8 +69,8 @@ def check_fileexists_C118():
             existing_path_C118.append(file)
         else:
             pass
-                     
-            
+
+
 def check_fileexists_X118():
     for file in path_list_X118:
         if os.path.exists(file) == True:
@@ -119,27 +117,6 @@ def start_program():
                 value_puff = item[getindex + 1:]
                 CSV_ORIGDATA[name_puff] = value_puff
 
-            if "W177" in str(csv_file):
-                for file_path in existing_path_W177:  
-                    setmeasurement_pointc118(file_path)
-                    open_button_W177["text"] = "W177 file loaded"
-                    open_button_W177["state"] = "disabled"
-                    break
-            
-            elif "C118" in str(csv_file):
-                for file_path in existing_path_C118:
-                    stemeasurement_pointc118(file_path)
-                    open_button_C118["text"] = "C118 file loaded"
-                    open_button_C118["state"] = "disabled"
-                    break
-                               
-            elif "X118" in str(csv_file):
-                for file_path in existing_path_X118:
-                    stemeasurement_pointc118(file_path)
-                    open_button_X118["text"] = "X118 file loaded"
-                    open_button_X118["state"] = "disabled"
-                    break
-               
 
         except ValueError:
 
@@ -150,13 +127,46 @@ def start_program():
                 root.destroy()
                 break
 
+        if "W177" in str(csv_file):
+            for file_path in existing_path_W177:
+                setmeasurement_pointc118(file_path)
+                open_button_W177["text"] = "W177 file loaded"
+                open_button_W177["state"] = "disabled"
+
+
+        else:
+            messagebox.showerror('Invalid file', 'Please select the correct TXT file')
+            continue
+
+        if "C118" in str(csv_file):
+            for file_path in existing_path_C118:
+                setmeasurement_pointc118(file_path)
+                open_button_C118["text"] = "C118 file loaded"
+                open_button_C118["state"] = "disabled"
+
+
+        else:
+            messagebox.showerror('Invalid file', 'Please select the correct TXT file')
+            continue
+
+        if "X118" in str(csv_file):
+            for file_path in existing_path_X118:
+                setmeasurement_pointc118(file_path)
+                open_button_X118["text"] = "X118 file loaded"
+                open_button_X118["state"] = "disabled"
+
+
+        else:
+            messagebox.showerror('Invalid file', 'Please select the correct TXT file')
+            break
+
         messagebox.showinfo('Close program', 'Offsets has been updated. Closing program')
         break
- 
- 
- def exit_program():
-     exit()
-      
+
+
+def exit_program():
+    exit()
+
 
 def open_File():
     filepath = filedialog.askopenfilename(title='Select the .txt file',
@@ -169,14 +179,11 @@ def popup():
     return messagebox.askquestion('Error', 'Wrong file selected! Please select the correct .txt file!\nContinue?')
 
 
-def filepath_popup():
-    return messagebox.askquestion('Error', File path doesn!t match. Check file names. \nContinue?')
-
 
 root.geometry('600x600')
 root.title('Auto offset loader')
 label = Label(root, text='Select the offset data(.txt) file\nthen select the .xml you want to overwrite',
-                    font=('Arial', 17))
+              font=('Arial', 17))
 label.pack()
 open_button_W177 = Button(root, text='Open W177 file', font=('Arial', 30), command=start_program)
 open_button_W177.pack()
@@ -184,7 +191,8 @@ open_button_C118 = Button(root, text='Open C118 file', font=('Arial', 30), comma
 open_button_C118.pack()
 open_button_X118 = Button(root, text='Open X118 file', font=('Arial', 30), command=start_program)
 open_button_X118.pack()
-exit_button = Button(root, text="Exit program",font=("Arial", 15), command=exit_program)
+exit_button = Button(root, text="Exit program", font=("Arial", 15), command=exit_program)
+exit_button.pack()
 pointnames_got = []
 values_got = []
 XML_ORIGDATA = {}
@@ -214,15 +222,15 @@ def setmeasurement_pointc118(document):
             values_got.pop(0)
 
     CALCULATED_KEYVALUES = {key: float(CSV_ORIGDATA.get(key, 0))
-                               + float(XML_ORIGDATA.get(key, 0))
-                                 for key in XML_ORIGDATA
+                                 + float(XML_ORIGDATA.get(key, 0))
+                            for key in XML_ORIGDATA
                             }
 
     FINAL_LIST = [round(item, 2) for item in CALCULATED_KEYVALUES.values()]
     FINAL_STRLIST = [str(e) for e in FINAL_LIST]
     FINAL_KEYLIST = [e for e in CALCULATED_KEYVALUES.keys()]
     CURR_DATE = date.today()
-    currtext = 'Offset_update_log_'+str(CURR_DATE)+'.txt'
+    currtext = 'Offset_update_log_' + str(CURR_DATE) + '.txt'
     filepath = os.path.realpath(currtext)
     for element in root.iter('Double'):
 
