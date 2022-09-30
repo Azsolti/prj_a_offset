@@ -2,3 +2,4 @@
 09_29_1200 - Updating path lists for different types, making code more convinient and readable, adding type buttons.
 09_30_0900 - Modified function calls for different types, button disabling added to avoid multiple offsetting.
 09_30_1000 - Loop break fixes, exit calls added, minor PEP fixes
+09_30_1400 - Backup function,button added, auto load on start, creates backup files, backs up modded files on button press.
