@@ -8,6 +8,24 @@ import os
 import os.path
 
 root = Tk()
+root.geometry('600x600')
+root.title('Auto offset loader')
+label = Label(root, text='Select the offset data(.txt) file\nthen select the .xml you want to overwrite',
+              font=('Arial', 17))
+label.pack()
+open_button_W177 = Button(root, text='Open W177 file', font=('Arial', 30), command=start_program_W177)
+open_button_W177.pack()
+open_button_C118 = Button(root, text='Open C118 file', font=('Arial', 30), command=start_program_C118)
+open_button_C118.pack()
+open_button_X118 = Button(root, text='Open X118 file', font=('Arial', 30), command=start_program_X118)
+open_button_X118.pack()
+exit_button = Button(root, text="Exit program", font=("Arial", 15), command=exit_program)
+exit_button.pack()
+
+existing_path_W177 = []
+existing_path_C118 = []
+existing_path_X118 = []
+
 
 path_list_W177 = ["D:\BestFit\AuditTypes_Left\\010_W177_FD_LI.xml",
                    "D:\BestFit\AuditTypes_Right\\010_W177_FD_RE.xml",
@@ -50,10 +68,6 @@ path_list_X118 = ["D:\BestFit\AuditTypes_Left\\140_X118_FD_LI.xml",
                   "D:\BestFit\AuditTypes\Type_X118\\31_X118_KV_LBR_Rechts.xml"
                   ]
 
-existing_path_W177 = []
-existing_path_C118 = []
-existing_path_X118 = []
-
 
 def check_fileexists_W177():
     for file in path_list_W177:
@@ -78,24 +92,31 @@ def check_fileexists_X118():
         else:
             pass
 
+          
+def start_program_W177():
 
-check_fileexists_W177()
-check_fileexists_C118()
-check_fileexists_X118()
-
-
-def start_program():
     while True:
         my_list = []
         anotherlist = []
         final_list = []
         list_tostrg = ''
         try:
-            with open(open_File(), 'r') as csv_file:
+            with open(open_file(), 'r') as csv_file:
 
                 reader = csv.reader(csv_file)
                 for n in reader:
                     my_list.append(n)
+                    
+            if "W177" in str(csv_file):
+                for file_path in existing_path_W177:
+                    setmeasurement_pointc118(file_path)
+                open_button_W177["text"] = "W177 file loaded"
+                open_button_W177["state"] = "disabled"
+                W177_setter = True
+
+            else:
+                messagebox.showerror('Invalid file', 'Please select the correct TXT file')
+                break
 
             for n in my_list:
                 for character in n:
@@ -117,7 +138,6 @@ def start_program():
                 value_puff = item[getindex + 1:]
                 CSV_ORIGDATA[name_puff] = value_puff
 
-
         except ValueError:
 
             if popup() == 'yes':
@@ -126,49 +146,122 @@ def start_program():
                 messagebox.showinfo('Close program', 'Offsets has not changed. Closing program')
                 root.destroy()
                 break
+        
+def start_program_C118():
 
-        if "W177" in str(csv_file):
-            for file_path in existing_path_W177:
-                setmeasurement_pointc118(file_path)
+    while True:
+        my_list = []
+        anotherlist = []
+        final_list = []
+        list_tostrg = ''
+        try:
+            with open(open_file(), 'r') as csv_file:
+
+                reader = csv.reader(csv_file)
+                for n in reader:
+                    my_list.append(n)
+                    
+            if "C118" in str(csv_file):
+                for file_path in existing_path_W177:
+                    setmeasurement_pointc118(file_path)
                 open_button_W177["text"] = "W177 file loaded"
                 open_button_W177["state"] = "disabled"
+                W177_setter = True
 
+            else:
+                messagebox.showerror('Invalid file', 'Please select the correct TXT file')
+                break
 
-        else:
-            messagebox.showerror('Invalid file', 'Please select the correct TXT file')
-            continue
+            for n in my_list:
+                for character in n:
+                    list_tostrg += character
+                    strg_replace = list_tostrg.replace(";", ".", 1)
+                    list_tostrg = ""
+                    anotherlist.append(strg_replace)
 
-        if "C118" in str(csv_file):
-            for file_path in existing_path_C118:
-                setmeasurement_pointc118(file_path)
-                open_button_C118["text"] = "C118 file loaded"
-                open_button_C118["state"] = "disabled"
+                # Converting unwanted characters to readable/necessary ones
+            for n in anotherlist:
+                list_tostrg += n
+                strg_replace2 = list_tostrg.replace(";", "=")
+                final_list.append(strg_replace2)
+                list_tostrg = ""
 
+            for item in final_list:
+                getindex = item.index("=")
+                name_puff = item[:getindex]
+                value_puff = item[getindex + 1:]
+                CSV_ORIGDATA[name_puff] = value_puff
 
-        else:
-            messagebox.showerror('Invalid file', 'Please select the correct TXT file')
-            continue
+        except ValueError:
 
-        if "X118" in str(csv_file):
-            for file_path in existing_path_X118:
-                setmeasurement_pointc118(file_path)
-                open_button_X118["text"] = "X118 file loaded"
-                open_button_X118["state"] = "disabled"
+            if popup() == 'yes':
+                continue
+            else:
+                messagebox.showinfo('Close program', 'Offsets has not changed. Closing program')
+                root.destroy()
+                break        
+            
 
+def start_program_X118():
 
-        else:
-            messagebox.showerror('Invalid file', 'Please select the correct TXT file')
-            break
+    while True:
+        my_list = []
+        anotherlist = []
+        final_list = []
+        list_tostrg = ''
+        try:
+            with open(open_file(), 'r') as csv_file:
 
-        messagebox.showinfo('Close program', 'Offsets has been updated. Closing program')
-        break
+                reader = csv.reader(csv_file)
+                for n in reader:
+                    my_list.append(n)
+                    
+            if "X118" in str(csv_file):
+                for file_path in existing_path_W177:
+                    setmeasurement_pointc118(file_path)
+                open_button_W177["text"] = "W177 file loaded"
+                open_button_W177["state"] = "disabled"
+                W177_setter = True
 
+            else:
+                messagebox.showerror('Invalid file', 'Please select the correct TXT file')
+                break
+
+            for n in my_list:
+                for character in n:
+                    list_tostrg += character
+                    strg_replace = list_tostrg.replace(";", ".", 1)
+                    list_tostrg = ""
+                    anotherlist.append(strg_replace)
+
+                # Converting unwanted characters to readable/necessary ones
+            for n in anotherlist:
+                list_tostrg += n
+                strg_replace2 = list_tostrg.replace(";", "=")
+                final_list.append(strg_replace2)
+                list_tostrg = ""
+
+            for item in final_list:
+                getindex = item.index("=")
+                name_puff = item[:getindex]
+                value_puff = item[getindex + 1:]
+                CSV_ORIGDATA[name_puff] = value_puff
+
+        except ValueError:
+
+            if popup() == 'yes':
+                continue
+            else:
+                messagebox.showinfo('Close program', 'Offsets has not changed. Closing program')
+                root.destroy()
+                break       
+                 
 
 def exit_program():
     exit()
 
 
-def open_File():
+def open_file():
     filepath = filedialog.askopenfilename(title='Select the .txt file',
                                           filetypes=(("txt files", "*.txt"),
                                                      ("all files", "*.*")))
@@ -177,22 +270,8 @@ def open_File():
 
 def popup():
     return messagebox.askquestion('Error', 'Wrong file selected! Please select the correct .txt file!\nContinue?')
-
-
-
-root.geometry('600x600')
-root.title('Auto offset loader')
-label = Label(root, text='Select the offset data(.txt) file\nthen select the .xml you want to overwrite',
-              font=('Arial', 17))
-label.pack()
-open_button_W177 = Button(root, text='Open W177 file', font=('Arial', 30), command=start_program)
-open_button_W177.pack()
-open_button_C118 = Button(root, text='Open C118 file', font=('Arial', 30), command=start_program)
-open_button_C118.pack()
-open_button_X118 = Button(root, text='Open X118 file', font=('Arial', 30), command=start_program)
-open_button_X118.pack()
-exit_button = Button(root, text="Exit program", font=("Arial", 15), command=exit_program)
-exit_button.pack()
+ 
+  
 pointnames_got = []
 values_got = []
 XML_ORIGDATA = {}
@@ -232,6 +311,7 @@ def setmeasurement_pointc118(document):
     CURR_DATE = date.today()
     currtext = 'Offset_update_log_' + str(CURR_DATE) + '.txt'
     filepath = os.path.realpath(currtext)
+    
     for element in root.iter('Double'):
 
         get_tagName = element.get('name')
@@ -249,6 +329,7 @@ def setmeasurement_pointc118(document):
 
             FINAL_STRLIST.pop(0)
             FINAL_KEYLIST.pop(0)
+    
     pointnames_got.clear()
     values_got.clear()
     XML_ORIGDATA.clear()
@@ -257,4 +338,11 @@ def setmeasurement_pointc118(document):
     tree.write(document)
 
 
+check_fileexists_W177()
+check_fileexists_C118()
+check_fileexists_X118()
+
+
 root.mainloop()
+
+
