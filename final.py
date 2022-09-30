@@ -144,7 +144,7 @@ def start_program_W177():
             else:
                 messagebox.showinfo('Close program', 'Offsets has not changed. Closing program')
                 root.destroy()
-                break
+                exit_program()
         
 def start_program_C118():
 
@@ -198,7 +198,7 @@ def start_program_C118():
             else:
                 messagebox.showinfo('Close program', 'Offsets has not changed. Closing program')
                 root.destroy()
-                break        
+                exit_program()     
             
 
 def start_program_X118():
@@ -253,7 +253,7 @@ def start_program_X118():
             else:
                 messagebox.showinfo('Close program', 'Offsets has not changed. Closing program')
                 root.destroy()
-                break       
+                exit_program()    
                  
 
 def exit_program():
