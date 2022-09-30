@@ -26,7 +26,6 @@ existing_path_W177 = []
 existing_path_C118 = []
 existing_path_X118 = []
 
-
 path_list_W177 = ["D:\BestFit\AuditTypes_Left\\010_W177_FD_LI.xml",
                    "D:\BestFit\AuditTypes_Right\\010_W177_FD_RE.xml",
                    "D:\BestFit\AuditTypes_Left\\010_W177_FA_LI.xml",
