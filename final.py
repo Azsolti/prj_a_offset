@@ -6,6 +6,7 @@ from tkinter import messagebox
 from datetime import date
 import os
 import os.path
+import shutil
 
 root = Tk()
 root.geometry('600x600')
@@ -21,10 +22,11 @@ open_button_X118 = Button(root, text='Open X118 file', font=('Arial', 30), comma
 open_button_X118.pack()
 exit_button = Button(root, text="Exit program", font=("Arial", 15), command=exit_program)
 exit_button.pack()
+backup_button = Button(root, text='Restore backup', font=('Arial', 15), command=restore_xml_backup)
+backup_button.pack()
 
-existing_path_W177 = []
-existing_path_C118 = []
-existing_path_X118 = []
+backup_created = False
+
 
 path_list_W177 = ["D:\BestFit\AuditTypes_Left\\010_W177_FD_LI.xml",
                    "D:\BestFit\AuditTypes_Right\\010_W177_FD_RE.xml",
@@ -68,6 +70,14 @@ path_list_X118 = ["D:\BestFit\AuditTypes_Left\\140_X118_FD_LI.xml",
                   ]
 
 
+existing_path_W177 = []
+existing_path_C118 = []
+existing_path_X118 = []
+W177_backup_paths = []
+C118_backup_paths = []
+X118_backup_paths = []
+
+
 def check_fileexists_W177():
     for file in path_list_W177:
         if os.path.exists(file) == True:
@@ -91,6 +101,23 @@ def check_fileexists_X118():
         else:
             pass
 
+          
+def create_xml_backup():
+    for file in existing_path_W177, existing_path_C118, existing_path_X118:
+        shutil.copy2(file, "D:\\BestFit\\AbgleichBackup")
+        
+        
+    
+    global backup_created    
+    backup_created = True
+    
+def get_backup_path():
+    backup_files = os.listdir("D:\\BestFit\\AbgleichBackup")
+    pass
+        
+        
+    
+        
           
 def start_program_W177():
 
@@ -335,11 +362,17 @@ def setmeasurement_pointc118(document):
     messagebox.showinfo('Log notification', f' Log file {currtext} created to {filepath}')
 
     tree.write(document)
-
-
+    
+    
+def restore_xml_backup():
+    pass
+    
+    
+    
 check_fileexists_W177()
 check_fileexists_C118()
 check_fileexists_X118()
+create_xml_backup()
 
 
 root.mainloop()
