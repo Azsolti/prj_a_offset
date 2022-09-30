@@ -14,33 +14,21 @@ root.title('Auto offset loader')
 label = Label(root, text='Select the offset data(.txt) file\nthen select the .xml you want to overwrite',
               font=('Arial', 17))
 label.pack()
-open_button_W177 = Button(root, text='Open W177 file', font=('Arial', 30), command=start_program_W177)
-open_button_W177.pack()
-open_button_C118 = Button(root, text='Open C118 file', font=('Arial', 30), command=start_program_C118)
-open_button_C118.pack()
-open_button_X118 = Button(root, text='Open X118 file', font=('Arial', 30), command=start_program_X118)
-open_button_X118.pack()
-exit_button = Button(root, text="Exit program", font=("Arial", 15), command=exit_program)
-exit_button.pack()
-backup_button = Button(root, text='Restore backup', font=('Arial', 15), command=restore_xml_backup)
-backup_button.pack()
-
-backup_created = False
 
 
 path_list_W177 = ["D:\BestFit\AuditTypes_Left\\010_W177_FD_LI.xml",
-                   "D:\BestFit\AuditTypes_Right\\010_W177_FD_RE.xml",
-                   "D:\BestFit\AuditTypes_Left\\010_W177_FA_LI.xml",
-                   "D:\BestFit\AuditTypes_Right\\010_W177_FA_RE.xml",
-                   "D:\BestFit\AuditTypes_KH_Left\\010_W177_KH_LI.xml",
-                   "D:\BestFit\AuditTypes_KH_Right\\010_W177_KH_RE.xml",
-                   "D:\BestFit\AuditTypes_RT\\010_W177_ND_RT.xml",
-                   "D:\BestFit\AuditTypes_STS_vo_Left\\011_W177_STS_vo_li.xml",
-                   "D:\BestFit\AuditTypes_STS_vo_Right\\011_W177_STS_vo_re.xml",
-                   "D:\BestFit\AuditTypes\Type_W177\\11_W177_KV_LBR_Links.xml",
-                   "D:\BestFit\AuditTypes\Type_W177\\11_W177_KV_LBR_Rechts.xml",
-                   "D:\BestFit\AuditTypes_MH\\010_W177_MH.xml"
-                   ]
+                  "D:\BestFit\AuditTypes_Right\\010_W177_FD_RE.xml",
+                  "D:\BestFit\AuditTypes_Left\\010_W177_FA_LI.xml",
+                  "D:\BestFit\AuditTypes_Right\\010_W177_FA_RE.xml",
+                  "D:\BestFit\AuditTypes_KH_Left\\010_W177_KH_LI.xml",
+                  "D:\BestFit\AuditTypes_KH_Right\\010_W177_KH_RE.xml",
+                  "D:\BestFit\AuditTypes_RT\\010_W177_ND_RT.xml",
+                  "D:\BestFit\AuditTypes_STS_vo_Left\\011_W177_STS_vo_li.xml",
+                  "D:\BestFit\AuditTypes_STS_vo_Right\\011_W177_STS_vo_re.xml",
+                  "D:\BestFit\AuditTypes\Type_W177\\11_W177_KV_LBR_Links.xml",
+                  "D:\BestFit\AuditTypes\Type_W177\\11_W177_KV_LBR_Rechts.xml",
+                  "D:\BestFit\AuditTypes_MH\\010_W177_MH.xml"
+                  ]
 
 path_list_C118 = ["D:\BestFit\AuditTypes_Left\\100_C118_FD_LI.xml",
                   "D:\BestFit\AuditTypes_Right\\100_C118_FD_RE.xml",
@@ -69,24 +57,24 @@ path_list_X118 = ["D:\BestFit\AuditTypes_Left\\140_X118_FD_LI.xml",
                   "D:\BestFit\AuditTypes\Type_X118\\31_X118_KV_LBR_Rechts.xml"
                   ]
 
-
 existing_path_W177 = []
 existing_path_C118 = []
 existing_path_X118 = []
 backup_pathlist = []
 
+
 def check_fileexists_W177():
     for file in path_list_W177:
-        if os.path.exists(file) == True:
+        if os.path.exists(file):
             existing_path_W177.append(file)
             backup_pathlist.append(file)
         else:
             pass
 
-          
+
 def check_fileexists_C118():
     for file in path_list_C118:
-        if os.path.exists(file) == True:
+        if os.path.exists(file):
             existing_path_C118.append(file)
             backup_pathlist.append(file)
         else:
@@ -95,41 +83,37 @@ def check_fileexists_C118():
 
 def check_fileexists_X118():
     for file in path_list_X118:
-        if os.path.exists(file) == True:
+        if os.path.exists(file):
             existing_path_X118.append(file)
             backup_pathlist.append(file)
         else:
             pass
 
-          
-def create_xml_backup():
-    for file_path in existing_path_W177:
-        shutil.copy2(str(file_path), "D:\\BestFit\\AbgleichBackup")
-        
-   for file_path in existing_path_C118:
-        shutil.copy2(str(file_path), "D:\\BestFit\\AbgleichBackup")
-    
-    for file_path in existing_path_X118:
-        shutil.copy2(str(file_path), "D:\\BestFit\\AbgleichBackup")
 
-    
-    global backup_created    
-    backup_created = True
-    
-    
+def create_xml_backup():
+    for file_path_W177 in existing_path_W177:
+        shutil.copy2(str(file_path_W177), "D:\\BestFit\\AbgleichBackup")
+
+    for file_path_C118 in existing_path_C118:
+        shutil.copy2(str(file_path_C118), "D:\\BestFit\\AbgleichBackup")
+
+    for file_path_X118 in existing_path_X118:
+        shutil.copy2(str(file_path_X118), "D:\\BestFit\\AbgleichBackup")
+
+
 def restore_xml_backup():
     backup_files = os.listdir("D:\\BestFit\\AbgleichBackup")
+
     for file_path, backup_path in zip(backup_files, backup_pathlist):
-        shutil.move(str(file_path), str(backup_path))
-    messagebox.showinfo("Restore completed","Offsets has been restored")
-    backup_button["state"] = "disabled"
+        shutil.copy2("D:\\BestFit\\AbgleichBackup\\" + file_path, backup_path)
 
-          
+    messagebox.showinfo("Restore completed", "Offsets has been restored")
+
+
 def start_program_W177():
-
     while True:
-        my_list = []
-        anotherlist = []
+        csv_rawdata = []
+        rawdata_chars = []
         final_list = []
         list_tostrg = ''
         try:
@@ -137,28 +121,20 @@ def start_program_W177():
 
                 reader = csv.reader(csv_file)
                 for n in reader:
-                    my_list.append(n)
-                    
-            if "W177" in str(csv_file):
-                for file_path in existing_path_W177:
-                    setmeasurement_pointc118(file_path)
-                open_button_W177["text"] = "W177 file loaded"
-                open_button_W177["state"] = "disabled"
-                break
-                
-            else:
-                messagebox.showerror('Invalid file', 'Please select the correct TXT file')
-                break
-               
-            for n in my_list:
+                    csv_rawdata.append(n)
+        except:
+            break
+
+        try:
+            for n in csv_rawdata:
                 for character in n:
                     list_tostrg += character
                     strg_replace = list_tostrg.replace(";", ".", 1)
                     list_tostrg = ""
-                    anotherlist.append(strg_replace)
+                    rawdata_chars.append(strg_replace)
 
                 # Converting unwanted characters to readable/necessary ones
-            for n in anotherlist:
+            for n in rawdata_chars:
                 list_tostrg += n
                 strg_replace2 = list_tostrg.replace(";", "=")
                 final_list.append(strg_replace2)
@@ -178,12 +154,24 @@ def start_program_W177():
                 messagebox.showinfo('Close program', 'Offsets has not changed. Closing program')
                 root.destroy()
                 exit_program()
-        
-def start_program_C118():
 
+        if "W177" in str(csv_file):
+            for file_path in existing_path_W177:
+                setmeasurement_pointc118(file_path)
+            open_button_W177["text"] = "W177 file loaded"
+            open_button_W177["state"] = "disabled"
+            backup_button['state'] = 'active'
+            backup_button['bg'] = 'green'
+            break
+
+        else:
+            messagebox.showerror('Invalid file', 'Please select the correct TXT file')
+
+
+def start_program_C118():
     while True:
-        my_list = []
-        anotherlist = []
+        csv_rawdata = []
+        rawdata_chars = []
         final_list = []
         list_tostrg = ''
         try:
@@ -191,28 +179,20 @@ def start_program_C118():
 
                 reader = csv.reader(csv_file)
                 for n in reader:
-                    my_list.append(n)
-                    
-            if "C118" in str(csv_file):
-                for file_path in existing_path_C118:
-                    setmeasurement_pointc118(file_path)
-                open_button_C118["text"] = "C118 file loaded"
-                open_button_C118["state"] = "disabled"
-                break
-                
-            else:
-                messagebox.showerror('Invalid file', 'Please select the correct TXT file')
-                break
+                    csv_rawdata.append(n)
+        except:
+            break
 
-            for n in my_list:
+        try:
+            for n in csv_rawdata:
                 for character in n:
                     list_tostrg += character
                     strg_replace = list_tostrg.replace(";", ".", 1)
                     list_tostrg = ""
-                    anotherlist.append(strg_replace)
+                    rawdata_chars.append(strg_replace)
 
                 # Converting unwanted characters to readable/necessary ones
-            for n in anotherlist:
+            for n in rawdata_chars:
                 list_tostrg += n
                 strg_replace2 = list_tostrg.replace(";", "=")
                 final_list.append(strg_replace2)
@@ -231,14 +211,25 @@ def start_program_C118():
             else:
                 messagebox.showinfo('Close program', 'Offsets has not changed. Closing program')
                 root.destroy()
-                exit_program()     
-            
+                exit_program()
+
+        if "C118" in str(csv_file):
+            for file_path in existing_path_C118:
+                setmeasurement_pointc118(file_path)
+            open_button_C118["text"] = "C118 file loaded"
+            open_button_C118["state"] = "disabled"
+            backup_button['state'] = 'active'
+            backup_button['bg'] = 'green'
+            break
+
+        else:
+            messagebox.showerror('Invalid file', 'Please select the correct TXT file')
+
 
 def start_program_X118():
-
     while True:
-        my_list = []
-        anotherlist = []
+        csv_raw_data = []
+        raw_data_chars = []
         final_list = []
         list_tostrg = ''
         try:
@@ -246,28 +237,20 @@ def start_program_X118():
 
                 reader = csv.reader(csv_file)
                 for n in reader:
-                    my_list.append(n)
-                    
-            if "X118" in str(csv_file):
-                for file_path in existing_path_X118:
-                    setmeasurement_pointc118(file_path)
-                open_button_X118["text"] = "X118 file loaded"
-                open_button_X118["state"] = "disabled"
-                break
-                
-            else:
-                messagebox.showerror('Invalid file', 'Please select the correct TXT file')
-                break
+                    csv_raw_data.append(n)
+        except:
+            break
 
-            for n in my_list:
+        try:
+            for n in csv_raw_data:
                 for character in n:
                     list_tostrg += character
                     strg_replace = list_tostrg.replace(";", ".", 1)
                     list_tostrg = ""
-                    anotherlist.append(strg_replace)
+                    raw_data_chars.append(strg_replace)
 
                 # Converting unwanted characters to readable/necessary ones
-            for n in anotherlist:
+            for n in raw_data_chars:
                 list_tostrg += n
                 strg_replace2 = list_tostrg.replace(";", "=")
                 final_list.append(strg_replace2)
@@ -286,24 +269,40 @@ def start_program_X118():
             else:
                 messagebox.showinfo('Close program', 'Offsets has not changed. Closing program')
                 root.destroy()
-                exit_program()    
-                 
+                exit_program()
+
+        if "X118" in str(csv_file):
+            for file_path in existing_path_X118:
+                setmeasurement_pointc118(file_path)
+            open_button_X118["text"] = "X118 file loaded"
+            open_button_X118["state"] = "disabled"
+            backup_button['state'] = 'active'
+            backup_button['bg'] = 'green'
+
+            break
+
+        else:
+            messagebox.showerror('Invalid file', 'Please select the correct TXT file')
+
 
 def exit_program():
     exit()
 
 
 def open_file():
+
     filepath = filedialog.askopenfilename(title='Select the .txt file',
-                                          filetypes=(("txt files", "*.txt"),
-                                                     ("all files", "*.*")))
-    return str(filepath)
+                                                  filetypes=(("txt files", "*.txt"),
+                                                             ("all files", "*.*")))
+
+    if filepath:
+        return str(filepath)
 
 
 def popup():
     return messagebox.askquestion('Error', 'Wrong file selected! Please select the correct .txt file!\nContinue?')
- 
-  
+
+
 pointnames_got = []
 values_got = []
 XML_ORIGDATA = {}
@@ -333,7 +332,7 @@ def setmeasurement_pointc118(document):
             values_got.pop(0)
 
     CALCULATED_KEYVALUES = {key: float(CSV_ORIGDATA.get(key, 0))
-                                 + float(XML_ORIGDATA.get(key, 0))
+                                + float(XML_ORIGDATA.get(key, 0))
                             for key in XML_ORIGDATA
                             }
 
@@ -343,7 +342,7 @@ def setmeasurement_pointc118(document):
     CURR_DATE = date.today()
     currtext = 'Offset_update_log_' + str(CURR_DATE) + '.txt'
     filepath = os.path.realpath(currtext)
-    
+
     for element in root.iter('Double'):
 
         get_tagName = element.get('name')
@@ -361,22 +360,30 @@ def setmeasurement_pointc118(document):
 
             FINAL_STRLIST.pop(0)
             FINAL_KEYLIST.pop(0)
-    
+
     pointnames_got.clear()
     values_got.clear()
     XML_ORIGDATA.clear()
     messagebox.showinfo('Log notification', f' Log file {currtext} created to {filepath}')
 
     tree.write(document)
-    
 
-    
+
+open_button_W177 = Button(root, text='Open W177 file', font=('Arial', 30), command=start_program_W177)
+open_button_W177.pack()
+open_button_C118 = Button(root, text='Open C118 file', font=('Arial', 30), command=start_program_C118)
+open_button_C118.pack()
+open_button_X118 = Button(root, text='Open X118 file', font=('Arial', 30), command=start_program_X118)
+open_button_X118.pack()
+exit_button = Button(root, text="Exit program", font=("Arial", 15), command=exit_program)
+exit_button.pack()
+backup_button = Button(root, bg="Red", text='Restore backup', font=('Arial', 15), command=restore_xml_backup, state='disabled')
+backup_button.pack()
+
 check_fileexists_W177()
 check_fileexists_C118()
 check_fileexists_X118()
 create_xml_backup()
 
-
 root.mainloop()
-
 
