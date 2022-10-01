@@ -171,15 +171,9 @@ def start_program_W177():
                 value_puff = item[getindex + 1:]
                 CSV_ORIGDATA[name_puff] = value_puff
 
-        except ValueError:
-
-            if popup() == 'yes':
-                continue
-
-            else:
-                messagebox.showinfo('Close program', 'Offsets has not changed. Closing program')
-                root.destroy()
-                exit_program()
+        except Exception:
+            messagebox.showerror('Invalid file', 'Please select the correct TXT file')
+            break
 
         if "W177" in str(csv_file):
             for file_path in existing_path_W177:
@@ -231,14 +225,10 @@ def start_program_C118():
                 value_puff = item[getindex + 1:]
                 CSV_ORIGDATA[name_puff] = value_puff
 
-        except ValueError:
 
-            if popup() == 'yes':
-                continue
-            else:
-                messagebox.showinfo('Close program', 'Offsets has not changed. Closing program')
-                root.destroy()
-                exit_program()
+        except Exception:
+            messagebox.showerror('Invalid file', 'Please select the correct TXT file')
+            break
 
         if "C118" in str(csv_file):
             for file_path in existing_path_C118:
@@ -290,14 +280,10 @@ def start_program_X118():
                 value_puff = item[getindex + 1:]
                 CSV_ORIGDATA[name_puff] = value_puff
 
-        except ValueError:
 
-            if popup() == 'yes':
-                continue
-            else:
-                messagebox.showinfo('Close program', 'Offsets has not changed. Closing program')
-                root.destroy()
-                exit_program()
+        except Exception:
+            messagebox.showerror('Invalid file', 'Please select the correct TXT file')
+            break
 
         if "X118" in str(csv_file):
             for file_path in existing_path_X118:
