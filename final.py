@@ -60,6 +60,10 @@ existing_path_W177 = []
 existing_path_C118 = []
 existing_path_X118 = []
 backup_pathlist = []
+pointnames_got = []
+values_got = []
+XML_ORIGDATA = {}
+CSV_ORIGDATA = {}
 
 
 def check_fileexists_W177():
@@ -327,12 +331,6 @@ def open_file():
 
 def popup():
     return messagebox.askquestion('Error', 'Wrong file selected! Please select the correct .txt file!\nContinue?')
-
-
-pointnames_got = []
-values_got = []
-XML_ORIGDATA = {}
-CSV_ORIGDATA = {}
 
 
 def setmeasurement_pointc118(document):
