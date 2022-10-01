@@ -9,3 +9,4 @@
 10_01_0815 - Minor text modifications
 10_01_0900 - GUI visual updates(button mousover coloring added, font formatting)
 10_01_1015 - Small adjustments
+10_01_1045 - Exception bug fixes , syntax modified
