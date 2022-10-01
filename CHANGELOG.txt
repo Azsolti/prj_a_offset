@@ -5,3 +5,7 @@
 09_30_1400 - Backup function,button added, auto load on start, creates backup files, backs up modded files on button press.
 09_30_1800 - Backup path bug fix, file selection cancel button bug fix
 10_01_0700 - Watermark added, buttons properly changes text and switches on/off
+10_01_0800 - Backup confirmation requiring window added
+10_01_0815 - Minor text modifications
+10_01_0900 - GUI visual updates(button mousover coloring added, font formatting)
+10_01_1015 - Small adjustments
