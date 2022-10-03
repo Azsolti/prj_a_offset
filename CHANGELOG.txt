@@ -1,18 +1,18 @@
-09_29_1000 - File path checking funcion added 
-09_29_1200 - Updating path lists for different types, making code more convinient and readable, adding type buttons.
-09_30_0900 - Modified function calls for different types, button disabling added to avoid multiple offsetting.
-09_30_1000 - Loop break fixes, exit calls added, minor PEP fixes
-09_30_1400 - Backup function,button added, auto load on start, creates backup files, backs up modded files on button press.
-09_30_1800 - Backup path bug fix, file selection cancel button bug fix
-10_01_0700 - Watermark added, buttons properly changes text and switches on/off
-10_01_0800 - Backup confirmation requiring window added
-10_01_0815 - Minor text modifications
-10_01_0900 - GUI visual updates(button mousover coloring added, font formatting)
-10_01_1015 - Small adjustments
-10_01_1045 - Exception bug fixes, syntax modified
-10_02_0700 - Checking all functions/calculations, log file algo modified
-10_02_0900 - Importing algo overcomplicated, next task is to simplify it
-10_03_1900 - Exit func restructured, kill visu, start best fit func added, backup path updated
-10_03_1930 - Magyarosítva
-10_03_2100 - File paths extended with SME/AMG variants
+22_09_29_1000 - File path checking funcion added 
+22_09_29_1200 - Updating path lists for different types, making code more convinient and readable, adding type buttons.
+22_09_30_0900 - Modified function calls for different types, button disabling added to avoid multiple offsetting.
+22_09_30_1000 - Loop break fixes, exit calls added, minor PEP fixes
+22_09_30_1400 - Backup function,button added, auto load on start, creates backup files, backs up modded files on button press.
+22_09_30_1800 - Backup path bug fix, file selection cancel button bug fix
+22_10_01_0700 - Watermark added, buttons properly changes text and switches on/off
+22_10_01_0800 - Backup confirmation requiring window added
+22_10_01_0815 - Minor text modifications
+22_10_01_0900 - GUI visual updates(button mousover coloring added, font formatting)
+22_10_01_1015 - Small adjustments
+22_10_01_1045 - Exception bug fixes, syntax modified
+22_10_02_0700 - Checking all functions/calculations, log file algo modified
+22_10_02_0900 - Importing algo overcomplicated, next task is to simplify it
+22_10_03_1900 - Exit func restructured, kill visu, start best fit func added, backup path updated
+22_10_03_1930 - Magyarosítva
+22_10_03_2100 - File paths extended with SME/AMG variants
 
