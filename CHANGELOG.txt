@@ -12,7 +12,7 @@
 22_10_01_1045 - Exception bug fixes, syntax modified
 22_10_02_0700 - Checking all functions/calculations, log file algo modified
 22_10_02_0900 - Importing algo overcomplicated, next task is to simplify it
-22_10_03_1900 - Exit func restructured, kill visu, start best fit func added, backup path updated
+22_10_03_1900 - Exit func restructured, kill visu, start best fit func added, backup path updated, ask for include on exit
 22_10_03_1930 - Magyarosítva
 22_10_03_2100 - File paths extended with SME/AMG variants
 
