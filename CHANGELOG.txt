@@ -9,7 +9,9 @@
 10_01_0815 - Minor text modifications
 10_01_0900 - GUI visual updates(button mousover coloring added, font formatting)
 10_01_1015 - Small adjustments
-10_01_1045 - Exception bug fixes , syntax modified
+10_01_1045 - Exception bug fixes, syntax modified
 10_02_0700 - Checking all functions/calculations, log file algo modified
 10_02_0900 - Importing algo overcomplicated, next task is to simplify it
-10_03_1900 - Exit func restructured, kill visu, start best fit func added
+10_03_1900 - Exit func restructured, kill visu, start best fit func added, backup path updated
+10_03_1930 - Magyarosítva
+
