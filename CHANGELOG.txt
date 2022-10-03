@@ -14,4 +14,5 @@
 10_02_0900 - Importing algo overcomplicated, next task is to simplify it
 10_03_1900 - Exit func restructured, kill visu, start best fit func added, backup path updated
 10_03_1930 - Magyarosítva
+10_03_2100 - File paths extended with SME/AMG variants
 
