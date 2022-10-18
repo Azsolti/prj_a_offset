@@ -263,7 +263,7 @@ def start_program_W177_SME_AMG():
                 value_puff = item[getindex + 1:]
                 csv_origdata[name_puff] = value_puff
 
-            if "W177" or "SME" and "AMG" in str(final_path_to_txt):
+            if "W177" and "AMG" in str(final_path_to_txt):
                 for file_path in existing_path_W177_SME_AMG:
                     setmeasurement_pointc118(file_path)
                 open_button_X118_SME_AMG["text"] = "W177/SME AMG offsetek beadva"
@@ -363,7 +363,7 @@ def start_program_C118_SME_AMG():
                 value_puff = item[getindex + 1:]
                 csv_origdata[name_puff] = value_puff
 
-            if "C118" or "SME" and "AMG" in str(final_path_to_txt):
+            if "C118" and "AMG" in str(final_path_to_txt):
                 for file_path in existing_path_C118_SME_AMG:
                     setmeasurement_pointc118(file_path)
                 open_button_X118_SME_AMG["text"] = "C118/SME AMG offsetek beadva"
@@ -464,7 +464,7 @@ def start_program_X118_SME_AMG():
                 value_puff = item[getindex + 1:]
                 csv_origdata[name_puff] = value_puff
 
-            if "X118" or "SME" and "AMG" in str(final_path_to_txt):
+            if "X118" and "AMG" in str(final_path_to_txt):
                 for file_path in existing_path_X118_SME_AMG:
                     setmeasurement_pointc118(file_path)
                 open_button_X118_SME_AMG["text"] = "X118/SME AMG offsetek beadva"
