@@ -211,13 +211,13 @@ def start_program_W177():
                 open_button_W177["state"] = "disabled"
                 backup_button['state'] = 'normal'
                 break
-
+            else:
+              messagebox.showerror('Helytelen fájl', 'Kérlek válaszd ki a megfelelő .CSV fájlt!')
+              break
+              
         except:
             break
-
-        else:
-            messagebox.showerror('Helytelen fájl', 'Kérlek válaszd ki a megfelelő CSV fájlt!')
-
+      
 
 def start_program_W177_SME_AMG():
     while True:
@@ -263,12 +263,14 @@ def start_program_W177_SME_AMG():
                 open_button_W177_SME_AMG["state"] = "disabled"
                 backup_button['state'] = 'normal'
                 break
+            else:
+                messagebox.showerror('Helytelen fájl', 'Kérlek válaszd ki a megfelelő .CSV fájlt!')
+                break  
+                
         except:
             break
-        else:
-            messagebox.showerror('Helytelen fájl', 'Kérlek válaszd ki a megfelelő .CSV fájlt!')
 
-
+            
 def start_program_C118():
     while True:
         try:
@@ -312,11 +314,13 @@ def start_program_C118():
                 open_button_C118['font'] = ('Arial', 22, 'italic')
                 open_button_C118["state"] = "disabled"
                 backup_button['state'] = 'normal'
-                break
+                break  
+            else:
+              messagebox.showerror('Helytelen fájl', 'Kérlek válaszd ki a megfelelő .CSV fájlt!')
+              break 
+              
         except:
             break
-        else:
-            messagebox.showerror('Helytelen fájl', 'Kérlek válaszd ki a megfelelő CSV fájlt!')
 
 
 def start_program_C118_SME_AMG():
@@ -362,11 +366,13 @@ def start_program_C118_SME_AMG():
                 open_button_C118_SME_AMG['font'] = ('Arial', 19, 'italic')
                 open_button_C118_SME_AMG["state"] = "disabled"
                 backup_button['state'] = 'normal'
-                break
+                break    
+            else:
+              messagebox.showerror('Helytelen fájl', 'Kérlek válaszd ki a megfelelő .CSV fájlt!')
+              break
+              
         except:
             break
-        else:
-            messagebox.showerror('Helytelen fájl', 'Kérlek válaszd ki a megfelelő .CSV fájlt!')
 
 
 def start_program_X118():
@@ -413,10 +419,12 @@ def start_program_X118():
                 open_button_X118["state"] = "disabled"
                 backup_button['state'] = 'normal'
                 break
+            else:
+              messagebox.showerror('Helytelen fájl', 'Kérlek válaszd ki a megfelelő .CSV fájlt!')
+              break
+        
         except:
             break
-        else:
-            messagebox.showerror('Helytelen fájl', 'Kérlek válaszd ki a megfelelő .CSV fájlt!')
 
 
 def start_program_X118_SME_AMG():
@@ -463,10 +471,11 @@ def start_program_X118_SME_AMG():
                 open_button_X118_SME_AMG["state"] = "disabled"
                 backup_button['state'] = 'normal'
                 break
+            else:
+                messagebox.showerror('Helytelen fájl', 'Kérlek válaszd ki a megfelelő .CSV fájlt!')
+        
         except:
             break
-        else:
-            messagebox.showerror('Helytelen fájl', 'Kérlek válaszd ki a megfelelő .CSV fájlt!')
 
 
 def start_program_X243():
@@ -513,14 +522,14 @@ def start_program_X243():
                 open_button_X243["state"] = "disabled"
                 backup_button['state'] = 'normal'
                 break
+            else:
+              messagebox.showerror('Helytelen fájl', 'Kérlek válaszd ki a megfelelő .CSV fájlt!')
+              break    
 
         except:
             break
 
-        else:
-            messagebox.showerror('Helytelen fájl', 'Kérlek válaszd ki a megfelelő .CSV fájlt!')
-
-
+            
 def ask_include():
     ask_includexml = messagebox.askquestion("Figyelmeztetés", "Érvényesítetted (include) az XML fájlt ?")
     if ask_includexml == "yes":
