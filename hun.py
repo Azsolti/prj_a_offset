@@ -258,9 +258,9 @@ def start_program_W177_SME_AMG():
             if "W177" and "AMG" in str(final_path_to_txt):
                 for file_path in existing_path_W177_SME_AMG:
                     setmeasurement_pointc118(file_path)
-                open_button_X118_SME_AMG["text"] = "W177/SME AMG beadva"
-                open_button_X118_SME_AMG['font'] = ('Arial', 19, 'italic')
-                open_button_X118_SME_AMG["state"] = "disabled"
+                open_button_W177_SME_AMG["text"] = "W177/SME AMG beadva"
+                open_button_W177_SME_AMG['font'] = ('Arial', 19, 'italic')
+                open_button_W177_SME_AMG["state"] = "disabled"
                 backup_button['state'] = 'normal'
                 break
         except:
@@ -358,9 +358,9 @@ def start_program_C118_SME_AMG():
             if "C118" and "AMG" in str(final_path_to_txt):
                 for file_path in existing_path_C118_SME_AMG:
                     setmeasurement_pointc118(file_path)
-                open_button_X118_SME_AMG["text"] = "C118/SME AMG beadva"
-                open_button_X118_SME_AMG['font'] = ('Arial', 19, 'italic')
-                open_button_X118_SME_AMG["state"] = "disabled"
+                open_button_C118_SME_AMG["text"] = "C118/SME AMG beadva"
+                open_button_C118_SME_AMG['font'] = ('Arial', 19, 'italic')
+                open_button_C118_SME_AMG["state"] = "disabled"
                 backup_button['state'] = 'normal'
                 break
         except:
