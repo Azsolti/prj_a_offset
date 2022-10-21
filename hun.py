@@ -27,8 +27,6 @@ path_list_W177 = ["D:\BestFit\AuditTypes_Left\\010_W177_FD_LI.xml",
                   "D:\BestFit\AuditTypes_RT\\010_W177_ND_RT.xml",
                   "D:\BestFit\AuditTypes_STS_vo_Left\\011_W177_STS_vo_li.xml",
                   "D:\BestFit\AuditTypes_STS_vo_Right\\011_W177_STS_vo_re.xml",
-                  "D:\BestFit\AuditTypes\Type_W177\\11_W177_KV_LBR_Links.xml",
-                  "D:\BestFit\AuditTypes\Type_W177\\11_W177_KV_LBR_Rechts.xml",
                   "D:\BestFit\AuditTypes_MH\\010_W177_MH.xml",
                   "D:\BestFit\AuditTypes_KH_Left\\020_W177_AMG_KH_LI.xml",
                   "D:\BestFit\AuditTypes_KH_Right\\020_W177_AMG_KH_RE.xml",
@@ -36,6 +34,9 @@ path_list_W177 = ["D:\BestFit\AuditTypes_Left\\010_W177_FD_LI.xml",
                   "D:\BestFit\AuditTypes_STS_vo_Left\\021_W177_AMG_STS_vo_li.xml",
                   "D:\BestFit\AuditTypes_STS_vo_Right\\021_W177_AMG_STS_vo_re.xml",
                   ]
+
+path_list_W177_SME = ["D:\BestFit\AuditTypes\Type_W177\\11_W177_KV_LBR_Links.xml",
+                      "D:\BestFit\AuditTypes\Type_W177\\11_W177_KV_LBR_Rechts.xml"]
 
 path_list_W177_SME_AMG = ["D:\BestFit\AuditTypes\Type_W177_AMG\\12_W177_KV_LBR_Links_AMG.xml",
                           "D:\BestFit\AuditTypes\Type_W177_AMG\\12_W177_KV_LBR_Rechts_AMG.xml"
@@ -49,9 +50,7 @@ path_list_C118 = ["D:\BestFit\AuditTypes_Left\\100_C118_FD_LI.xml",
                   "D:\BestFit\AuditTypes_KH_Right\\100_C118_KH_RE.xml",
                   "D:\BestFit\AuditTypes_MH\\100_C118_MH.xml",
                   "D:\BestFit\AuditTypes_STS_vo_Left\\101_C118_STS_vo_li.xml",
-                  "D:\BestFit\AuditTypes_STS_vo_Right\\101_C118_STS_vo_re.xml",
-                  "D:\BestFit\AuditTypes\Type_C118\\21_C118_KV_LBR_Links.xml",
-                  "D:\BestFit\AuditTypes\Type_C118\\21_C118_KV_LBR_Rechts.xml",
+                  "D:\BestFit\AuditTypes_STS_vo_Right\\101_C118_STS_vo_re.xml", 
                   "D:\BestFit\AuditTypes_MH\\120_C118_AMG_MH.xml",
                   "D:\BestFit\AuditTypes_STS_vo_Left\\121_C118_AMG_STS_vo_li.xml",
                   "D:\BestFit\AuditTypes_STS_vo_Right\\121_C118_AMG_STS_vo_re.xml",
@@ -59,6 +58,9 @@ path_list_C118 = ["D:\BestFit\AuditTypes_Left\\100_C118_FD_LI.xml",
                   "D:\BestFit\AuditTypes_KH_Right\\120_C118_AMG_KH_RE.xml",
                   "D:\BestFit\AuditTypes_MH\\120_C118_AMG_MH.xml"
                   ]
+
+path_list_C118_SME = ["D:\BestFit\AuditTypes\Type_C118\\21_C118_KV_LBR_Links.xml",
+                      "D:\BestFit\AuditTypes\Type_C118\\21_C118_KV_LBR_Rechts.xml"]
 
 path_list_C118_SME_AMG = ["D:\BestFit\AuditTypes\Type_C118_AMG\\22_C118_KV_LBR_Links_AMG.xml",
                           "D:\BestFit\AuditTypes\Type_C118_AMG\\22_C118_KV_LBR_Rechts_AMG.xml"]
@@ -73,14 +75,15 @@ path_list_X118 = ["D:\BestFit\AuditTypes_Left\\140_X118_FD_LI.xml",
                   "D:\BestFit\AuditTypes_MH\\140_X118_MH.xml",
                   "D:\BestFit\AuditTypes_STS_vo_Left\\141_X118_STS_vo_li.xml",
                   "D:\BestFit\AuditTypes_STS_vo_Right\\141_X118_STS_vo_re.xml",
-                  "D:\BestFit\AuditTypes\Type_X118\\31_X118_KV_LBR_Links.xml",
-                  "D:\BestFit\AuditTypes\Type_X118\\31_X118_KV_LBR_Rechts.xml",
                   "D:\BestFit\AuditTypes_MH\\160_X118_AMG_MH.xml",
                   "D:\BestFit\AuditTypes_STS_vo_Left\\161_X118_AMG_STS_vo_li.xml",
                   "D:\BestFit\AuditTypes_STS_vo_Right\\161_X118_AMG_STS_vo_re.xml",
                   "D:\BestFit\AuditTypes_KH_Left\\160_X118_AMG_KH_LI.xml",
                   "D:\BestFit\AuditTypes_KH_Right\\160_X118_AMG_KH_RE.xml"
                   ]
+
+path_list_X118_SME = ["D:\BestFit\AuditTypes\Type_X118\\31_X118_KV_LBR_Links.xml",
+                      "D:\BestFit\AuditTypes\Type_X118\\31_X118_KV_LBR_Rechts.xml"]
 
 path_list_X118_SME_AMG = ["D:\BestFit\AuditTypes\Type_X118_AMG\\32_X118_KV_LBR_Links_AMG.xml",
                           "D:\BestFit\AuditTypes\Type_X118_AMG\\32_X118_KV_LBR_Rechts_AMG.xml"]
@@ -387,7 +390,7 @@ def start_program_C118():
             if "BF_C118" in str(final_path_to_txt):
                 for file_path in existing_path_C118:
                     setmeasurement_pointc118(file_path)
-                open_button_C118["text"] = "BF C118"
+                open_button_C118["text"] = "BestFit C118"
                 open_button_C118['font'] = ('Arial', 22, 'italic')
                 open_button_C118["state"] = "disabled"
                 backup_button['state'] = 'normal'
@@ -1110,6 +1113,9 @@ watermark2.pack(anchor='s')
 check_fileexists_W177()
 check_fileexists_C118()
 check_fileexists_X118()
+check_fileexists_W177_SME()
+check_fileexists_C118_SME()
+check_fileexists_X118_SME()
 check_fileexists_W177_SME_AMG()
 check_fileexists_C118_SME_AMG()
 check_fileexists_X118_SME_AMG()
