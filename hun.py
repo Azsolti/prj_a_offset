@@ -124,12 +124,14 @@ def restore_xml_backup():
                 open_button_W177['font'] = ('Arial', 22, 'bold')
                 open_button_W177["text"] = "BestFit W177"
                 open_button_W177["bd"] = 10
+                open_button_W177["color"] = "SystemButtonFace"
                 break
         for file in path_list_W177_SME:
             if os.path.exists(file):
                 open_button_W177_SME["state"] = "normal"
                 open_button_W177_SME['font'] = ('Arial', 22, 'bold')
                 open_button_W177_SME["text"] = "SME W177"
+                open_button_W177_SME["color"] = "SystemButtonFace"
                 open_button_W177_SME["bd"] = 10
                 break        
         for file in path_list_W177_SME_AMG:
@@ -137,6 +139,7 @@ def restore_xml_backup():
                 open_button_W177_SME_AMG["state"] = "normal"
                 open_button_W177_SME_AMG['font'] = ('Arial', 22, 'bold')
                 open_button_W177_SME_AMG["text"] = "SME W177 AMG"
+                open_button_W177_SME_AMG["color"] = "SystemButtonFace"
                 open_button_W177_SME_AMG["bd"] = 10
                 break
         for file in path_list_C118:
@@ -144,6 +147,7 @@ def restore_xml_backup():
                 open_button_C118["state"] = "normal"
                 open_button_C118["text"] = "BestFit C118"
                 open_button_C118['font'] = ('Arial', 22, 'bold')
+                open_button_C118["color"] = "SystemButtonFace"
                 open_button_C118["bd"] = 10
                 break
         for file in path_list_C118_SME:
@@ -151,6 +155,7 @@ def restore_xml_backup():
                 open_button_C118_SME["state"] = "normal"
                 open_button_C118_SME['font'] = ('Arial', 22, 'bold')
                 open_button_C118_SME["text"] = "SME C118"
+                open_button_C118_SME["color"] = "SystemButtonFace"
                 open_button_C118_SME["bd"] = 10
                 break        
         for file in path_list_C118_SME_AMG:
@@ -158,6 +163,7 @@ def restore_xml_backup():
                 open_button_C118_SME_AMG["state"] = "normal"
                 open_button_C118_SME_AMG['font'] = ('Arial', 22, 'bold')
                 open_button_C118_SME_AMG["text"] = "SME C118 AMG"
+                open_button_C118_SME_AMG["color"] = "SystemButtonFace"
                 open_button_C118_SME_AMG["bd"] = 10
                 break
         for file in path_list_X118:
@@ -165,6 +171,7 @@ def restore_xml_backup():
                 open_button_X118["state"] = "normal"
                 open_button_X118["text"] = "BestFit X118"
                 open_button_X118['font'] = ('Arial', 22, 'bold')
+                open_button_X118["color"] = "SystemButtonFace"
                 open_button_X118["bd"] = 10
                 break
         for file in path_list_X118_SME:
@@ -172,6 +179,7 @@ def restore_xml_backup():
                 open_button_X118_SME["state"] = "normal"
                 open_button_X118_SME['font'] = ('Arial', 22, 'bold')
                 open_button_X118_SME["text"] = "SME X118"
+                open_button_X118_SME["color"] = "SystemButtonFace"
                 open_button_X118_SME["bd"] = 10
                 break        
         for file in path_list_X118_SME_AMG:
@@ -179,6 +187,7 @@ def restore_xml_backup():
                 open_button_X118_SME_AMG["state"] = "normal"
                 open_button_X118_SME_AMG['font'] = ('Arial', 22, 'bold')
                 open_button_X118_SME_AMG["text"] = "SME X118 AMG"
+                open_button_X118_SME_AMG["color"] = "SystemButtonFace"
                 open_button_X118_SME_AMG["bd"] = 10
                 break
         for file in path_list_X243:
@@ -186,6 +195,7 @@ def restore_xml_backup():
                 open_button_X243["state"] = "normal"
                 open_button_X243["text"] = "SMA X243"
                 open_button_X243['font'] = ('Arial', 22, 'bold')
+                open_button_X243["color"] = "SystemButtonFace"
                 open_button_X243["bd"] = 10
                 break
 
@@ -236,6 +246,7 @@ def start_program_W177():
                 open_button_W177["text"] = "BestFit W177"
                 open_button_W177['font'] = ('Arial', 22, 'italic')
                 open_button_W177["state"] = "disabled"
+                open_button_W177["color"] = "light green"
                 backup_button['state'] = 'normal'
                 break
             else:
@@ -288,6 +299,7 @@ def start_program_W177_SME():
                 open_button_W177_SME["text"] = "SME W177"
                 open_button_W177_SME['font'] = ('Arial', 22, 'italic')
                 open_button_W177_SME["state"] = "disabled"
+                open_button_W177_SME["color"] = "light green"
                 backup_button['state'] = 'normal'
                 break
             else:
@@ -341,6 +353,7 @@ def start_program_W177_SME_AMG():
                 open_button_W177_SME_AMG["text"] = "SME W177 AMG"
                 open_button_W177_SME_AMG['font'] = ('Arial', 22, 'italic')
                 open_button_W177_SME_AMG["state"] = "disabled"
+                open_button_W177_SME_AMG["color"] = "light green"
                 backup_button['state'] = 'normal'
                 break
             else:
@@ -393,6 +406,7 @@ def start_program_C118():
                 open_button_C118["text"] = "BestFit C118"
                 open_button_C118['font'] = ('Arial', 22, 'italic')
                 open_button_C118["state"] = "disabled"
+                open_button_C118["color"] = "light green"
                 backup_button['state'] = 'normal'
                 break
             else:
@@ -445,6 +459,7 @@ def start_program_C118_SME():
                 open_button_C118_SME["text"] = "SME C118"
                 open_button_C118_SME['font'] = ('Arial', 22, 'italic')
                 open_button_C118_SME["state"] = "disabled"
+                open_button_C118_SME["color"] = "light green"
                 backup_button['state'] = 'normal'
                 break
             else:
@@ -499,6 +514,7 @@ def start_program_C118_SME_AMG():
                 open_button_C118_SME_AMG["text"] = "SME C118 AMG"
                 open_button_C118_SME_AMG['font'] = ('Arial', 22, 'italic')
                 open_button_C118_SME_AMG["state"] = "disabled"
+                open_button_C118_SME_AMG["color"] = "light green"
                 backup_button['state'] = 'normal'
                 break
             else:
@@ -551,6 +567,7 @@ def start_program_X118():
                 open_button_X118["text"] = "BestFit X118 "
                 open_button_X118['font'] = ('Arial', 22, 'italic')
                 open_button_X118["state"] = "disabled"
+                open_button_X118["color"] = "light green"
                 backup_button['state'] = 'normal'
                 break
             else:
@@ -603,6 +620,7 @@ def start_program_X118_SME():
                 open_button_X118_SME["text"] = "SME X118"
                 open_button_X118_SME['font'] = ('Arial', 22, 'italic')
                 open_button_X118_SME["state"] = "disabled"
+                open_button_X118_SME["color"] = "light green"
                 backup_button['state'] = 'normal'
                 break
             else:
@@ -655,6 +673,7 @@ def start_program_X118_SME_AMG():
                 open_button_X118_SME_AMG["text"] = "SME X118 AMG"
                 open_button_X118_SME_AMG['font'] = ('Arial', 22, 'italic')
                 open_button_X118_SME_AMG["state"] = "disabled"
+                open_button_X118_SME_AMG["color"] = "light green"
                 backup_button['state'] = 'normal'
                 break
             else:
@@ -706,6 +725,7 @@ def start_program_X243():
                 open_button_X243["text"] = "SMA X243"
                 open_button_X243['font'] = ('Arial', 22, 'italic')
                 open_button_X243["state"] = "disabled"
+                open_button_X243["color"] = "light green"
                 backup_button['state'] = 'normal'
                 break
             else:
@@ -819,7 +839,7 @@ def setmeasurement_pointc118(document):
 
 def on_enter_W177(e):
     if open_button_W177['state'] == 'normal':
-        open_button_W177['background'] = 'light green'
+        open_button_W177['background'] = '#8CC9DE'
 
 
 def on_leave_W177(e):
@@ -828,7 +848,7 @@ def on_leave_W177(e):
 
 def on_enter_W177_SME(e):
     if open_button_W177_SME['state'] == 'normal':
-        open_button_W177_SME['background'] = 'light green'
+        open_button_W177_SME['background'] = '#8CC9DE'
 
 
 def on_leave_W177_SME(e):
@@ -837,7 +857,7 @@ def on_leave_W177_SME(e):
     
 def on_enter_W177_SME_AMG(e):
     if open_button_W177_SME_AMG['state'] == 'normal':
-        open_button_W177_SME_AMG['background'] = 'light green'
+        open_button_W177_SME_AMG['background'] = '#8CC9DE'
 
 
 def on_leave_W177_SME_AMG(e):
@@ -846,7 +866,7 @@ def on_leave_W177_SME_AMG(e):
 
 def on_enter_C118(e):
     if open_button_C118['state'] == 'normal':
-        open_button_C118['background'] = 'light green'
+        open_button_C118['background'] = '#8CC9DE'
 
 
 def on_leave_C118(e):
@@ -855,7 +875,7 @@ def on_leave_C118(e):
 
 def on_enter_C118_SME(e):
     if open_button_C118_SME['state'] == 'normal':
-        open_button_C118_SME['background'] = 'light green'
+        open_button_C118_SME['background'] = '#8CC9DE'
 
 
 def on_leave_C118_SME_AMG(e):
@@ -864,7 +884,7 @@ def on_leave_C118_SME_AMG(e):
     
 def on_enter_C118_SME_AMG(e):
     if open_button_C118_SME_AMG['state'] == 'normal':
-        open_button_C118_SME_AMG['background'] = 'light green'
+        open_button_C118_SME_AMG['background'] = '#8CC9DE'
 
 
 def on_leave_C118_SME_AMG(e):
@@ -873,7 +893,7 @@ def on_leave_C118_SME_AMG(e):
 
 def on_enter_X118(e):
     if open_button_X118['state'] == 'normal':
-        open_button_X118['background'] = 'light green'
+        open_button_X118['background'] = '#8CC9DE'
 
 
 def on_leave_X118(e):
@@ -882,7 +902,7 @@ def on_leave_X118(e):
 
 def on_enter_X118_SME(e):
     if open_button_X118_SME['state'] == 'normal':
-        open_button_X118_SME['background'] = 'light green'
+        open_button_X118_SME['background'] = '#8CC9DE'
 
 
 def on_leave_X118_SME(e):
@@ -891,7 +911,7 @@ def on_leave_X118_SME(e):
     
 def on_enter_X118_SME_AMG(e):
     if open_button_X118_SME_AMG['state'] == 'normal':
-        open_button_X118_SME_AMG['background'] = 'light green'
+        open_button_X118_SME_AMG['background'] = '#8CC9DE'
 
 
 def on_leave_X118_SME_AMG(e):
@@ -900,7 +920,7 @@ def on_leave_X118_SME_AMG(e):
 
 def on_enter_X243(e):
     if open_button_X243['state'] == 'normal':
-        open_button_X243['background'] = 'light green'
+        open_button_X243['background'] = '#8CC9DE'
 
 
 def on_leave_X243(e):
@@ -917,7 +937,7 @@ def on_leave_exit(e):
 
 def on_enter_backup(e):
     if backup_button['state'] == 'normal':
-        backup_button['background'] = 'light green'
+        backup_button['background'] = '#8CC9DE'
 
 
 def on_leave_backup(e):
