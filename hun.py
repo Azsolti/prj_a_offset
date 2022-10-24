@@ -37,11 +37,11 @@ path_list_W177 = ["D:\BestFit\AuditTypes_Left\\010_W177_FD_LI.xml",
 
 path_list_W177_SME = ["D:\BestFit\AuditTypes\Type_W177\\11_W177_KV_LBR_Links.xml",
                       "D:\BestFit\AuditTypes\Type_W177\\11_W177_KV_LBR_Rechts.xml"
-                     ]
+                      ]
 
 path_list_W177_SME_AMG = ["D:\BestFit\AuditTypes\Type_W177_AMG\\12_W177_KV_LBR_Links_AMG.xml",
                           "D:\BestFit\AuditTypes\Type_W177_AMG\\12_W177_KV_LBR_Rechts_AMG.xml"
-                         ]
+                          ]
 
 path_list_C118 = ["D:\BestFit\AuditTypes_Left\\100_C118_FD_LI.xml",
                   "D:\BestFit\AuditTypes_Right\\100_C118_FD_RE.xml",
@@ -51,7 +51,7 @@ path_list_C118 = ["D:\BestFit\AuditTypes_Left\\100_C118_FD_LI.xml",
                   "D:\BestFit\AuditTypes_KH_Right\\100_C118_KH_RE.xml",
                   "D:\BestFit\AuditTypes_MH\\100_C118_MH.xml",
                   "D:\BestFit\AuditTypes_STS_vo_Left\\101_C118_STS_vo_li.xml",
-                  "D:\BestFit\AuditTypes_STS_vo_Right\\101_C118_STS_vo_re.xml", 
+                  "D:\BestFit\AuditTypes_STS_vo_Right\\101_C118_STS_vo_re.xml",
                   "D:\BestFit\AuditTypes_MH\\120_C118_AMG_MH.xml",
                   "D:\BestFit\AuditTypes_STS_vo_Left\\121_C118_AMG_STS_vo_li.xml",
                   "D:\BestFit\AuditTypes_STS_vo_Right\\121_C118_AMG_STS_vo_re.xml",
@@ -62,11 +62,11 @@ path_list_C118 = ["D:\BestFit\AuditTypes_Left\\100_C118_FD_LI.xml",
 
 path_list_C118_SME = ["D:\BestFit\AuditTypes\Type_C118\\21_C118_KV_LBR_Links.xml",
                       "D:\BestFit\AuditTypes\Type_C118\\21_C118_KV_LBR_Rechts.xml"
-                     ]
+                      ]
 
 path_list_C118_SME_AMG = ["D:\BestFit\AuditTypes\Type_C118_AMG\\22_C118_KV_LBR_Links_AMG.xml",
                           "D:\BestFit\AuditTypes\Type_C118_AMG\\22_C118_KV_LBR_Rechts_AMG.xml"
-                         ]
+                          ]
 
 path_list_X118 = ["D:\BestFit\AuditTypes_Left\\140_X118_FD_LI.xml",
                   "D:\BestFit\AuditTypes_Right\\140_X118_FD_RE.xml",
@@ -87,11 +87,11 @@ path_list_X118 = ["D:\BestFit\AuditTypes_Left\\140_X118_FD_LI.xml",
 
 path_list_X118_SME = ["D:\BestFit\AuditTypes\Type_X118\\31_X118_KV_LBR_Links.xml",
                       "D:\BestFit\AuditTypes\Type_X118\\31_X118_KV_LBR_Rechts.xml"
-                     ]
+                      ]
 
 path_list_X118_SME_AMG = ["D:\BestFit\AuditTypes\Type_X118_AMG\\32_X118_KV_LBR_Links_AMG.xml",
                           "D:\BestFit\AuditTypes\Type_X118_AMG\\32_X118_KV_LBR_Rechts_AMG.xml"
-                         ]
+                          ]
 
 path_list_X243 = ['D:\BestFit\AuditTypes\Type_X243\\10_X243.xml']
 
@@ -129,80 +129,69 @@ def restore_xml_backup():
                 open_button_W177['font'] = ('Arial', 22, 'bold')
                 open_button_W177["text"] = "BestFit W177"
                 open_button_W177["bd"] = 10
-                open_button_W177["color"] = "SystemButtonFace"
-                break
+
         for file in path_list_W177_SME:
             if os.path.exists(file):
                 open_button_W177_SME["state"] = "normal"
                 open_button_W177_SME['font'] = ('Arial', 22, 'bold')
                 open_button_W177_SME["text"] = "SME W177"
-                open_button_W177_SME["color"] = "SystemButtonFace"
                 open_button_W177_SME["bd"] = 10
-                break        
+
         for file in path_list_W177_SME_AMG:
             if os.path.exists(file):
                 open_button_W177_SME_AMG["state"] = "normal"
                 open_button_W177_SME_AMG['font'] = ('Arial', 22, 'bold')
                 open_button_W177_SME_AMG["text"] = "SME W177 AMG"
-                open_button_W177_SME_AMG["color"] = "SystemButtonFace"
                 open_button_W177_SME_AMG["bd"] = 10
-                break
+
         for file in path_list_C118:
             if os.path.exists(file):
                 open_button_C118["state"] = "normal"
                 open_button_C118["text"] = "BestFit C118"
                 open_button_C118['font'] = ('Arial', 22, 'bold')
-                open_button_C118["color"] = "SystemButtonFace"
                 open_button_C118["bd"] = 10
-                break
+
         for file in path_list_C118_SME:
             if os.path.exists(file):
                 open_button_C118_SME["state"] = "normal"
                 open_button_C118_SME['font'] = ('Arial', 22, 'bold')
                 open_button_C118_SME["text"] = "SME C118"
-                open_button_C118_SME["color"] = "SystemButtonFace"
                 open_button_C118_SME["bd"] = 10
-                break        
+
         for file in path_list_C118_SME_AMG:
             if os.path.exists(file):
                 open_button_C118_SME_AMG["state"] = "normal"
                 open_button_C118_SME_AMG['font'] = ('Arial', 22, 'bold')
                 open_button_C118_SME_AMG["text"] = "SME C118 AMG"
-                open_button_C118_SME_AMG["color"] = "SystemButtonFace"
                 open_button_C118_SME_AMG["bd"] = 10
-                break
+
         for file in path_list_X118:
             if os.path.exists(file):
                 open_button_X118["state"] = "normal"
                 open_button_X118["text"] = "BestFit X118"
                 open_button_X118['font'] = ('Arial', 22, 'bold')
-                open_button_X118["color"] = "SystemButtonFace"
                 open_button_X118["bd"] = 10
-                break
+                continue
         for file in path_list_X118_SME:
             if os.path.exists(file):
                 open_button_X118_SME["state"] = "normal"
                 open_button_X118_SME['font'] = ('Arial', 22, 'bold')
                 open_button_X118_SME["text"] = "SME X118"
-                open_button_X118_SME["color"] = "SystemButtonFace"
                 open_button_X118_SME["bd"] = 10
-                break        
+
         for file in path_list_X118_SME_AMG:
             if os.path.exists(file):
                 open_button_X118_SME_AMG["state"] = "normal"
                 open_button_X118_SME_AMG['font'] = ('Arial', 22, 'bold')
                 open_button_X118_SME_AMG["text"] = "SME X118 AMG"
-                open_button_X118_SME_AMG["color"] = "SystemButtonFace"
                 open_button_X118_SME_AMG["bd"] = 10
-                break
+
         for file in path_list_X243:
             if os.path.exists(file):
                 open_button_X243["state"] = "normal"
                 open_button_X243["text"] = "SMA X243"
                 open_button_X243['font'] = ('Arial', 22, 'bold')
-                open_button_X243["color"] = "SystemButtonFace"
                 open_button_X243["bd"] = 10
-                break
 
         backup_button['state'] = 'disabled'
         messagebox.showinfo("Sikeres helyreállítás",
@@ -251,7 +240,6 @@ def start_program_W177():
                 open_button_W177["text"] = "BestFit W177"
                 open_button_W177['font'] = ('Arial', 22, 'italic')
                 open_button_W177["state"] = "disabled"
-                open_button_W177["color"] = "light green"
                 backup_button['state'] = 'normal'
                 break
             else:
@@ -304,7 +292,6 @@ def start_program_W177_SME():
                 open_button_W177_SME["text"] = "SME W177"
                 open_button_W177_SME['font'] = ('Arial', 22, 'italic')
                 open_button_W177_SME["state"] = "disabled"
-                open_button_W177_SME["color"] = "light green"
                 backup_button['state'] = 'normal'
                 break
             else:
@@ -313,9 +300,8 @@ def start_program_W177_SME():
 
         except:
             break
-            
-            
-            
+
+
 def start_program_W177_SME_AMG():
     while True:
         try:
@@ -358,7 +344,6 @@ def start_program_W177_SME_AMG():
                 open_button_W177_SME_AMG["text"] = "SME W177 AMG"
                 open_button_W177_SME_AMG['font'] = ('Arial', 22, 'italic')
                 open_button_W177_SME_AMG["state"] = "disabled"
-                open_button_W177_SME_AMG["color"] = "light green"
                 backup_button['state'] = 'normal'
                 break
             else:
@@ -411,7 +396,6 @@ def start_program_C118():
                 open_button_C118["text"] = "BestFit C118"
                 open_button_C118['font'] = ('Arial', 22, 'italic')
                 open_button_C118["state"] = "disabled"
-                open_button_C118["color"] = "light green"
                 backup_button['state'] = 'normal'
                 break
             else:
@@ -464,7 +448,6 @@ def start_program_C118_SME():
                 open_button_C118_SME["text"] = "SME C118"
                 open_button_C118_SME['font'] = ('Arial', 22, 'italic')
                 open_button_C118_SME["state"] = "disabled"
-                open_button_C118_SME["color"] = "light green"
                 backup_button['state'] = 'normal'
                 break
             else:
@@ -473,10 +456,8 @@ def start_program_C118_SME():
 
         except:
             break
-            
-            
-            
-            
+
+
 def start_program_C118_SME_AMG():
     while True:
         try:
@@ -513,13 +494,12 @@ def start_program_C118_SME_AMG():
                 value_puff = item[getindex + 1:]
                 csv_origdata[name_puff] = value_puff
 
-            if "C118_AMG" in str(final_path_to_txt):
+            if "SME_C118_AMG" in str(final_path_to_txt):
                 for file_path in existing_path_C118_SME_AMG:
                     setmeasurement_pointc118(file_path)
                 open_button_C118_SME_AMG["text"] = "SME C118 AMG"
                 open_button_C118_SME_AMG['font'] = ('Arial', 22, 'italic')
                 open_button_C118_SME_AMG["state"] = "disabled"
-                open_button_C118_SME_AMG["color"] = "light green"
                 backup_button['state'] = 'normal'
                 break
             else:
@@ -566,13 +546,12 @@ def start_program_X118():
                 value_puff = item[getindex + 1:]
                 csv_origdata[name_puff] = value_puff
 
-            if "X118" in str(final_path_to_txt):
+            if "BF_X118" in str(final_path_to_txt):
                 for file_path in existing_path_X118:
                     setmeasurement_pointc118(file_path)
                 open_button_X118["text"] = "BestFit X118 "
                 open_button_X118['font'] = ('Arial', 22, 'italic')
                 open_button_X118["state"] = "disabled"
-                open_button_X118["color"] = "light green"
                 backup_button['state'] = 'normal'
                 break
             else:
@@ -625,17 +604,15 @@ def start_program_X118_SME():
                 open_button_X118_SME["text"] = "SME X118"
                 open_button_X118_SME['font'] = ('Arial', 22, 'italic')
                 open_button_X118_SME["state"] = "disabled"
-                open_button_X118_SME["color"] = "light green"
                 backup_button['state'] = 'normal'
                 break
             else:
                 messagebox.showerror('Helytelen fájl', 'Kérlek válaszd ki a megfelelő .CSV fájlt!')
                 break
         except:
-            break            
-            
-            
-            
+            break
+
+
 def start_program_X118_SME_AMG():
     while True:
         try:
@@ -678,7 +655,6 @@ def start_program_X118_SME_AMG():
                 open_button_X118_SME_AMG["text"] = "SME X118 AMG"
                 open_button_X118_SME_AMG['font'] = ('Arial', 22, 'italic')
                 open_button_X118_SME_AMG["state"] = "disabled"
-                open_button_X118_SME_AMG["color"] = "light green"
                 backup_button['state'] = 'normal'
                 break
             else:
@@ -730,7 +706,6 @@ def start_program_X243():
                 open_button_X243["text"] = "SMA X243"
                 open_button_X243['font'] = ('Arial', 22, 'italic')
                 open_button_X243["state"] = "disabled"
-                open_button_X243["color"] = "light green"
                 backup_button['state'] = 'normal'
                 break
             else:
@@ -834,7 +809,7 @@ def setmeasurement_pointc118(document):
         read = log.read()
         log.truncate(0)
 
-    messagebox.showinfo('Log fájl felülírva', f' {read} ')
+    # messagebox.showinfo('Log fájl felülírva', f' {read} ')
     pointnames_got.clear()
     values_got.clear()
     xml_origdata.clear()
@@ -857,9 +832,9 @@ def on_enter_W177_SME(e):
 
 
 def on_leave_W177_SME(e):
-    open_button_W177_SME['background'] = 'SystemButtonFace'    
-    
-    
+    open_button_W177_SME['background'] = 'SystemButtonFace'
+
+
 def on_enter_W177_SME_AMG(e):
     if open_button_W177_SME_AMG['state'] == 'normal':
         open_button_W177_SME_AMG['background'] = '#8CC9DE'
@@ -883,10 +858,10 @@ def on_enter_C118_SME(e):
         open_button_C118_SME['background'] = '#8CC9DE'
 
 
-def on_leave_C118_SME_AMG(e):
-    open_button_C118_SME['background'] = 'SystemButtonFace'    
+def on_leave_C118_SME(e):
+    open_button_C118_SME['background'] = 'SystemButtonFace'
 
-    
+
 def on_enter_C118_SME_AMG(e):
     if open_button_C118_SME_AMG['state'] == 'normal':
         open_button_C118_SME_AMG['background'] = '#8CC9DE'
@@ -911,9 +886,9 @@ def on_enter_X118_SME(e):
 
 
 def on_leave_X118_SME(e):
-    open_button_X118_SME['background'] = 'SystemButtonFace'    
-      
-    
+    open_button_X118_SME['background'] = 'SystemButtonFace'
+
+
 def on_enter_X118_SME_AMG(e):
     if open_button_X118_SME_AMG['state'] == 'normal':
         open_button_X118_SME_AMG['background'] = '#8CC9DE'
@@ -956,15 +931,15 @@ def check_fileexists_W177():
             backup_pathlist.append(file)
             open_button_W177['state'] = ['normal']
 
-            
+
 def check_fileexists_W177_SME():
     for file in path_list_W177_SME:
         if os.path.exists(file):
             existing_path_W177_SME.append(file)
             backup_pathlist.append(file)
             open_button_W177_SME['state'] = ['normal']
-            
-            
+
+
 def check_fileexists_W177_SME_AMG():
     for file in path_list_W177_SME_AMG:
         if os.path.exists(file):
@@ -986,9 +961,9 @@ def check_fileexists_C118_SME():
         if os.path.exists(file):
             existing_path_C118_SME.append(file)
             backup_pathlist.append(file)
-            open_button_C118_SME['state'] = ['normal'] 
-            
-            
+            open_button_C118_SME['state'] = ['normal']
+
+
 def check_fileexists_C118_SME_AMG():
     for file in path_list_C118_SME_AMG:
         if os.path.exists(file):
@@ -1003,15 +978,15 @@ def check_fileexists_X118():
             existing_path_X118.append(file)
             backup_pathlist.append(file)
             open_button_X118['state'] = ['normal']
-            
-            
+
+
 def check_fileexists_X118_SME():
     for file in path_list_X118_SME:
         if os.path.exists(file):
             existing_path_X118_SME.append(file)
             backup_pathlist.append(file)
-            open_button_X118_SME['state'] = ['normal']            
-            
+            open_button_X118_SME['state'] = ['normal']
+
 
 def check_fileexists_X118_SME_AMG():
     for file in path_list_X118_SME_AMG:
@@ -1073,7 +1048,7 @@ open_button_X243.bind("<Leave>", on_leave_X243)
 frame122 = Frame(root, bg='black')
 frame122.pack()
 open_button_W177_SME = Button(frame122, text='SME W177', font=('Arial', 22, 'bold'), bd='10',
-                                  command=start_program_W177_SME, width=15, state='disabled')
+                              command=start_program_W177_SME, width=15, state='disabled')
 open_button_W177_SME.pack(padx=2, pady=2)
 open_button_W177_SME.bind("<Enter>", on_enter_W177_SME)
 open_button_W177_SME.bind("<Leave>", on_leave_W177_SME)
@@ -1081,7 +1056,7 @@ open_button_W177_SME.bind("<Leave>", on_leave_W177_SME)
 frame222 = Frame(root, bg='black')
 frame222.pack()
 open_button_C118_SME = Button(frame222, text='SME C118', font=('Arial', 22, 'bold'), bd='10',
-                                  command=start_program_C118_SME, width=15, state='disabled')
+                              command=start_program_C118_SME, width=15, state='disabled')
 open_button_C118_SME.pack(padx=2, pady=2)
 open_button_C118_SME.bind("<Enter>", on_enter_C118_SME)
 open_button_C118_SME.bind("<Leave>", on_leave_C118_SME)
@@ -1089,7 +1064,7 @@ open_button_C118_SME.bind("<Leave>", on_leave_C118_SME)
 frame333 = Frame(root, bg='black')
 frame333.pack()
 open_button_X118_SME = Button(frame333, text='SME X118', font=('Arial', 22, 'bold'), bd='10',
-                                  command=start_program_X118_SME, width=15, state='disabled')
+                              command=start_program_X118_SME, width=15, state='disabled')
 open_button_X118_SME.pack(padx=2, pady=2)
 open_button_X118_SME.bind("<Enter>", on_enter_X118_SME)
 open_button_X118_SME.bind("<Leave>", on_leave_X118_SME)
@@ -1147,3 +1122,5 @@ check_fileexists_X118_SME_AMG()
 check_fileexists_X243()
 create_xml_backup()
 root.mainloop()
+
+
