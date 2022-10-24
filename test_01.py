@@ -238,14 +238,16 @@ def start_program_W177():
                 value_puff = item[getindex + 1:]
                 csv_origdata[name_puff] = value_puff
 
-            if str(final_path_to_txt).startswith('BF_W177', 0, 7):
-                for file_path in existing_path_W177:
-                    setmeasurement_pointc118(file_path)
-                open_button_W177["text"] = "BestFit W177"
-                open_button_W177['font'] = ('Arial', 22, 'italic')
-                open_button_W177["state"] = "disabled"
-                backup_button['state'] = 'normal'
-                break
+            for item in filepath.split('/'):
+                if item.startswith('BF_W177', 0, 8):
+                    for file_path in existing_path_W177:
+                        setmeasurement_pointc118(file_path)
+                    open_button_W177["text"] = "BestFit W177"
+                    open_button_W177['font'] = ('Arial', 22, 'italic')
+                    open_button_W177["state"] = "disabled"
+                    backup_button['state'] = 'normal'
+                    break
+
             else:
                 messagebox.showerror('Helytelen fájl', 'Kérlek válaszd ki a megfelelő .CSV fájlt!')
                 break
