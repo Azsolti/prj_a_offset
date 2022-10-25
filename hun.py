@@ -208,34 +208,36 @@ def start_program_W177():
             filepath = filedialog.askopenfilename(title='Válaszd ki az CSV fájlt', filetypes=(("csv files", "*.csv"),
                                                                                               ("all files", "*.*")))
 
-            txt_path = filepath[:len(filepath) - 4]
-            final_path_to_txt = txt_path + ".txt"
-            csv_copy = shutil.copyfile(filepath, final_path_to_txt)
-
-            with open(csv_copy, 'r') as output_file:
-                for n in output_file:
-                    csv_rawdata.append(n)
-
-            for n in csv_rawdata:
-                replaced = n.replace(';', '.', 1)
-                replaced_char_list.append(replaced)
-
-            for n in replaced_char_list:
-                replaced_2 = n.replace(';', '=')
-                replaced_char_list_2.append(replaced_2)
-
-            for n in replaced_char_list_2:
-                replaced_3 = n.replace(',', '.')
-                final_point_value_list.append(replaced_3[:-1])
-
-            for item in final_point_value_list:
-                getindex = item.index("=")
-                name_puff = item[:getindex]
-                value_puff = item[getindex + 1:]
-                csv_origdata[name_puff] = value_puff
-            
+              
             file_name = os.path.split(filepath)[1]
             if file_name.startswith('BF_W177', 0, 7):
+                txt_path = filepath[:len(filepath) - 4]
+                final_path_to_txt = txt_path + ".txt"
+                csv_copy = shutil.copyfile(filepath, final_path_to_txt)
+
+                with open(csv_copy, 'r') as output_file:
+                    for n in output_file:
+                        csv_rawdata.append(n)
+
+                for n in csv_rawdata:
+                    replaced = n.replace(';', '.', 1)
+                    replaced_char_list.append(replaced)
+
+                for n in replaced_char_list:
+                    replaced_2 = n.replace(';', '=')
+                    replaced_char_list_2.append(replaced_2)
+
+                for n in replaced_char_list_2:
+                    replaced_3 = n.replace(',', '.')
+                    final_point_value_list.append(replaced_3[:-1])
+
+                for item in final_point_value_list:
+                    getindex = item.index("=")
+                    name_puff = item[:getindex]
+                    value_puff = item[getindex + 1:]
+                    csv_origdata[name_puff] = value_puff
+
+
                 for file_path in existing_path_W177:
                     setmeasurement_pointc118(file_path)
                 open_button_W177["text"] = "BestFit W177"
@@ -260,35 +262,37 @@ def start_program_W177_SME():
             final_point_value_list = []
             filepath = filedialog.askopenfilename(title='Válasz ki a CSV fájlt', filetypes=(("csv files", "*.csv"),
                                                                                             ("all files", "*.*")))
-
-            txt_path = filepath[:len(filepath) - 4]
-            final_path_to_txt = txt_path + ".txt"
-            csv_copy = shutil.copyfile(filepath, final_path_to_txt)
-
-            with open(csv_copy, 'r') as output_file:
-                for n in output_file:
-                    csv_rawdata.append(n)
-
-            for n in csv_rawdata:
-                replaced = n.replace(';', '.', 1)
-                replaced_char_list.append(replaced)
-
-            for n in replaced_char_list:
-                replaced_2 = n.replace(';', '=')
-                replaced_char_list_2.append(replaced_2)
-
-            for n in replaced_char_list_2:
-                replaced_3 = n.replace(',', '.')
-                final_point_value_list.append(replaced_3[:-1])
-
-            for item in final_point_value_list:
-                getindex = item.index("=")
-                name_puff = item[:getindex]
-                value_puff = item[getindex + 1:]
-                csv_origdata[name_puff] = value_puff
             
             file_name = os.path.split(filepath)[1]
             if file_name.startswith('SME_W177_SERIE', 0, 14):
+              
+                txt_path = filepath[:len(filepath) - 4]
+                final_path_to_txt = txt_path + ".txt"
+                csv_copy = shutil.copyfile(filepath, final_path_to_txt)
+
+                with open(csv_copy, 'r') as output_file:
+                    for n in output_file:
+                        csv_rawdata.append(n)
+
+                for n in csv_rawdata:
+                    replaced = n.replace(';', '.', 1)
+                    replaced_char_list.append(replaced)
+
+                for n in replaced_char_list:
+                    replaced_2 = n.replace(';', '=')
+                    replaced_char_list_2.append(replaced_2)
+
+                for n in replaced_char_list_2:
+                    replaced_3 = n.replace(',', '.')
+                    final_point_value_list.append(replaced_3[:-1])
+
+                for item in final_point_value_list:
+                    getindex = item.index("=")
+                    name_puff = item[:getindex]
+                    value_puff = item[getindex + 1:]
+                    csv_origdata[name_puff] = value_puff
+            
+            
                for file_path in existing_path_W177_SME:
                    setmeasurement_pointc118(file_path)
                open_button_W177_SME["text"] = "SME W177"
@@ -313,35 +317,37 @@ def start_program_W177_SME_AMG():
             final_point_value_list = []
             filepath = filedialog.askopenfilename(title='Válasz ki a CSV fájlt', filetypes=(("csv files", "*.csv"),
                                                                                             ("all files", "*.*")))
-
-            txt_path = filepath[:len(filepath) - 4]
-            final_path_to_txt = txt_path + ".txt"
-            csv_copy = shutil.copyfile(filepath, final_path_to_txt)
-
-            with open(csv_copy, 'r') as output_file:
-                for n in output_file:
-                    csv_rawdata.append(n)
-
-            for n in csv_rawdata:
-                replaced = n.replace(';', '.', 1)
-                replaced_char_list.append(replaced)
-
-            for n in replaced_char_list:
-                replaced_2 = n.replace(';', '=')
-                replaced_char_list_2.append(replaced_2)
-
-            for n in replaced_char_list_2:
-                replaced_3 = n.replace(',', '.')
-                final_point_value_list.append(replaced_3[:-1])
-
-            for item in final_point_value_list:
-                getindex = item.index("=")
-                name_puff = item[:getindex]
-                value_puff = item[getindex + 1:]
-                csv_origdata[name_puff] = value_puff
-
+            
             file_name = os.path.split(filepath)[1]
             if file_name.startswith('SME_W177_AMG', 0, 12):
+              
+                txt_path = filepath[:len(filepath) - 4]
+                final_path_to_txt = txt_path + ".txt"
+                csv_copy = shutil.copyfile(filepath, final_path_to_txt)
+
+                with open(csv_copy, 'r') as output_file:
+                    for n in output_file:
+                        csv_rawdata.append(n)
+
+                for n in csv_rawdata:
+                    replaced = n.replace(';', '.', 1)
+                    replaced_char_list.append(replaced)
+
+                for n in replaced_char_list:
+                    replaced_2 = n.replace(';', '=')
+                    replaced_char_list_2.append(replaced_2)
+
+                for n in replaced_char_list_2:
+                    replaced_3 = n.replace(',', '.')
+                    final_point_value_list.append(replaced_3[:-1])
+
+                for item in final_point_value_list:
+                    getindex = item.index("=")
+                    name_puff = item[:getindex]
+                    value_puff = item[getindex + 1:]
+                    csv_origdata[name_puff] = value_puff
+
+            
                 for file_path in existing_path_W177_SME_AMG:
                     setmeasurement_pointc118(file_path)
                open_button_W177_SME_AMG["text"] = "SME W177 AMG"
@@ -366,35 +372,37 @@ def start_program_C118():
             final_point_value_list = []
             filepath = filedialog.askopenfilename(title='Válaszd ki a CSV fájlt', filetypes=[("csv files", "*.csv"),
                                                                                              ("all files", "*.*")])
-
-            txt_path = filepath[:len(filepath) - 4]
-            final_path_to_txt = txt_path + ".txt"
-            csv_copy = shutil.copyfile(filepath, final_path_to_txt)
-
-            with open(csv_copy, 'r') as output_file:
-                for n in output_file:
-                    csv_rawdata.append(n)
-
-            for n in csv_rawdata:
-                replaced = n.replace(';', '.', 1)
-                replaced_char_list.append(replaced)
-
-            for n in replaced_char_list:
-                replaced_2 = n.replace(';', '=')
-                replaced_char_list_2.append(replaced_2)
-
-            for n in replaced_char_list_2:
-                replaced_3 = n.replace(',', '.')
-                final_point_value_list.append(replaced_3[:-1])
-
-            for item in final_point_value_list:
-                getindex = item.index("=")
-                name_puff = item[:getindex]
-                value_puff = item[getindex + 1:]
-                csv_origdata[name_puff] = value_puff
-
+            
             file_name = os.path.split(filepath)[1]
             if file_name.startswith('BF_C118', 0, 7):
+              
+                txt_path = filepath[:len(filepath) - 4]
+                final_path_to_txt = txt_path + ".txt"
+                csv_copy = shutil.copyfile(filepath, final_path_to_txt)
+
+                with open(csv_copy, 'r') as output_file:
+                    for n in output_file:
+                        csv_rawdata.append(n)
+
+                for n in csv_rawdata:
+                    replaced = n.replace(';', '.', 1)
+                    replaced_char_list.append(replaced)
+
+                for n in replaced_char_list:
+                    replaced_2 = n.replace(';', '=')
+                    replaced_char_list_2.append(replaced_2)
+
+                for n in replaced_char_list_2:
+                    replaced_3 = n.replace(',', '.')
+                    final_point_value_list.append(replaced_3[:-1])
+
+                for item in final_point_value_list:
+                    getindex = item.index("=")
+                    name_puff = item[:getindex]
+                    value_puff = item[getindex + 1:]
+                    csv_origdata[name_puff] = value_puff
+
+            
                 for file_path in existing_path_C118:
                     setmeasurement_pointc118(file_path)
                 open_button_C118["text"] = "BestFit C118"
@@ -420,34 +428,36 @@ def start_program_C118_SME():
             filepath = filedialog.askopenfilename(title='Válasz ki a CSV fájlt', filetypes=(("csv files", "*.csv"),
                                                                                             ("all files", "*.*")))
 
-            txt_path = filepath[:len(filepath) - 4]
-            final_path_to_txt = txt_path + ".txt"
-            csv_copy = shutil.copyfile(filepath, final_path_to_txt)
-
-            with open(csv_copy, 'r') as output_file:
-                for n in output_file:
-                    csv_rawdata.append(n)
-
-            for n in csv_rawdata:
-                replaced = n.replace(';', '.', 1)
-                replaced_char_list.append(replaced)
-
-            for n in replaced_char_list:
-                replaced_2 = n.replace(';', '=')
-                replaced_char_list_2.append(replaced_2)
-
-            for n in replaced_char_list_2:
-                replaced_3 = n.replace(',', '.')
-                final_point_value_list.append(replaced_3[:-1])
-
-            for item in final_point_value_list:
-                getindex = item.index("=")
-                name_puff = item[:getindex]
-                value_puff = item[getindex + 1:]
-                csv_origdata[name_puff] = value_puff
-
             file_name = os.path.split(filepath)[1]
             if file_name.startswith('SME_C118_SERIE', 0, 14):
+              
+                txt_path = filepath[:len(filepath) - 4]
+                final_path_to_txt = txt_path + ".txt"
+                csv_copy = shutil.copyfile(filepath, final_path_to_txt)
+
+                with open(csv_copy, 'r') as output_file:
+                    for n in output_file:
+                        csv_rawdata.append(n)
+
+                for n in csv_rawdata:
+                    replaced = n.replace(';', '.', 1)
+                    replaced_char_list.append(replaced)
+
+                for n in replaced_char_list:
+                    replaced_2 = n.replace(';', '=')
+                    replaced_char_list_2.append(replaced_2)
+
+                for n in replaced_char_list_2:
+                    replaced_3 = n.replace(',', '.')
+                    final_point_value_list.append(replaced_3[:-1])
+
+                for item in final_point_value_list:
+                    getindex = item.index("=")
+                    name_puff = item[:getindex]
+                    value_puff = item[getindex + 1:]
+                    csv_origdata[name_puff] = value_puff
+
+            
                 for file_path in existing_path_C118_SME:
                     setmeasurement_pointc118(file_path)
                 open_button_C118_SME["text"] = "SME C118"
@@ -472,35 +482,37 @@ def start_program_C118_SME_AMG():
             final_point_value_list = []
             filepath = filedialog.askopenfilename(title='Válasz ki a CSV fájlt', filetypes=(("csv files", "*.csv"),
                                                                                             ("all files", "*.*")))
-
-            txt_path = filepath[:len(filepath) - 4]
-            final_path_to_txt = txt_path + ".txt"
-            csv_copy = shutil.copyfile(filepath, final_path_to_txt)
-
-            with open(csv_copy, 'r') as output_file:
-                for n in output_file:
-                    csv_rawdata.append(n)
-
-            for n in csv_rawdata:
-                replaced = n.replace(';', '.', 1)
-                replaced_char_list.append(replaced)
-
-            for n in replaced_char_list:
-                replaced_2 = n.replace(';', '=')
-                replaced_char_list_2.append(replaced_2)
-
-            for n in replaced_char_list_2:
-                replaced_3 = n.replace(',', '.')
-                final_point_value_list.append(replaced_3[:-1])
-
-            for item in final_point_value_list:
-                getindex = item.index("=")
-                name_puff = item[:getindex]
-                value_puff = item[getindex + 1:]
-                csv_origdata[name_puff] = value_puff
-
+            
             file_name = os.path.split(filepath)[1]
             if file_name.startswith('SME_C118_AMG', 0, 12):
+
+                txt_path = filepath[:len(filepath) - 4]
+                final_path_to_txt = txt_path + ".txt"
+                csv_copy = shutil.copyfile(filepath, final_path_to_txt)
+
+                with open(csv_copy, 'r') as output_file:
+                    for n in output_file:
+                        csv_rawdata.append(n)
+
+                for n in csv_rawdata:
+                    replaced = n.replace(';', '.', 1)
+                    replaced_char_list.append(replaced)
+
+                for n in replaced_char_list:
+                    replaced_2 = n.replace(';', '=')
+                    replaced_char_list_2.append(replaced_2)
+
+                for n in replaced_char_list_2:
+                    replaced_3 = n.replace(',', '.')
+                    final_point_value_list.append(replaced_3[:-1])
+
+                for item in final_point_value_list:
+                    getindex = item.index("=")
+                    name_puff = item[:getindex]
+                    value_puff = item[getindex + 1:]
+                    csv_origdata[name_puff] = value_puff
+
+            
                 for file_path in existing_path_C118_SME_AMG:
                     setmeasurement_pointc118(file_path)
                 open_button_C118_SME_AMG["text"] = "SME C118 AMG"
@@ -525,35 +537,37 @@ def start_program_X118():
             final_point_value_list = []
             filepath = filedialog.askopenfilename(title='Válasz ki a CSV fájlt', filetypes=(("csv files", "*.csv"),
                                                                                             ("all files", "*.*")))
-
-            txt_path = filepath[:len(filepath) - 4]
-            final_path_to_txt = txt_path + ".txt"
-            csv_copy = shutil.copyfile(filepath, final_path_to_txt)
-
-            with open(csv_copy, 'r') as output_file:
-                for n in output_file:
-                    csv_rawdata.append(n)
-
-            for n in csv_rawdata:
-                replaced = n.replace(';', '.', 1)
-                replaced_char_list.append(replaced)
-
-            for n in replaced_char_list:
-                replaced_2 = n.replace(';', '=')
-                replaced_char_list_2.append(replaced_2)
-
-            for n in replaced_char_list_2:
-                replaced_3 = n.replace(',', '.')
-                final_point_value_list.append(replaced_3[:-1])
-
-            for item in final_point_value_list:
-                getindex = item.index("=")
-                name_puff = item[:getindex]
-                value_puff = item[getindex + 1:]
-                csv_origdata[name_puff] = value_puff
-
+            
             file_name = os.path.split(filepath)[1]
             if file_name.startswith('BF_X118', 0, 7):
+
+                txt_path = filepath[:len(filepath) - 4]
+                final_path_to_txt = txt_path + ".txt"
+                csv_copy = shutil.copyfile(filepath, final_path_to_txt)
+
+                with open(csv_copy, 'r') as output_file:
+                    for n in output_file:
+                        csv_rawdata.append(n)
+
+                for n in csv_rawdata:
+                    replaced = n.replace(';', '.', 1)
+                    replaced_char_list.append(replaced)
+
+                for n in replaced_char_list:
+                    replaced_2 = n.replace(';', '=')
+                    replaced_char_list_2.append(replaced_2)
+
+                for n in replaced_char_list_2:
+                    replaced_3 = n.replace(',', '.')
+                    final_point_value_list.append(replaced_3[:-1])
+
+                for item in final_point_value_list:
+                    getindex = item.index("=")
+                    name_puff = item[:getindex]
+                    value_puff = item[getindex + 1:]
+                    csv_origdata[name_puff] = value_puff
+
+            
                 for file_path in existing_path_X118:
                     setmeasurement_pointc118(file_path)
                 open_button_X118["text"] = "BestFit X118 "
@@ -578,35 +592,37 @@ def start_program_X118_SME():
             final_point_value_list = []
             filepath = filedialog.askopenfilename(title='Válasz ki a CSV fájlt', filetypes=(("csv files", "*.csv"),
                                                                                             ("all files", "*.*")))
-
-            txt_path = filepath[:len(filepath) - 4]
-            final_path_to_txt = txt_path + ".txt"
-            csv_copy = shutil.copyfile(filepath, final_path_to_txt)
-
-            with open(csv_copy, 'r') as output_file:
-                for n in output_file:
-                    csv_rawdata.append(n)
-
-            for n in csv_rawdata:
-                replaced = n.replace(';', '.', 1)
-                replaced_char_list.append(replaced)
-
-            for n in replaced_char_list:
-                replaced_2 = n.replace(';', '=')
-                replaced_char_list_2.append(replaced_2)
-
-            for n in replaced_char_list_2:
-                replaced_3 = n.replace(',', '.')
-                final_point_value_list.append(replaced_3[:-1])
-
-            for item in final_point_value_list:
-                getindex = item.index("=")
-                name_puff = item[:getindex]
-                value_puff = item[getindex + 1:]
-                csv_origdata[name_puff] = value_puff
-
+            
             file_name = os.path.split(filepath)[1]
             if file_name.startswith('SME_X118_SERIE', 0, 14):
+
+                txt_path = filepath[:len(filepath) - 4]
+                final_path_to_txt = txt_path + ".txt"
+                csv_copy = shutil.copyfile(filepath, final_path_to_txt)
+
+                with open(csv_copy, 'r') as output_file:
+                    for n in output_file:
+                        csv_rawdata.append(n)
+
+                for n in csv_rawdata:
+                    replaced = n.replace(';', '.', 1)
+                    replaced_char_list.append(replaced)
+
+                for n in replaced_char_list:
+                    replaced_2 = n.replace(';', '=')
+                    replaced_char_list_2.append(replaced_2)
+
+                for n in replaced_char_list_2:
+                    replaced_3 = n.replace(',', '.')
+                    final_point_value_list.append(replaced_3[:-1])
+
+                for item in final_point_value_list:
+                    getindex = item.index("=")
+                    name_puff = item[:getindex]
+                    value_puff = item[getindex + 1:]
+                    csv_origdata[name_puff] = value_puff
+
+            
                 for file_path in existing_path_X118_SME:
                     setmeasurement_pointc118(file_path)
                 open_button_X118_SME["text"] = "SME X118"
@@ -630,35 +646,37 @@ def start_program_X118_SME_AMG():
             final_point_value_list = []
             filepath = filedialog.askopenfilename(title='Válasz ki a CSV fájlt', filetypes=(("csv files", "*.csv"),
                                                                                             ("all files", "*.*")))
-
-            txt_path = filepath[:len(filepath) - 4]
-            final_path_to_txt = txt_path + ".txt"
-            csv_copy = shutil.copyfile(filepath, final_path_to_txt)
-
-            with open(csv_copy, 'r') as output_file:
-                for n in output_file:
-                    csv_rawdata.append(n)
-
-            for n in csv_rawdata:
-                replaced = n.replace(';', '.', 1)
-                replaced_char_list.append(replaced)
-
-            for n in replaced_char_list:
-                replaced_2 = n.replace(';', '=')
-                replaced_char_list_2.append(replaced_2)
-
-            for n in replaced_char_list_2:
-                replaced_3 = n.replace(',', '.')
-                final_point_value_list.append(replaced_3[:-1])
-
-            for item in final_point_value_list:
-                getindex = item.index("=")
-                name_puff = item[:getindex]
-                value_puff = item[getindex + 1:]
-                csv_origdata[name_puff] = value_puff
-
+            
             file_name = os.path.split(filepath)[1]
             if file_name.startswith('SME_X118_AMG', 0, 12):
+
+                txt_path = filepath[:len(filepath) - 4]
+                final_path_to_txt = txt_path + ".txt"
+                csv_copy = shutil.copyfile(filepath, final_path_to_txt)
+
+                with open(csv_copy, 'r') as output_file:
+                    for n in output_file:
+                        csv_rawdata.append(n)
+
+                for n in csv_rawdata:
+                    replaced = n.replace(';', '.', 1)
+                    replaced_char_list.append(replaced)
+
+                for n in replaced_char_list:
+                    replaced_2 = n.replace(';', '=')
+                    replaced_char_list_2.append(replaced_2)
+
+                for n in replaced_char_list_2:
+                    replaced_3 = n.replace(',', '.')
+                    final_point_value_list.append(replaced_3[:-1])
+
+                for item in final_point_value_list:
+                    getindex = item.index("=")
+                    name_puff = item[:getindex]
+                    value_puff = item[getindex + 1:]
+                    csv_origdata[name_puff] = value_puff
+
+            
                 for file_path in existing_path_X118_SME_AMG:
                     setmeasurement_pointc118(file_path)
                 open_button_X118_SME_AMG["text"] = "SME X118 AMG"
@@ -682,35 +700,37 @@ def start_program_X243():
             final_point_value_list = []
             filepath = filedialog.askopenfilename(title='Válaszd ki a CSV fájlt', filetypes=(("csv files", "*.csv"),
                                                                                              ("all files", "*.*")))
-
-            txt_path = filepath[:len(filepath) - 4]
-            final_path_to_txt = txt_path + ".txt"
-            csv_copy = shutil.copyfile(filepath, final_path_to_txt)
-
-            with open(csv_copy, 'r') as output_file:
-                for n in output_file:
-                    csv_rawdata.append(n)
-
-            for n in csv_rawdata:
-                replaced = n.replace(';', '.', 1)
-                replaced_char_list.append(replaced)
-
-            for n in replaced_char_list:
-                replaced_2 = n.replace(';', '=')
-                replaced_char_list_2.append(replaced_2)
-
-            for n in replaced_char_list_2:
-                replaced_3 = n.replace(',', '.')
-                final_point_value_list.append(replaced_3[:-1])
-
-            for item in final_point_value_list:
-                getindex = item.index("=")
-                name_puff = item[:getindex]
-                value_puff = item[getindex + 1:]
-                csv_origdata[name_puff] = value_puff
-
+            
             file_name = os.path.split(filepath)[1]
             if file_name.startswith('SMA_X243', 0, 8):
+
+                txt_path = filepath[:len(filepath) - 4]
+                final_path_to_txt = txt_path + ".txt"
+                csv_copy = shutil.copyfile(filepath, final_path_to_txt)
+
+                with open(csv_copy, 'r') as output_file:
+                    for n in output_file:
+                        csv_rawdata.append(n)
+
+                for n in csv_rawdata:
+                    replaced = n.replace(';', '.', 1)
+                    replaced_char_list.append(replaced)
+
+                for n in replaced_char_list:
+                    replaced_2 = n.replace(';', '=')
+                    replaced_char_list_2.append(replaced_2)
+
+                for n in replaced_char_list_2:
+                    replaced_3 = n.replace(',', '.')
+                    final_point_value_list.append(replaced_3[:-1])
+
+                for item in final_point_value_list:
+                    getindex = item.index("=")
+                    name_puff = item[:getindex]
+                    value_puff = item[getindex + 1:]
+                    csv_origdata[name_puff] = value_puff
+
+            
                 for file_path in existing_path_X243:
                     setmeasurement_pointc118(file_path)
                 open_button_X243["text"] = "SMA X243"
