@@ -233,8 +233,9 @@ def start_program_W177():
                 name_puff = item[:getindex]
                 value_puff = item[getindex + 1:]
                 csv_origdata[name_puff] = value_puff
-
-            if str(final_path_to_txt).startswith('BF_W177', 0, 7):
+            
+            file_name = os.path.split(filepath)[1]
+            if file_name.startswith('BF_W177', 0, 7):
                 for file_path in existing_path_W177:
                     setmeasurement_pointc118(file_path)
                 open_button_W177["text"] = "BestFit W177"
@@ -285,18 +286,19 @@ def start_program_W177_SME():
                 name_puff = item[:getindex]
                 value_puff = item[getindex + 1:]
                 csv_origdata[name_puff] = value_puff
-
-            if str(final_path_to_txt).startswith('SME_W177', 0, 8):
-                for file_path in existing_path_W177_SME:
-                    setmeasurement_pointc118(file_path)
-                open_button_W177_SME["text"] = "SME W177"
-                open_button_W177_SME['font'] = ('Arial', 22, 'italic')
-                open_button_W177_SME["state"] = "disabled"
-                backup_button['state'] = 'normal'
-                break
+            
+            file_name = os.path.split(filepath)[1]
+            if file_name.startswith('SME_W177', 0, 8):
+               for file_path in existing_path_W177_SME:
+                   setmeasurement_pointc118(file_path)
+               open_button_W177_SME["text"] = "SME W177"
+               open_button_W177_SME['font'] = ('Arial', 22, 'italic')
+               open_button_W177_SME["state"] = "disabled"
+               backup_button['state'] = 'normal'
+               break
             else:
-                messagebox.showerror('Helytelen fájl', 'Kérlek válaszd ki a megfelelő .CSV fájlt!')
-                break
+               messagebox.showerror('Helytelen fájl', 'Kérlek válaszd ki a megfelelő .CSV fájlt!')
+               break
 
         except:
             break
@@ -338,14 +340,15 @@ def start_program_W177_SME_AMG():
                 value_puff = item[getindex + 1:]
                 csv_origdata[name_puff] = value_puff
 
-            if str(final_path_to_txt).startswith('SME_W177_AMG', 0, 12):
+            file_name = os.path.split(filepath)[1]
+            if file_name.startswith('SME_W177_AMG', 0, 12):
                 for file_path in existing_path_W177_SME_AMG:
                     setmeasurement_pointc118(file_path)
-                open_button_W177_SME_AMG["text"] = "SME W177 AMG"
-                open_button_W177_SME_AMG['font'] = ('Arial', 22, 'italic')
-                open_button_W177_SME_AMG["state"] = "disabled"
-                backup_button['state'] = 'normal'
-                break
+               open_button_W177_SME_AMG["text"] = "SME W177 AMG"
+               open_button_W177_SME_AMG['font'] = ('Arial', 22, 'italic')
+               open_button_W177_SME_AMG["state"] = "disabled"
+               backup_button['state'] = 'normal'
+               break
             else:
                 messagebox.showerror('Helytelen fájl', 'Kérlek válaszd ki a megfelelő .CSV fájlt!')
                 break
@@ -390,7 +393,8 @@ def start_program_C118():
                 value_puff = item[getindex + 1:]
                 csv_origdata[name_puff] = value_puff
 
-            if str(final_path_to_txt).startswith('BF_C118', 0, 8):
+            file_name = os.path.split(filepath)[1]
+            if file_name.startswith('BF_C118', 0, 7):
                 for file_path in existing_path_C118:
                     setmeasurement_pointc118(file_path)
                 open_button_C118["text"] = "BestFit C118"
@@ -442,7 +446,8 @@ def start_program_C118_SME():
                 value_puff = item[getindex + 1:]
                 csv_origdata[name_puff] = value_puff
 
-            if str(final_path_to_txt).startswith('SME_C118', 0, 8):
+            file_name = os.path.split(filepath)[1]
+            if file_name.startswith('SME_C118', 0, 8):
                 for file_path in existing_path_C118_SME:
                     setmeasurement_pointc118(file_path)
                 open_button_C118_SME["text"] = "SME C118"
@@ -494,7 +499,8 @@ def start_program_C118_SME_AMG():
                 value_puff = item[getindex + 1:]
                 csv_origdata[name_puff] = value_puff
 
-            if str(final_path_to_txt).startswith('SME_C118_AMG', 0, 12):
+            file_name = os.path.split(filepath)[1]
+            if file_name.startswith('SME_C118_AMG', 0, 12):
                 for file_path in existing_path_C118_SME_AMG:
                     setmeasurement_pointc118(file_path)
                 open_button_C118_SME_AMG["text"] = "SME C118 AMG"
@@ -546,7 +552,8 @@ def start_program_X118():
                 value_puff = item[getindex + 1:]
                 csv_origdata[name_puff] = value_puff
 
-            if str(final_path_to_txt).startswith('BF_X118', 0, 7):
+            file_name = os.path.split(filepath)[1]
+            if file_name.startswith('BF_X118', 0, 7):
                 for file_path in existing_path_X118:
                     setmeasurement_pointc118(file_path)
                 open_button_X118["text"] = "BestFit X118 "
@@ -598,7 +605,8 @@ def start_program_X118_SME():
                 value_puff = item[getindex + 1:]
                 csv_origdata[name_puff] = value_puff
 
-            if str(final_path_to_txt).startswith('SME_X118', 0, 8):
+            file_name = os.path.split(filepath)[1]
+            if file_name.startswith('SME_X118', 0, 8):
                 for file_path in existing_path_X118_SME:
                     setmeasurement_pointc118(file_path)
                 open_button_X118_SME["text"] = "SME X118"
@@ -649,7 +657,8 @@ def start_program_X118_SME_AMG():
                 value_puff = item[getindex + 1:]
                 csv_origdata[name_puff] = value_puff
 
-            if str(final_path_to_txt).startswith('SME_X118_AMG', 0, 12):
+            file_name = os.path.split(filepath)[1]
+            if file_name.startswith('SME_X118_AMG', 0, 12):
                 for file_path in existing_path_X118_SME_AMG:
                     setmeasurement_pointc118(file_path)
                 open_button_X118_SME_AMG["text"] = "SME X118 AMG"
@@ -700,7 +709,8 @@ def start_program_X243():
                 value_puff = item[getindex + 1:]
                 csv_origdata[name_puff] = value_puff
 
-            if str(final_path_to_txt).startswith('SMA_X243', 0, 8):
+            file_name = os.path.split(filepath)[1]
+            if file_name.startswith('SMA_X243', 0, 8):
                 for file_path in existing_path_X243:
                     setmeasurement_pointc118(file_path)
                 open_button_X243["text"] = "SMA X243"
