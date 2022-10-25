@@ -288,7 +288,7 @@ def start_program_W177_SME():
                 csv_origdata[name_puff] = value_puff
             
             file_name = os.path.split(filepath)[1]
-            if file_name.startswith('SME_W177', 0, 8):
+            if file_name.startswith('SME_W177_SERIE', 0, 14):
                for file_path in existing_path_W177_SME:
                    setmeasurement_pointc118(file_path)
                open_button_W177_SME["text"] = "SME W177"
@@ -447,7 +447,7 @@ def start_program_C118_SME():
                 csv_origdata[name_puff] = value_puff
 
             file_name = os.path.split(filepath)[1]
-            if file_name.startswith('SME_C118', 0, 8):
+            if file_name.startswith('SME_C118_SERIE', 0, 14):
                 for file_path in existing_path_C118_SME:
                     setmeasurement_pointc118(file_path)
                 open_button_C118_SME["text"] = "SME C118"
@@ -606,7 +606,7 @@ def start_program_X118_SME():
                 csv_origdata[name_puff] = value_puff
 
             file_name = os.path.split(filepath)[1]
-            if file_name.startswith('SME_X118', 0, 8):
+            if file_name.startswith('SME_X118_SERIE', 0, 14):
                 for file_path in existing_path_X118_SME:
                     setmeasurement_pointc118(file_path)
                 open_button_X118_SME["text"] = "SME X118"
