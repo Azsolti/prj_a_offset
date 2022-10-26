@@ -246,7 +246,8 @@ def start_program_W177():
                 open_button_W177["state"] = "disabled"
                 backup_button['state'] = 'normal'
                 break
-
+            else:
+              messagebox.showerror('Helytelen fájl', 'Kérlek válaszd ki a megfelelő .CSV fájlt!')
         except:
             break
 
@@ -297,8 +298,8 @@ def start_program_W177_SME():
                 open_button_W177_SME["state"] = "disabled"
                 backup_button['state'] = 'normal'
                 break
-                messagebox.showerror('Helytelen fájl', 'Kérlek válaszd ki a megfelelő .CSV fájlt!')
-
+           else:
+              messagebox.showerror('Helytelen fájl', 'Kérlek válaszd ki a megfelelő .CSV fájlt!')
         except:
             break
 
@@ -349,10 +350,9 @@ def start_program_W177_SME_AMG():
                 open_button_W177_SME_AMG["state"] = "disabled"
                 backup_button['state'] = 'normal'
                 break
-            elif Exception:
-                messagebox.showerror('Helytelen fájl', 'Kérlek válaszd ki a megfelelő .CSV fájlt!')
-
-        finally:
+            else:
+              messagebox.showerror('Helytelen fájl', 'Kérlek válaszd ki a megfelelő .CSV fájlt!')
+        except:
             break
 
 
@@ -402,10 +402,9 @@ def start_program_C118():
                 open_button_C118["state"] = "disabled"
                 backup_button['state'] = 'normal'
                 break
-            elif Exception:
-                messagebox.showerror('Helytelen fájl', 'Kérlek válaszd ki a megfelelő .CSV fájlt!')
-
-        finally:
+            else:
+              messagebox.showerror('Helytelen fájl', 'Kérlek válaszd ki a megfelelő .CSV fájlt!')
+        except:
             break
 
 def start_program_C118_SME():
@@ -454,10 +453,9 @@ def start_program_C118_SME():
                 open_button_C118_SME["state"] = "disabled"
                 backup_button['state'] = 'normal'
                 break
-            elif Exception:
-                messagebox.showerror('Helytelen fájl', 'Kérlek válaszd ki a megfelelő .CSV fájlt!')
-
-        finally:
+            else:
+              messagebox.showerror('Helytelen fájl', 'Kérlek válaszd ki a megfelelő .CSV fájlt!')
+        except:
             break
 
 
@@ -507,10 +505,9 @@ def start_program_C118_SME_AMG():
                 open_button_C118_SME_AMG["state"] = "disabled"
                 backup_button['state'] = 'normal'
                 break
-            elif Exception:
-                messagebox.showerror('Helytelen fájl', 'Kérlek válaszd ki a megfelelő .CSV fájlt!')
-
-        finally:
+            else:
+              messagebox.showerror('Helytelen fájl', 'Kérlek válaszd ki a megfelelő .CSV fájlt!')
+        except:
             break
 
 
@@ -560,12 +557,10 @@ def start_program_X118():
                 open_button_X118["state"] = "disabled"
                 backup_button['state'] = 'normal'
                 break
-            elif Exception:
-                messagebox.showerror('Helytelen fájl', 'Kérlek válaszd ki a megfelelő .CSV fájlt!')
-
-        finally:
+            else:
+              messagebox.showerror('Helytelen fájl', 'Kérlek válaszd ki a megfelelő .CSV fájlt!')
+        except:
             break
-
 
 def start_program_X118_SME():
     while True:
@@ -613,10 +608,9 @@ def start_program_X118_SME():
                 open_button_X118_SME["state"] = "disabled"
                 backup_button['state'] = 'normal'
                 break
-            elif Exception:
-                messagebox.showerror('Helytelen fájl', 'Kérlek válaszd ki a megfelelő .CSV fájlt!')
-
-        finally:
+            else:
+              messagebox.showerror('Helytelen fájl', 'Kérlek válaszd ki a megfelelő .CSV fájlt!')
+        except:
             break
 
 
@@ -666,10 +660,9 @@ def start_program_X118_SME_AMG():
                 open_button_X118_SME_AMG["state"] = "disabled"
                 backup_button['state'] = 'normal'
                 break
-            elif Exception:
-                messagebox.showerror('Helytelen fájl', 'Kérlek válaszd ki a megfelelő .CSV fájlt!')
-
-        finally:
+            else:
+              messagebox.showerror('Helytelen fájl', 'Kérlek válaszd ki a megfelelő .CSV fájlt!')
+        except:
             break
 
 
@@ -719,10 +712,9 @@ def start_program_X243():
                 open_button_X243["state"] = "disabled"
                 backup_button['state'] = 'normal'
                 break
-            elif Exception:
-                messagebox.showerror('Helytelen fájl', 'Kérlek válaszd ki a megfelelő .CSV fájlt!')
-
-        finally:
+            else:
+              messagebox.showerror('Helytelen fájl', 'Kérlek válaszd ki a megfelelő .CSV fájlt!')
+        except:
             break
 
 
