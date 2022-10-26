@@ -56,8 +56,7 @@ path_list_C118 = ["D:\BestFit\AuditTypes_Left\\100_C118_FD_LI.xml",
                   "D:\BestFit\AuditTypes_STS_Left\\121_C118_AMG_STS_vo_li.xml",
                   "D:\BestFit\AuditTypes_STS_Right\\121_C118_AMG_STS_vo_re.xml",
                   "D:\BestFit\AuditTypes_KH_Left\\120_C118_AMG_KH_LI.xml",
-                  "D:\BestFit\AuditTypes_KH_Right\\120_C118_AMG_KH_RE.xml",
-                  "D:\BestFit\AuditTypes_MH\\120_C118_AMG_MH.xml"
+                  "D:\BestFit\AuditTypes_KH_Right\\120_C118_AMG_KH_RE.xml", 
                   ]
 
 path_list_C118_SME = ["D:\BestFit\AuditTypes\Type_C118\\21_C118_KV_LBR_Links.xml",
