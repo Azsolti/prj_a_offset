@@ -825,7 +825,7 @@ def setmeasurement_pointc118(document):
 
             with open(final_logfilevar, 'a+') as logfile_2:
                 logfile_2.write(f'\nOffset {final_keylist[0]} felülírva {get_pointValue}-ról {element.get("value")}-ra'
-                                f'itt: \n {document} \n')
+                                f' itt: \n {document} \n')
 
             final_strlist.pop(0)
             final_keylist.pop(0)
