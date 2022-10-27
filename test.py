@@ -1040,80 +1040,80 @@ def create_xml_backup():
 
 frame1 = Frame(root, bg='black')
 frame1.pack()
-open_button_W177 = Button(frame1, text='BestFit W117', font=('Arial', 22, 'bold'), bd='10',
-                          command=start_program_W177, width=15, state='disabled')
+open_button_W177 = Button(frame1, text='BestFit W117', font=('Arial', 19, 'bold'), bd='10',
+                          command=start_program_W177, height=1, width=15, state='disabled')
 open_button_W177.pack(padx=2, pady=2)
 open_button_W177.bind("<Enter>", on_enter_W177)
 open_button_W177.bind("<Leave>", on_leave_W177)
 
 frame2 = Frame(root, bg='black')
 frame2.pack()
-open_button_C118 = Button(frame2, text='BestFit C118', font=('Arial', 22, 'bold'), bd='10',
-                          command=start_program_C118, width=15, state='disabled')
+open_button_C118 = Button(frame2, text='BestFit C118', font=('Arial', 19, 'bold'), bd='10',
+                          command=start_program_C118, height=1, width=15, state='disabled')
 open_button_C118.pack(padx=2, pady=1)
 open_button_C118.bind("<Enter>", on_enter_C118)
 open_button_C118.bind("<Leave>", on_leave_C118)
 
 frame3 = Frame(root, bg='black')
 frame3.pack()
-open_button_X118 = Button(frame3, text='BestFit X118', font=('Arial', 22, 'bold'), bd='10',
-                          command=start_program_X118, width=15, state='disabled')
+open_button_X118 = Button(frame3, text='BestFit X118', font=('Arial', 19, 'bold'), bd='10',
+                          command=start_program_X118, height=1, width=15, state='disabled')
 open_button_X118.pack(padx=2, pady=2)
 open_button_X118.bind("<Enter>", on_enter_X118)
 open_button_X118.bind("<Leave>", on_leave_X118)
 
 frame4 = Frame(root, bg='black')
 frame4.pack()
-open_button_X243 = Button(frame4, text='SMA X243', font=('Arial', 22, 'bold'), bd='10',
-                          command=start_program_X243, width=15, state='disabled')
+open_button_X243 = Button(frame4, text='SMA X243', font=('Arial', 19, 'bold'), bd='10',
+                          command=start_program_X243, height=1, width=15, state='disabled')
 open_button_X243.pack(padx=2, pady=2)
 open_button_X243.bind("<Enter>", on_enter_X243)
 open_button_X243.bind("<Leave>", on_leave_X243)
 
 frame122 = Frame(root, bg='black')
 frame122.pack()
-open_button_W177_SME = Button(frame122, text='SME W177', font=('Arial', 22, 'bold'), bd='10',
-                              command=start_program_W177_SME, width=15, state='disabled')
+open_button_W177_SME = Button(frame122, text='SME W177', font=('Arial', 19, 'bold'), bd='10',
+                              command=start_program_W177_SME, height=1, width=15, state='disabled')
 open_button_W177_SME.pack(padx=2, pady=2)
 open_button_W177_SME.bind("<Enter>", on_enter_W177_SME)
 open_button_W177_SME.bind("<Leave>", on_leave_W177_SME)
 
 frame222 = Frame(root, bg='black')
 frame222.pack()
-open_button_C118_SME = Button(frame222, text='SME C118', font=('Arial', 22, 'bold'), bd='10',
-                              command=start_program_C118_SME, width=15, state='disabled')
+open_button_C118_SME = Button(frame222, text='SME C118', font=('Arial', 19, 'bold'), bd='10',
+                              command=start_program_C118_SME, height=1, width=15, state='disabled')
 open_button_C118_SME.pack(padx=2, pady=2)
 open_button_C118_SME.bind("<Enter>", on_enter_C118_SME)
 open_button_C118_SME.bind("<Leave>", on_leave_C118_SME)
 
 frame333 = Frame(root, bg='black')
 frame333.pack()
-open_button_X118_SME = Button(frame333, text='SME X118', font=('Arial', 22, 'bold'), bd='10',
-                              command=start_program_X118_SME, width=15, state='disabled')
+open_button_X118_SME = Button(frame333, text='SME X118', font=('Arial', 19, 'bold'), bd='10',
+                              command=start_program_X118_SME, height=1, width=15, state='disabled')
 open_button_X118_SME.pack(padx=2, pady=2)
 open_button_X118_SME.bind("<Enter>", on_enter_X118_SME)
 open_button_X118_SME.bind("<Leave>", on_leave_X118_SME)
 
 frame12 = Frame(root, bg='black')
 frame12.pack()
-open_button_W177_SME_AMG = Button(frame12, text='SME AMG W177', font=('Arial', 22, 'bold'), bd='10',
-                                  command=start_program_W177_SME_AMG, width=15, state='disabled')
+open_button_W177_SME_AMG = Button(frame12, text='SME AMG W177', font=('Arial', 19, 'bold'), bd='10',
+                                  command=start_program_W177_SME_AMG, height=1, width=15, state='disabled')
 open_button_W177_SME_AMG.pack(padx=2, pady=2)
 open_button_W177_SME_AMG.bind("<Enter>", on_enter_W177_SME_AMG)
 open_button_W177_SME_AMG.bind("<Leave>", on_leave_W177_SME_AMG)
 
 frame22 = Frame(root, bg='black')
 frame22.pack()
-open_button_C118_SME_AMG = Button(frame22, text='SME AMG C118', font=('Arial', 22, 'bold'), bd='10',
-                                  command=start_program_C118_SME_AMG, width=15, state='disabled')
+open_button_C118_SME_AMG = Button(frame22, text='SME AMG C118', font=('Arial', 19, 'bold'), bd='10',
+                                  command=start_program_C118_SME_AMG, height=1, width=15, state='disabled')
 open_button_C118_SME_AMG.pack(padx=2, pady=2)
 open_button_C118_SME_AMG.bind("<Enter>", on_enter_C118_SME_AMG)
 open_button_C118_SME_AMG.bind("<Leave>", on_leave_C118_SME_AMG)
 
 frame33 = Frame(root, bg='black')
 frame33.pack()
-open_button_X118_SME_AMG = Button(frame33, text='SME AMG X118', font=('Arial', 22, 'bold'), bd='10',
-                                  command=start_program_X118_SME_AMG, width=15, state='disabled')
+open_button_X118_SME_AMG = Button(frame33, text='SME AMG X118', font=('Arial', 19, 'bold'), bd='10',
+                                  command=start_program_X118_SME_AMG, height=1, width=15, state='disabled')
 open_button_X118_SME_AMG.pack(padx=2, pady=2)
 open_button_X118_SME_AMG.bind("<Enter>", on_enter_X118_SME_AMG)
 open_button_X118_SME_AMG.bind("<Leave>", on_leave_X118_SME_AMG)
