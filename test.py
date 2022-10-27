@@ -125,21 +125,21 @@ def restore_xml_backup():
         for file in path_list_W177:
             if os.path.exists(file):
                 open_button_W177["state"] = "normal"
-                open_button_W177['font'] = ('Arial', 22, 'bold')
+                open_button_W177['font'] = ('Arial', 19, 'bold')
                 open_button_W177["text"] = "BestFit W177"
                 open_button_W177["bd"] = 10
 
         for file in path_list_W177_SME:
             if os.path.exists(file):
                 open_button_W177_SME["state"] = "normal"
-                open_button_W177_SME['font'] = ('Arial', 22, 'bold')
+                open_button_W177_SME['font'] = ('Arial', 19, 'bold')
                 open_button_W177_SME["text"] = "SME W177"
                 open_button_W177_SME["bd"] = 10
 
         for file in path_list_W177_SME_AMG:
             if os.path.exists(file):
                 open_button_W177_SME_AMG["state"] = "normal"
-                open_button_W177_SME_AMG['font'] = ('Arial', 22, 'bold')
+                open_button_W177_SME_AMG['font'] = ('Arial', 19, 'bold')
                 open_button_W177_SME_AMG["text"] = "SME W177 AMG"
                 open_button_W177_SME_AMG["bd"] = 10
 
@@ -147,20 +147,20 @@ def restore_xml_backup():
             if os.path.exists(file):
                 open_button_C118["state"] = "normal"
                 open_button_C118["text"] = "BestFit C118"
-                open_button_C118['font'] = ('Arial', 22, 'bold')
+                open_button_C118['font'] = ('Arial', 19, 'bold')
                 open_button_C118["bd"] = 10
 
         for file in path_list_C118_SME:
             if os.path.exists(file):
                 open_button_C118_SME["state"] = "normal"
-                open_button_C118_SME['font'] = ('Arial', 22, 'bold')
+                open_button_C118_SME['font'] = ('Arial', 19, 'bold')
                 open_button_C118_SME["text"] = "SME C118"
                 open_button_C118_SME["bd"] = 10
 
         for file in path_list_C118_SME_AMG:
             if os.path.exists(file):
                 open_button_C118_SME_AMG["state"] = "normal"
-                open_button_C118_SME_AMG['font'] = ('Arial', 22, 'bold')
+                open_button_C118_SME_AMG['font'] = ('Arial', 19, 'bold')
                 open_button_C118_SME_AMG["text"] = "SME C118 AMG"
                 open_button_C118_SME_AMG["bd"] = 10
 
@@ -168,20 +168,20 @@ def restore_xml_backup():
             if os.path.exists(file):
                 open_button_X118["state"] = "normal"
                 open_button_X118["text"] = "BestFit X118"
-                open_button_X118['font'] = ('Arial', 22, 'bold')
+                open_button_X118['font'] = ('Arial', 19, 'bold')
                 open_button_X118["bd"] = 10
                 continue
         for file in path_list_X118_SME:
             if os.path.exists(file):
                 open_button_X118_SME["state"] = "normal"
-                open_button_X118_SME['font'] = ('Arial', 22, 'bold')
+                open_button_X118_SME['font'] = ('Arial', 19, 'bold')
                 open_button_X118_SME["text"] = "SME X118"
                 open_button_X118_SME["bd"] = 10
 
         for file in path_list_X118_SME_AMG:
             if os.path.exists(file):
                 open_button_X118_SME_AMG["state"] = "normal"
-                open_button_X118_SME_AMG['font'] = ('Arial', 22, 'bold')
+                open_button_X118_SME_AMG['font'] = ('Arial', 19, 'bold')
                 open_button_X118_SME_AMG["text"] = "SME X118 AMG"
                 open_button_X118_SME_AMG["bd"] = 10
 
@@ -189,7 +189,7 @@ def restore_xml_backup():
             if os.path.exists(file):
                 open_button_X243["state"] = "normal"
                 open_button_X243["text"] = "SMA X243"
-                open_button_X243['font'] = ('Arial', 22, 'bold')
+                open_button_X243['font'] = ('Arial', 19, 'bold')
                 open_button_X243["bd"] = 10
 
         backup_button['state'] = 'disabled'
@@ -241,7 +241,7 @@ def start_program_W177():
                 for file_path in existing_path_W177:
                     setmeasurement_pointc118(file_path)
                 open_button_W177["text"] = "BestFit W177"
-                open_button_W177['font'] = ('Arial', 22, 'italic')
+                open_button_W177['font'] = ('Arial', 19, 'italic')
                 open_button_W177["state"] = "disabled"
                 backup_button['state'] = 'normal'
                 break
@@ -297,7 +297,7 @@ def start_program_W177_SME():
                 for file_path in existing_path_W177_SME:
                     setmeasurement_pointc118(file_path)
                 open_button_W177_SME["text"] = "SME W177"
-                open_button_W177_SME['font'] = ('Arial', 22, 'italic')
+                open_button_W177_SME['font'] = ('Arial', 19, 'italic')
                 open_button_W177_SME["state"] = "disabled"
                 backup_button['state'] = 'normal'
                 break
@@ -351,7 +351,7 @@ def start_program_W177_SME_AMG():
                 for file_path in existing_path_W177_SME_AMG:
                     setmeasurement_pointc118(file_path)
                 open_button_W177_SME_AMG["text"] = "SME W177 AMG"
-                open_button_W177_SME_AMG['font'] = ('Arial', 22, 'italic')
+                open_button_W177_SME_AMG['font'] = ('Arial', 19, 'italic')
                 open_button_W177_SME_AMG["state"] = "disabled"
                 backup_button['state'] = 'normal'
                 break
@@ -405,7 +405,7 @@ def start_program_C118():
                 for file_path in existing_path_C118:
                     setmeasurement_pointc118(file_path)
                 open_button_C118["text"] = "BestFit C118"
-                open_button_C118['font'] = ('Arial', 22, 'italic')
+                open_button_C118['font'] = ('Arial', 19, 'italic')
                 open_button_C118["state"] = "disabled"
                 backup_button['state'] = 'normal'
                 break
@@ -459,7 +459,7 @@ def start_program_C118_SME():
                 for file_path in existing_path_C118_SME:
                     setmeasurement_pointc118(file_path)
                 open_button_C118_SME["text"] = "SME C118"
-                open_button_C118_SME['font'] = ('Arial', 22, 'italic')
+                open_button_C118_SME['font'] = ('Arial', 19, 'italic')
                 open_button_C118_SME["state"] = "disabled"
                 backup_button['state'] = 'normal'
                 break
@@ -513,7 +513,7 @@ def start_program_C118_SME_AMG():
                 for file_path in existing_path_C118_SME_AMG:
                     setmeasurement_pointc118(file_path)
                 open_button_C118_SME_AMG["text"] = "SME C118 AMG"
-                open_button_C118_SME_AMG['font'] = ('Arial', 22, 'italic')
+                open_button_C118_SME_AMG['font'] = ('Arial', 19, 'italic')
                 open_button_C118_SME_AMG["state"] = "disabled"
                 backup_button['state'] = 'normal'
                 break
@@ -567,7 +567,7 @@ def start_program_X118():
                 for file_path in existing_path_X118:
                     setmeasurement_pointc118(file_path)
                 open_button_X118["text"] = "BestFit X118 "
-                open_button_X118['font'] = ('Arial', 22, 'italic')
+                open_button_X118['font'] = ('Arial', 19, 'italic')
                 open_button_X118["state"] = "disabled"
                 backup_button['state'] = 'normal'
                 break
@@ -621,7 +621,7 @@ def start_program_X118_SME():
                 for file_path in existing_path_X118_SME:
                     setmeasurement_pointc118(file_path)
                 open_button_X118_SME["text"] = "SME X118"
-                open_button_X118_SME['font'] = ('Arial', 22, 'italic')
+                open_button_X118_SME['font'] = ('Arial', 19, 'italic')
                 open_button_X118_SME["state"] = "disabled"
                 backup_button['state'] = 'normal'
                 break
@@ -675,7 +675,7 @@ def start_program_X118_SME_AMG():
                 for file_path in existing_path_X118_SME_AMG:
                     setmeasurement_pointc118(file_path)
                 open_button_X118_SME_AMG["text"] = "SME X118 AMG"
-                open_button_X118_SME_AMG['font'] = ('Arial', 22, 'italic')
+                open_button_X118_SME_AMG['font'] = ('Arial', 19, 'italic')
                 open_button_X118_SME_AMG["state"] = "disabled"
                 backup_button['state'] = 'normal'
                 break
@@ -729,7 +729,7 @@ def start_program_X243():
                 for file_path in existing_path_X243:
                     setmeasurement_pointc118(file_path)
                 open_button_X243["text"] = "SMA X243"
-                open_button_X243['font'] = ('Arial', 22, 'italic')
+                open_button_X243['font'] = ('Arial', 19, 'italic')
                 open_button_X243["state"] = "disabled"
                 backup_button['state'] = 'normal'
                 break
