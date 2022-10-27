@@ -56,7 +56,7 @@ path_list_C118 = ["D:\BestFit\AuditTypes_Left\\100_C118_FD_LI.xml",
                   "D:\BestFit\AuditTypes_STS_Left\\121_C118_AMG_STS_vo_li.xml",
                   "D:\BestFit\AuditTypes_STS_Right\\121_C118_AMG_STS_vo_re.xml",
                   "D:\BestFit\AuditTypes_KH_Left\\120_C118_AMG_KH_LI.xml",
-                  "D:\BestFit\AuditTypes_KH_Right\\120_C118_AMG_KH_RE.xml", 
+                  "D:\BestFit\AuditTypes_KH_Right\\120_C118_AMG_KH_RE.xml",
                   ]
 
 path_list_C118_SME = ["D:\BestFit\AuditTypes\Type_C118\\21_C118_KV_LBR_Links.xml",
@@ -245,10 +245,10 @@ def start_program_W177():
                 open_button_W177["state"] = "disabled"
                 backup_button['state'] = 'normal'
                 break
-                
+
             elif filepath == "":
                 break
-            
+
             else:
                 messagebox.showerror('Helytelen fájl', 'Kérlek válaszd ki a megfelelő .CSV fájlt!')
         finally:
@@ -301,9 +301,9 @@ def start_program_W177_SME():
                 open_button_W177_SME["state"] = "disabled"
                 backup_button['state'] = 'normal'
                 break
-           elif filepath == "":
+            elif filepath == "":
                 break
-          else:
+            else:
                 messagebox.showerror('Helytelen fájl', 'Kérlek válaszd ki a megfelelő .CSV fájlt!')
         finally:
             break
@@ -415,6 +415,7 @@ def start_program_C118():
                 messagebox.showerror('Helytelen fájl', 'Kérlek válaszd ki a megfelelő .CSV fájlt!')
         finally:
             break
+
 
 def start_program_C118_SME():
     while True:
@@ -577,6 +578,7 @@ def start_program_X118():
         finally:
             break
 
+
 def start_program_X118_SME():
     while True:
         try:
@@ -683,6 +685,7 @@ def start_program_X118_SME_AMG():
                 messagebox.showerror('Helytelen fájl', 'Kérlek válaszd ki a megfelelő .CSV fájlt!')
         finally:
             break
+
 
 def start_program_X243():
     while True:
@@ -1144,4 +1147,3 @@ check_fileexists_X118_SME_AMG()
 check_fileexists_X243()
 create_xml_backup()
 root.mainloop()
-
