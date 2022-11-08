@@ -1204,8 +1204,15 @@ def login_popup():
     login_butt = Button(top, text="Bejelentkezés", font=('Arial', 12), bd=8, command=afaszom)
     user_pass_box.bind("<Return>", afaszom)
     login_butt.pack(pady=15)
+    
+    
+def check_backup_files():
+    backup_files = os.listdir("D:\\BackupBestFit\\AbgleichBackup")
+    if len(backup_files) >= 1:
+        restore_backup_button['state'] = 'normal'
+        
 
-
+        
 Grid.rowconfigure(root, 0, weight=1)
 Grid.rowconfigure(root, 1, weight=1)
 Grid.rowconfigure(root, 2, weight=1)
@@ -1331,6 +1338,7 @@ watermark_name.grid(row=8, columnspan=4)
 watermark2 = Label(root, text='<371_RB-EF>', font=('Arial', 10, 'italic'), bg='light yellow')
 watermark2.grid(row=9, columnspan=4)
 
+check_backup_files()
 
 with open('text_box.txt', 'w') as txt:
     txt.truncate()
