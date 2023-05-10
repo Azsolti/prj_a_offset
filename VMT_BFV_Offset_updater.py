@@ -1172,7 +1172,7 @@ def login_popup():
 
     user_pass_box.pack()
 
-    def afaszom(*args):
+    def inner(*args):
         get_name = user_name_box.get()
         get_pass = user_pass_box.get()
 
@@ -1201,8 +1201,8 @@ def login_popup():
                 messagebox.showerror('Helytelen jelszó', 'Kérlek add meg a helyes jelszót')
                 break
 
-    login_butt = Button(top, text="Bejelentkezés", font=('Arial', 12), bd=8, command=afaszom)
-    user_pass_box.bind("<Return>", afaszom)
+    login_butt = Button(top, text="Bejelentkezés", font=('Arial', 12), bd=8, command=inner)
+    user_pass_box.bind("<Return>", inner)
     login_butt.pack(pady=15)
     
     
